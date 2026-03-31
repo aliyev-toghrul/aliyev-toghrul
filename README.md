@@ -2,7 +2,7 @@
 
 ### Data Science Student | ML & AI Engineer | AI Automation
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Website-chartreuse?style=for-the-badge)](https://toghrulaliyev.vercel.app)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Website-chartreuse?style=for-the-badge)](https://aliyevt.vercel.app)
 
 Freshman at INHA University (BEU) building real AI tools.
 I ship automation pipelines, agentic workflows, and AI-powered apps.
@@ -13,23 +13,24 @@ I run Arch Linux, write Python, and move fast.
 ## 🚀 About Me
 
 - 🤖 Building **AI-powered tools** with LLMs, FastAPI, and agentic pipelines
+- 📊 Studying **Data Science** at INHA University (BEU)
 - 🔬 Exploring **ML Engineering** — NLP, Computer Vision, MLOps
 - ⚙️ Automating everything with **n8n, Docker, Groq, Gemini**
-- 🌱 Currently diving deeper into **LangChain, HuggingFace, spaCy**
+- 🌱 Currently diving into **HuggingFace, spaCy, LangChain**
 - 📫 Reach me at: **[toghrulaliyev724@gmail.com](mailto:toghrulaliyev724@gmail.com)**
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Core
-[![core](https://skillicons.dev/icons?i=python,fastapi,docker,linux,bash)](https://skillicons.dev)
+### Languages & Core
+[![core](https://skillicons.dev/icons?i=python,bash,linux)](https://skillicons.dev)
 
 ### AI & ML
 [![ai](https://skillicons.dev/icons?i=pytorch,tensorflow)](https://skillicons.dev)
 
-### Web & Tools
-[![web](https://skillicons.dev/icons?i=nextjs,ts,js,html,css)](https://skillicons.dev)
+### Tools & Infrastructure
+[![tools](https://skillicons.dev/icons?i=docker,fastapi,git)](https://skillicons.dev)
 
 ---
 
