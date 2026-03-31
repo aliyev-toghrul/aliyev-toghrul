@@ -12,7 +12,7 @@ export default function Home() {
           <div className="flex gap-8 text-sm font-medium">
             <a href="#projects" className="hover:text-zinc-500 transition-colors">Projects</a>
             <a href="#skills" className="hover:text-zinc-500 transition-colors">Skills</a>
-            <a href="https://github.com/Jowker17" target="_blank" className="hover:text-zinc-500 transition-colors">GitHub</a>
+            <a href="https://github.com/aliyev-toghrul" target="_blank" className="hover:text-zinc-500 transition-colors">GitHub</a>
             <a href="https://linkedin.com/in/toghrul-aliyev-a83b3037b" target="_blank" className="hover:text-zinc-500 transition-colors">LinkedIn</a>
           </div>
         </div>
@@ -21,7 +21,9 @@ export default function Home() {
       <main className="max-w-5xl mx-auto px-6 pt-32 pb-24">
         {/* Hero Section */}
         <section className="mb-32">
-          <div className="max-w-3xl">
+          <div className="flex flex-col md:flex-row items-start gap-10 mb-10">
+            <img src="/avatar.jpg" alt="Toghrul Aliyev" className="w-28 h-28 rounded-full object-cover border-2 border-zinc-200 dark:border-zinc-800 shrink-0" />
+            <div className="max-w-3xl">
             <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-8 leading-[1.1]">
               Engineering the <span className="text-zinc-400">Intelligence Layer</span> of the Web.
             </h1>
@@ -38,11 +40,12 @@ export default function Home() {
                 View Systems
               </a>
               <a 
-                href="mailto:jowker17@example.com" 
+                href="mailto:toghrulaliyev724@gmail.com" 
                 className="h-12 px-8 flex items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-800 font-medium transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-900"
               >
                 Contact
               </a>
+            </div>
             </div>
           </div>
         </section>
@@ -80,31 +83,32 @@ export default function Home() {
               </div>
             </div>
 
-            {/* MOTO / Research */}
+            {/* Gist */}
             <div className="group">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 mb-6 relative">
                 <div className="absolute inset-0 flex items-center justify-center text-4xl font-bold tracking-tighter opacity-20 group-hover:opacity-40 transition-opacity">
-                  MOTO
+                  Gist
                 </div>
                 <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-zinc-100 dark:from-zinc-900 to-transparent">
                   <span className="text-xs font-bold uppercase tracking-widest bg-white dark:bg-black px-2 py-1 rounded border border-zinc-200 dark:border-zinc-800">
-                    Autonomous Research
+                    AI Content Intelligence
                   </span>
                 </div>
               </div>
               <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
-                MOTO Engine
+                Gist
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 7h10v10"/><path d="M7 17L17 7"/></svg>
               </h3>
               <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Multi-Output Token Orchestrator. An autonomous deep research harness that generates 
-                novel mathematical papers through multi-agent aggregation and validation.
+                AI-powered content intelligence tool. Scrapes any URL via Firecrawl, 
+                runs Gemini Flash analysis, and extracts tone, entities, and insights 
+                through a FastAPI microservice and Opal pipeline.
               </p>
               <div className="flex gap-3">
-                <span className="text-xs font-medium text-zinc-500">Python</span>
                 <span className="text-xs font-medium text-zinc-500">FastAPI</span>
-                <span className="text-xs font-medium text-zinc-500">Multi-Agent</span>
-                <span className="text-xs font-medium text-zinc-500">React</span>
+                <span className="text-xs font-medium text-zinc-500">Gemini</span>
+                <span className="text-xs font-medium text-zinc-500">Firecrawl</span>
+                <span className="text-xs font-medium text-zinc-500">Docker</span>
               </div>
             </div>
 
@@ -184,7 +188,7 @@ export default function Home() {
         <footer className="pt-24 border-t border-zinc-100 dark:border-zinc-900 text-sm text-zinc-500 flex flex-col md:flex-row justify-between gap-6">
           <p>© 2026 Toghrul Aliyev. Built with Next.js 16 & Tailwind 4.</p>
           <div className="flex gap-6">
-            <a href="https://github.com/Jowker17" className="hover:text-zinc-900 dark:hover:text-white transition-colors">GitHub</a>
+            <a href="https://github.com/aliyev-toghrul" className="hover:text-zinc-900 dark:hover:text-white transition-colors">GitHub</a>
             <a href="https://linkedin.com/in/toghrul-aliyev-a83b3037b" className="hover:text-zinc-900 dark:hover:text-white transition-colors">LinkedIn</a>
           </div>
         </footer>
