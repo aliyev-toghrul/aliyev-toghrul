@@ -2,7 +2,7 @@
 
 ### Data Science Student | ML & AI Engineer | AI Automation
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Website-chartreuse?style=for-the-badge)](https://aliyevt.vercel.app)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Website-chartreuse?style=for-the-badge)](https://toghrulaliyev.vercel.app)
 
 Freshman at INHA University (BEU) building real AI tools.
 I ship automation pipelines, agentic workflows, and AI-powered apps.
