@@ -12,50 +12,57 @@ export default function Home() {
       title: "DTS Thermodynamic ML",
       category: "Physics-Informed Deep Learning",
       description:
-        "Physics-informed ConvLSTM model predicting wellbore flow-rate from Distributed Temperature Sensing data. Processed 1GB+ (~26M lines) of high-noise sensor data with thermodynamic feature engineering. Built as Stage 2 research task for Algorithm Developer internship application.",
-      stack: ["Python", "PyTorch", "Scikit-learn", "Pandas", "NumPy"],
+        "Physics-informed ConvLSTM predicting wellbore flow-rate from Distributed Temperature Sensing data. Processed 1GB+ (~26M lines) of high-noise sensor data with thermodynamic feature engineering (spatial gradients dT/dz, thermal curvature, rolling statistics). Architecture evolved Conv1D-BiLSTM → ConvLSTM with AdamW + Cosine Annealing; strict 80/20 spatial depth split to prevent data leakage.",
+      stack: ["Python", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
       link: "https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling",
-      image: "DTS",
       badge: "Research Task",
+      badgeColor: "bg-blue-500/20 text-blue-300 border-blue-500/30",
+      year: "2026",
     },
     {
-      title: "ZeroT Cybersecurity",
+      title: "ZeroT — AI Cybersecurity Platform",
       category: "AI & Cybersecurity",
       description:
-        "AI-native cybersecurity platform for SMEs. GDG Baku Hackathon Finalist. Features real-time OSINT threat feeds, hybrid intelligence scanner integrating Google Safe Browsing, PhishTank & URLScan.io with Gemini 2.5, and an anti-hallucination AI assistant.",
-      stack: ["Next.js 15", "TypeScript", "Gemini 2.5", "React 18", "Vercel"],
+        "AI-native cybersecurity platform for SMEs. GDG Baku Build with AI Hackathon Top 10 Finalist. Hybrid Threat Scanner integrating Google Safe Browsing, PhishTank & URLScan.io with Gemini 2.5 — sub-second risk assessments across 100+ URLs with plain-language reporting. Monorepo: Next.js 15 portal + React 18 dashboard; real-time OSINT feed with anti-hallucination AI assistant.",
+      stack: ["Next.js 15", "React 18", "TypeScript", "Tailwind", "Gemini 2.5", "Vercel"],
       link: "https://zerot.vercel.app",
-      image: "ZeroT",
       badge: "Hackathon Finalist",
+      badgeColor: "bg-[#3ff2d7]/20 text-[#3ff2d7] border-[#3ff2d7]/30",
+      year: "2025",
     },
     {
-      title: "Gist",
+      title: "Gist — AI Content Intelligence",
       category: "NLP · Content Intelligence",
       description:
-        "AI-powered content intelligence pipeline. End-to-end flow: Firecrawl scraping → spaCy NER → MiniLM semantic deduplication → BERTopic topic clustering → Gemini Flash summarization. FastAPI backend structured as modular Opal pipeline.",
-      stack: ["FastAPI", "spaCy", "HuggingFace", "BERTopic", "Gemini Flash"],
+        "End-to-end NLP content intelligence pipeline: Firecrawl web scraping → spaCy NER → MiniLM semantic deduplication → BERTopic topic clustering → Gemini Flash AI summarization. FastAPI backend structured as a modular pipeline. Containerized with Docker for consistent deployment.",
+      stack: ["FastAPI", "spaCy", "HuggingFace", "MiniLM", "BERTopic", "Gemini Flash", "Docker", "Firecrawl"],
       link: "https://github.com/aliyev-toghrul",
-      image: "Gist",
       badge: "In Development",
+      badgeColor: "bg-amber-500/20 text-amber-300 border-amber-500/30",
+      year: "2025–Present",
     },
   ];
 
   const skills = [
     {
+      category: "Languages",
+      items: ["Python", "TypeScript", "C++", "SQL*", "Bash"],
+    },
+    {
       category: "ML / Deep Learning",
-      items: ["Python", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Polars", "ConvLSTM"],
+      items: ["PyTorch", "Scikit-learn", "Pandas", "NumPy", "Polars", "ConvLSTM", "Matplotlib"],
     },
     {
       category: "NLP & AI",
-      items: ["HuggingFace", "spaCy", "BERTopic", "MiniLM", "Gemini 2.5", "Groq", "Firecrawl"],
+      items: ["HuggingFace", "spaCy", "BERTopic", "MiniLM", "Firecrawl", "Gemini 2.5", "Groq"],
     },
     {
-      category: "Engineering",
-      items: ["FastAPI", "Next.js 15", "React 18", "TypeScript", "n8n", "Docker", "Prompt Eng."],
+      category: "AI / LLMs",
+      items: ["Prompt Engineering", "n8n", "FastAPI", "LLM Agents"],
     },
     {
-      category: "Infrastructure",
-      items: ["Vercel", "Git", "Linux", "C++", "SQL*"],
+      category: "Web & Infrastructure",
+      items: ["Next.js 15", "React 18", "Tailwind CSS", "Vercel", "Docker", "Git", "Linux"],
     },
   ];
 
@@ -66,8 +73,8 @@ export default function Home() {
       period: "2026 – Present",
       type: "Part-time",
       bullets: [
-        "Selected to mentor and teach Python globally in Stanford's Code in Place program.",
-        "Running weekly teaching sessions and providing code reviews to enrolled students.",
+        "Selected to mentor and teach Python to students globally in Stanford's introductory CS curriculum.",
+        "Running weekly teaching sessions, reviewing student code, and guiding learners through problem-solving strategies.",
       ],
     },
     {
@@ -101,17 +108,44 @@ export default function Home() {
   ];
 
   const certs = [
-    { name: "ML Specialization", issuer: "DeepLearning.AI · Andrew Ng" },
-    { name: "Prompting Essentials", issuer: "Google · 4-course" },
+    { name: "Machine Learning Specialization", issuer: "DeepLearning.AI · Andrew Ng" },
+    { name: "Prompting Essentials (4-course)", issuer: "Google" },
     { name: "Data Analysis with Python", issuer: "IBM / Coursera" },
     { name: "SQL Basic", issuer: "HackerRank" },
+  ];
+
+  const blogPosts = [
+    {
+      title: "Meta-Heuristic Based Multi-Agent Decision-Making Systems",
+      date: "2025",
+      tag: "Research",
+      description:
+        "Synthesis of peer-reviewed literature on meta-heuristic optimization applied to multi-agent architectures — exploring the gap between theoretical models and production deployment.",
+      link: "https://linkedin.com/in/toghrul-aliyev-a83b3037b",
+    },
+    {
+      title: "Building a Physics-Informed ConvLSTM on 26M Lines of Sensor Data",
+      date: "2026",
+      tag: "Deep Learning",
+      description:
+        "How I processed 1GB+ of distributed temperature sensing data, engineered thermodynamic features, and evolved my architecture from Conv1D-BiLSTM to ConvLSTM for wellbore flow-rate prediction.",
+      link: "https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling",
+    },
+    {
+      title: "ZeroT: Shipping an AI Cybersecurity Platform in a Hackathon",
+      date: "2025",
+      tag: "AI Engineering",
+      description:
+        "The story of building an AI-native threat intelligence platform — integrating Google Safe Browsing, PhishTank, URLScan.io and Gemini 2.5 into a real-time OSINT dashboard. GDG Baku Top 10 Finalist.",
+      link: "https://zerot.vercel.app",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-[#1a1a1a] text-zinc-300 font-sans selection:bg-[#3ff2d7]/30">
       <main className="max-w-6xl mx-auto px-4 py-8 lg:py-20 flex flex-col lg:flex-row gap-6 items-start">
 
-        {/* Sidebar */}
+        {/* SIDEBAR */}
         <aside className="w-full lg:w-[280px] lg:sticky lg:top-10 bg-[#242424] border border-zinc-800 rounded-3xl p-8 flex flex-col items-center shrink-0">
           <div className="bg-[#333333] rounded-3xl p-4 mb-6 shadow-xl">
             <img
@@ -122,16 +156,16 @@ export default function Home() {
           </div>
 
           <div className="text-center mb-8">
-            <h1 className="text-xl font-bold text-white mb-3 whitespace-nowrap">Toghrul Aliyev</h1>
+            <h1 className="text-xl font-bold text-white mb-3">Toghrul Aliyev</h1>
             <span className="px-4 py-1.5 bg-[#333333] text-xs font-medium text-white rounded-lg">
               ML / AI Engineer
             </span>
           </div>
 
-          <div className="w-full border-t border-zinc-800 pt-8 space-y-6">
+          <div className="w-full border-t border-zinc-800 pt-8 space-y-5">
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#242424] border border-zinc-800 rounded-xl flex items-center justify-center text-[#3ff2d7] shadow-lg">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <div className="w-10 h-10 bg-[#242424] border border-zinc-800 rounded-xl flex items-center justify-center text-[#3ff2d7] shrink-0">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               </div>
               <div className="min-w-0">
                 <p className="text-[10px] uppercase text-zinc-500 font-bold tracking-wider">Email</p>
@@ -142,8 +176,18 @@ export default function Home() {
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#242424] border border-zinc-800 rounded-xl flex items-center justify-center text-[#3ff2d7] shadow-lg">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div className="w-10 h-10 bg-[#242424] border border-zinc-800 rounded-xl flex items-center justify-center text-[#3ff2d7] shrink-0">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 15 19.79 19.79 0 0 1 1.94 6.4 2 2 0 0 1 3.91 4.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 11.91a16 16 0 0 0 5.99 5.99l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <p className="text-[10px] uppercase text-zinc-500 font-bold tracking-wider">Phone</p>
+                <a href="tel:+994505190132" className="text-xs text-zinc-200 hover:text-[#3ff2d7] transition-colors">+994 50 519 0132</a>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <div className="w-10 h-10 bg-[#242424] border border-zinc-800 rounded-xl flex items-center justify-center text-[#3ff2d7] shrink-0">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div>
                 <p className="text-[10px] uppercase text-zinc-500 font-bold tracking-wider">Location</p>
@@ -151,31 +195,42 @@ export default function Home() {
               </div>
             </div>
 
-            {/* CV Download */}
+            <div className="flex items-center gap-4">
+              <div className="w-10 h-10 bg-[#242424] border border-zinc-800 rounded-xl flex items-center justify-center text-[#3ff2d7] shrink-0">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <p className="text-[10px] uppercase text-zinc-500 font-bold tracking-wider">Availability</p>
+                <p className="text-xs text-zinc-200">Remote · Full-time Summer 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full mt-6 space-y-3">
             <a
-              href="https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling/raw/main/Research_Task.pdf"
+              href="https://linkedin.com/in/toghrul-aliyev-a83b3037b"
               target="_blank"
               className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-[#3ff2d7]/10 border border-[#3ff2d7]/30 rounded-xl text-[#3ff2d7] text-xs font-medium hover:bg-[#3ff2d7]/20 transition-colors"
             >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Download CV
             </a>
 
-            <div className="flex justify-center gap-4 pt-2">
-              <a href="https://github.com/aliyev-toghrul" target="_blank" className="text-zinc-400 hover:text-[#3ff2d7] transition-colors">
+            <div className="flex justify-center gap-4 pt-1">
+              <a href="https://github.com/aliyev-toghrul" target="_blank" aria-label="GitHub" className="text-zinc-400 hover:text-[#3ff2d7] transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
               </a>
-              <a href="https://linkedin.com/in/toghrul-aliyev17" target="_blank" className="text-zinc-400 hover:text-[#3ff2d7] transition-colors">
+              <a href="https://linkedin.com/in/toghrul-aliyev-a83b3037b" target="_blank" aria-label="LinkedIn" className="text-zinc-400 hover:text-[#3ff2d7] transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               </a>
             </div>
           </div>
         </aside>
 
-        {/* Content Area */}
+        {/* CONTENT AREA */}
         <div className="flex-1 w-full min-w-0 flex flex-col gap-6 relative">
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <nav className="absolute top-0 right-0 z-10 hidden lg:flex bg-[#282829] border border-zinc-800 rounded-bl-3xl rounded-tr-3xl overflow-hidden">
             {tabs.map((tab) => (
               <button
@@ -190,13 +245,13 @@ export default function Home() {
             ))}
           </nav>
 
-          {/* Mobile Navigation */}
+          {/* Mobile Nav */}
           <nav className="lg:hidden bg-[#242424] border border-zinc-800 rounded-2xl flex justify-around p-2">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-4 py-3 text-xs font-medium rounded-xl transition-colors ${
+                className={`px-3 py-2.5 text-xs font-medium rounded-xl transition-colors ${
                   activeTab === tab ? "bg-[#333333] text-[#3ff2d7]" : "text-zinc-400"
                 }`}
               >
@@ -214,14 +269,14 @@ export default function Home() {
               </h2>
             </header>
 
-            {/* ── ABOUT ── */}
+            {/* ABOUT */}
             {activeTab === "About" && (
               <section className="animate-in fade-in slide-in-from-bottom-2 duration-500">
                 <p className="text-zinc-400 leading-relaxed mb-10">
                   Freshman at BEU–INHA University (GPA 3.67) with hands-on experience in deep learning,
                   NLP pipelines, and AI-native product engineering. Built a physics-informed ConvLSTM
-                  model on 1GB+ thermodynamic sensor data and a GDG Baku Hackathon-finalist
-                  cybersecurity platform. Seeking remote ML/AI engineering or research internship roles.
+                  on 1GB+ thermodynamic sensor data and a GDG Baku Hackathon-finalist cybersecurity platform.
+                  Stanford Code in Place Section Leader. Seeking remote ML/AI engineering or research internship roles.
                 </p>
 
                 <h3 className="text-2xl font-bold text-white mb-6">What I&apos;m Doing</h3>
@@ -233,7 +288,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-white mb-2">Deep Learning & ML</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Building physics-informed neural networks, ConvLSTM architectures, and supervised ML models on real-world scientific datasets.
+                        Building physics-informed neural networks and ConvLSTM architectures on real-world scientific datasets — from DTS sensor data to supervised ML modeling.
                       </p>
                     </div>
                   </div>
@@ -245,7 +300,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-white mb-2">NLP Pipelines</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Designing end-to-end NLP systems: scraping, named entity recognition, semantic deduplication, topic clustering, and LLM summarization.
+                        Designing end-to-end NLP systems: web scraping, NER, semantic deduplication, topic clustering with BERTopic, and LLM summarization via Gemini Flash.
                       </p>
                     </div>
                   </div>
@@ -257,19 +312,19 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-white mb-2">AI-Native Products</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Shipping full-stack AI applications with Next.js, FastAPI, and Gemini 2.5 — from hackathon prototypes to production deployments.
+                        Shipping full-stack AI applications with Next.js 15, FastAPI, and Gemini 2.5 — from hackathon finalist platforms to production-deployed tools.
                       </p>
                     </div>
                   </div>
 
                   <div className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-[#3ff2d7] shrink-0">
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">Open Source</h4>
+                      <h4 className="font-bold text-white mb-2">Teaching & Research</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Maintaining public projects across ML, cybersecurity, and automation. Stanford Code in Place Section Leader.
+                        Stanford Code in Place Section Leader mentoring Python students globally. Research contributor on Meta-Heuristic Multi-Agent Decision-Making Systems at BEU.
                       </p>
                     </div>
                   </div>
@@ -277,13 +332,12 @@ export default function Home() {
               </section>
             )}
 
-            {/* ── RESUME ── */}
+            {/* RESUME */}
             {activeTab === "Resume" && (
               <section className="animate-in fade-in slide-in-from-bottom-2 duration-500 space-y-10">
 
-                {/* Download button */}
                 <a
-                  href="https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling/raw/main/Research_Task.pdf"
+                  href="https://linkedin.com/in/toghrul-aliyev-a83b3037b"
                   target="_blank"
                   className="inline-flex items-center gap-2 px-5 py-3 bg-[#3ff2d7]/10 border border-[#3ff2d7]/30 rounded-xl text-[#3ff2d7] text-sm font-medium hover:bg-[#3ff2d7]/20 transition-colors"
                 >
@@ -293,8 +347,8 @@ export default function Home() {
 
                 {/* Education */}
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
-                    <span className="w-6 h-6 rounded-lg bg-[#3ff2d7]/20 flex items-center justify-center text-[#3ff2d7] text-xs">🎓</span>
+                  <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-lg bg-[#3ff2d7]/20 flex items-center justify-center text-xs">🎓</span>
                     Education
                   </h3>
                   {education.map((e, i) => (
@@ -311,8 +365,8 @@ export default function Home() {
 
                 {/* Experience */}
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
-                    <span className="w-6 h-6 rounded-lg bg-[#3ff2d7]/20 flex items-center justify-center text-[#3ff2d7] text-xs">💼</span>
+                  <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-lg bg-[#3ff2d7]/20 flex items-center justify-center text-xs">💼</span>
                     Experience
                   </h3>
                   <div className="space-y-4">
@@ -326,7 +380,7 @@ export default function Home() {
                           <p className="text-sm text-[#3ff2d7]">{e.org}</p>
                           <span className="text-[10px] px-2 py-0.5 bg-[#333] rounded-full text-zinc-400">{e.type}</span>
                         </div>
-                        <ul className="space-y-1">
+                        <ul className="space-y-1.5">
                           {e.bullets.map((b, j) => (
                             <li key={j} className="text-xs text-zinc-400 flex gap-2">
                               <span className="text-[#3ff2d7] mt-0.5 shrink-0">·</span>
@@ -341,12 +395,241 @@ export default function Home() {
 
                 {/* Skills */}
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
-                    <span className="w-6 h-6 rounded-lg bg-[#3ff2d7]/20 flex items-center justify-center text-[#3ff2d7] text-xs">⚙️</span>
+                  <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-lg bg-[#3ff2d7]/20 flex items-center justify-center text-xs">⚙️</span>
                     Skills
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {skills.map((s, i) => (
                       <div key={i} className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-5">
                         <p className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-3">{s.category}</p>
-                   
+                        <div className="flex flex-wrap gap-2">
+                          {s.items.map((item, j) => (
+                            <span key={j} className="text-xs px-2.5 py-1 bg-[#2a2a2a] border border-zinc-700 rounded-lg text-zinc-300">
+                              {item}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-[11px] text-zinc-600 mt-3">* SQL: basic/intermediate level</p>
+                </div>
+
+                {/* Certifications */}
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-lg bg-[#3ff2d7]/20 flex items-center justify-center text-xs">📜</span>
+                    Certifications
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {certs.map((c, i) => (
+                      <div key={i} className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-5 flex items-start gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-[#3ff2d7]/10 border border-[#3ff2d7]/20 flex items-center justify-center text-[#3ff2d7] shrink-0 mt-0.5">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-white leading-tight">{c.name}</p>
+                          <p className="text-xs text-zinc-500 mt-0.5">{c.issuer}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Languages */}
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-lg bg-[#3ff2d7]/20 flex items-center justify-center text-xs">🌐</span>
+                    Languages
+                  </h3>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    {[
+                      { lang: "Azerbaijani", level: "Native", flag: "🇦🇿" },
+                      { lang: "Turkish", level: "Native", flag: "🇹🇷" },
+                      { lang: "English", level: "Professional", flag: "🇬🇧" },
+                      { lang: "Korean", level: "Beginner", flag: "🇰🇷" },
+                    ].map((l, i) => (
+                      <div key={i} className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-4 text-center">
+                        <div className="text-2xl mb-2">{l.flag}</div>
+                        <p className="text-sm font-semibold text-white">{l.lang}</p>
+                        <p className="text-xs text-zinc-500 mt-0.5">{l.level}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+              </section>
+            )}
+
+            {/* PORTFOLIO */}
+            {activeTab === "Portfolio" && (
+              <section className="animate-in fade-in slide-in-from-bottom-2 duration-500 space-y-6">
+                <p className="text-zinc-400 text-sm leading-relaxed">
+                  Hands-on projects spanning deep learning research, AI-native product engineering, and NLP automation.
+                </p>
+                <div className="space-y-6">
+                  {projects.map((p, i) => (
+                    <div key={i} className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-colors group">
+                      <div className="flex items-start justify-between flex-wrap gap-3 mb-3">
+                        <div>
+                          <div className="flex items-center gap-3 mb-1 flex-wrap">
+                            <h3 className="text-lg font-bold text-white group-hover:text-[#3ff2d7] transition-colors">
+                              {p.title}
+                            </h3>
+                            <span className={`text-[10px] px-2.5 py-1 rounded-full border font-medium ${p.badgeColor}`}>
+                              {p.badge}
+                            </span>
+                          </div>
+                          <p className="text-xs text-zinc-500">{p.category} · {p.year}</p>
+                        </div>
+                        <a
+                          href={p.link}
+                          target="_blank"
+                          className="flex items-center gap-1.5 text-xs text-[#3ff2d7] hover:text-white transition-colors shrink-0"
+                        >
+                          View Project
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </a>
+                      </div>
+                      <p className="text-sm text-zinc-400 leading-relaxed mb-4">{p.description}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {p.stack.map((tech, j) => (
+                          <span key={j} className="text-[11px] px-2.5 py-1 bg-[#2a2a2a] border border-zinc-700/60 rounded-lg text-zinc-400">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="pt-2 text-center">
+                  <a
+                    href="https://github.com/aliyev-toghrul"
+                    target="_blank"
+                    className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-[#3ff2d7] transition-colors"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    View all repositories on GitHub →
+                  </a>
+                </div>
+              </section>
+            )}
+
+            {/* BLOG */}
+            {activeTab === "Blog" && (
+              <section className="animate-in fade-in slide-in-from-bottom-2 duration-500 space-y-6">
+                <p className="text-zinc-400 text-sm leading-relaxed">
+                  Writing about deep learning, NLP engineering, AI products, and lessons from building in public.
+                </p>
+                <div className="space-y-4">
+                  {blogPosts.map((post, i) => (
+                    <a
+                      key={i}
+                      href={post.link}
+                      target="_blank"
+                      className="block bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-colors group"
+                    >
+                      <div className="flex items-start justify-between gap-3 mb-2 flex-wrap">
+                        <div className="flex items-center gap-3 flex-wrap">
+                          <span className="text-[10px] px-2.5 py-1 bg-[#3ff2d7]/10 border border-[#3ff2d7]/20 text-[#3ff2d7] rounded-full font-medium">
+                            {post.tag}
+                          </span>
+                          <span className="text-xs text-zinc-600 font-mono">{post.date}</span>
+                        </div>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-zinc-600 group-hover:text-[#3ff2d7] transition-colors shrink-0"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                      </div>
+                      <h3 className="text-base font-bold text-white mb-2 group-hover:text-[#3ff2d7] transition-colors leading-snug">
+                        {post.title}
+                      </h3>
+                      <p className="text-sm text-zinc-400 leading-relaxed">{post.description}</p>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* CONTACT */}
+            {activeTab === "Contact" && (
+              <section className="animate-in fade-in slide-in-from-bottom-2 duration-500 space-y-8">
+                <p className="text-zinc-400 text-sm leading-relaxed">
+                  Open to remote ML/AI engineering and research internship opportunities.
+                  Part-time availability after 5 PM (Baku, UTC+4) · Full-time from Summer 2026.
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {[
+                    {
+                      label: "Email",
+                      value: "toghrulaliyev724@gmail.com",
+                      href: "mailto:toghrulaliyev724@gmail.com",
+                      icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>,
+                    },
+                    {
+                      label: "Phone",
+                      value: "+994 50 519 0132",
+                      href: "tel:+994505190132",
+                      icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 15 19.79 19.79 0 0 1 1.94 6.4 2 2 0 0 1 3.91 4.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 11.91a16 16 0 0 0 5.99 5.99l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>,
+                    },
+                    {
+                      label: "LinkedIn",
+                      value: "linkedin.com/in/toghrul-aliyev-a83b3037b",
+                      href: "https://linkedin.com/in/toghrul-aliyev-a83b3037b",
+                      icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>,
+                    },
+                    {
+                      label: "GitHub",
+                      value: "github.com/aliyev-toghrul",
+                      href: "https://github.com/aliyev-toghrul",
+                      icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>,
+                    },
+                  ].map((item, i) => (
+                    <a
+                      key={i}
+                      href={item.href}
+                      target={item.href.startsWith("http") ? "_blank" : undefined}
+                      className="flex items-center gap-4 bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-5 hover:border-[#3ff2d7]/40 hover:bg-[#3ff2d7]/5 transition-all group"
+                    >
+                      <div className="w-10 h-10 rounded-xl bg-[#3ff2d7]/10 border border-[#3ff2d7]/20 flex items-center justify-center text-[#3ff2d7] shrink-0">
+                        {item.icon}
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-[10px] uppercase text-zinc-600 font-bold tracking-wider">{item.label}</p>
+                        <p className="text-sm text-zinc-200 truncate group-hover:text-[#3ff2d7] transition-colors">{item.value}</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+
+                <div className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-6">
+                  <h3 className="text-sm font-bold text-white mb-3">Availability</h3>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-[#3ff2d7] shrink-0"></span>
+                      <span className="text-sm text-zinc-400">Remote preferred · Part-time after 5 PM (Baku, UTC+4)</span>
+                    </div>
+                    <div className="flex items-center gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-[#3ff2d7] shrink-0"></span>
+                      <span className="text-sm text-zinc-400">Full-time available from Summer 2026</span>
+                    </div>
+                    <div className="flex items-center gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                      <span className="text-sm text-zinc-400">INHA Summer School — South Korea, Jul/Aug 2026</span>
+                    </div>
+                  </div>
+                </div>
+
+              </section>
+            )}
+
+          </article>
+
+          <footer className="text-center text-xs text-zinc-600 pb-4">
+            © {new Date().getFullYear()} Toghrul Aliyev
+          </footer>
+        </div>
+
+      </main>
+    </div>
+  );
+}
