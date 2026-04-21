@@ -7,6 +7,31 @@ export default function Home() {
 
   const tabs = ["About", "Resume", "Portfolio", "Blog", "Contact"];
 
+  const projects = [
+    {
+      title: "DTS Thermodynamic ML Modeling",
+      category: "Physics-Informed Deep Learning",
+      description:
+        "Built a physics-informed ConvLSTM to predict wellbore flow-rate from Distributed Temperature Sensing data. Processed 1GB+ (~26M lines) of high-noise sensor data with thermodynamic feature engineering — spatial gradients dT/dz, thermal curvature, rolling statistics. Architecture evolved Conv1D-BiLSTM → ConvLSTM with AdamW + Cosine Annealing; strict 80/20 spatial depth split to prevent data leakage and validate OOD extrapolation.",
+      stack: ["Python", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
+      link: "https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling",
+      badge: "Research Task",
+      badgeColor: "bg-blue-500/20 text-blue-300 border-blue-500/30",
+      year: "2026",
+    },
+    {
+      title: "ZeroT — AI-Native Cybersecurity Platform",
+      category: "AI & Cybersecurity",
+      description:
+        "AI-native cybersecurity platform for SMEs. GDG Baku Build with AI Hackathon Top 10 Finalist. Hybrid Threat Scanner integrating Google Safe Browsing, PhishTank & URLScan.io with Gemini 2.5 — sub-second risk assessments across 100+ URLs with plain-language SME reporting. Monorepo: Next.js 15 portal + React 18 dashboard; real-time OSINT feed with anti-hallucination AI assistant.",
+      stack: ["Next.js 15", "React 18", "TypeScript", "Tailwind", "Gemini 2.5", "Vercel"],
+      link: "https://zerot.vercel.app",
+      badge: "Hackathon Finalist",
+      badgeColor: "bg-[#3ff2d7]/20 text-[#3ff2d7] border-[#3ff2d7]/30",
+      year: "2025",
+    },
+  ];
+
   const skills = [
     {
       category: "ML / Deep Learning",
@@ -380,19 +405,54 @@ export default function Home() {
 
             {/* ── PORTFOLIO ── */}
             {activeTab === "Portfolio" && (
-              <section className="animate-in fade-in slide-in-from-bottom-2 duration-500">
-                <div className="flex flex-col items-center justify-center py-20 text-center">
-                  <div className="w-16 h-16 rounded-2xl bg-[#3ff2d7]/10 border border-[#3ff2d7]/20 flex items-center justify-center text-[#3ff2d7] mb-6">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
-                  </div>
-                  <h3 className="text-lg font-bold text-white mb-2">Projects coming soon</h3>
-                  <p className="text-sm text-zinc-500 max-w-xs leading-relaxed">
-                    Working on documenting my projects. Check my{" "}
-                    <a href="https://github.com/aliyev-toghrul" target="_blank" className="text-[#3ff2d7] hover:underline">
-                      GitHub
-                    </a>{" "}
-                    in the meantime.
-                  </p>
+              <section className="animate-in fade-in slide-in-from-bottom-2 duration-500 space-y-6">
+                <p className="text-zinc-400 text-sm leading-relaxed">
+                  Selected projects in deep learning research and AI-native product engineering.
+                </p>
+                <div className="space-y-6">
+                  {projects.map((p, i) => (
+                    <div key={i} className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-colors group">
+                      <div className="flex items-start justify-between flex-wrap gap-3 mb-3">
+                        <div>
+                          <div className="flex items-center gap-3 mb-1 flex-wrap">
+                            <h3 className="text-lg font-bold text-white group-hover:text-[#3ff2d7] transition-colors">
+                              {p.title}
+                            </h3>
+                            <span className={`text-[10px] px-2.5 py-1 rounded-full border font-medium ${p.badgeColor}`}>
+                              {p.badge}
+                            </span>
+                          </div>
+                          <p className="text-xs text-zinc-500">{p.category} · {p.year}</p>
+                        </div>
+                        <a
+                          href={p.link}
+                          target="_blank"
+                          className="flex items-center gap-1.5 text-xs text-[#3ff2d7] hover:text-white transition-colors shrink-0"
+                        >
+                          View Project
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </a>
+                      </div>
+                      <p className="text-sm text-zinc-400 leading-relaxed mb-4">{p.description}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {p.stack.map((tech, j) => (
+                          <span key={j} className="text-[11px] px-2.5 py-1 bg-[#2a2a2a] border border-zinc-700/60 rounded-lg text-zinc-400">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="pt-2 text-center">
+                  <a
+                    href="https://github.com/aliyev-toghrul"
+                    target="_blank"
+                    className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-[#3ff2d7] transition-colors"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    View all repositories on GitHub →
+                  </a>
                 </div>
               </section>
             )}
