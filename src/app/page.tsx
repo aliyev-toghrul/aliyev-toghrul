@@ -12,7 +12,7 @@ export default function Home() {
       title: "DTS Thermodynamic ML Modeling",
       category: "Physics-Informed Deep Learning",
       description:
-        "Built a physics-informed ConvLSTM to predict wellbore flow-rate from Distributed Temperature Sensing data. Processed 1GB+ (~26M lines) of high-noise sensor data with thermodynamic feature engineering — spatial gradients dT/dz, thermal curvature, rolling statistics. Architecture evolved Conv1D-BiLSTM → ConvLSTM with AdamW + Cosine Annealing; strict 80/20 spatial depth split to prevent data leakage and validate OOD extrapolation.",
+        "Built a physics-informed ConvLSTM to predict wellbore flow-rate from DTS sensor data; processed 1GB+ (~26M lines) of high-noise data with thermodynamic feature engineering (spatial gradients dT/dz, thermal curvature, rolling statistics). Achieved R² = 0.94 on held-out test data; evolved architecture Conv1D-BiLSTM → ConvLSTM with AdamW + Cosine Annealing and strict 80/20 spatial depth split to validate OOD extrapolation.",
       stack: ["Python", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
       link: "https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling",
       badge: "Research Task",
@@ -34,24 +34,28 @@ export default function Home() {
 
   const skills = [
     {
-      category: "ML / Deep Learning",
-      items: ["Python", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Polars", "ConvLSTM", "Matplotlib"],
+      category: "Languages",
+      items: ["Python"],
     },
     {
-      category: "NLP & AI",
-      items: ["HuggingFace", "spaCy", "BERTopic", "MiniLM", "Firecrawl", "Gemini 2.5", "Groq"],
+      category: "ML / DL",
+      items: ["PyTorch", "Scikit-learn", "Pandas", "NumPy", "Polars", "ConvLSTM"],
+    },
+    {
+      category: "NLP",
+      items: ["HuggingFace", "spaCy", "BERTopic", "MiniLM", "Firecrawl"],
     },
     {
       category: "AI / LLMs",
-      items: ["Prompt Engineering", "n8n", "FastAPI", "LLM Agents"],
+      items: ["Gemini 2.5", "Groq", "Prompt Engineering"],
     },
     {
-      category: "Web & Infrastructure",
-      items: ["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "Vercel", "Docker", "Git", "Linux"],
+      category: "Automation",
+      items: ["n8n"],
     },
     {
-      category: "Other",
-      items: ["C++", "SQL*", "Bash"],
+      category: "Infra",
+      items: ["Docker", "Git", "Linux", "Vercel"],
     },
   ];
 
@@ -62,8 +66,8 @@ export default function Home() {
       period: "2026 – Present",
       type: "Part-time",
       bullets: [
-        "Selected to mentor and teach Python to students globally in Stanford's introductory CS curriculum.",
-        "Running weekly teaching sessions, reviewing student code, and guiding learners through problem-solving strategies.",
+        "Selected to mentor 17 students globally; running weekly Python sessions and guiding learners through Stanford's introductory CS curriculum.",
+        "Reviews code submissions and provides structured feedback aligned with Stanford's teaching standards.",
       ],
     },
     {
@@ -72,8 +76,8 @@ export default function Home() {
       period: "2025 – Present",
       type: "Research",
       bullets: [
-        "Conducted structured literature research on Meta-Heuristic Based Multi-Agent Decision-Making Systems under supervision of Dr. A. Gayibov.",
-        "Synthesized findings from peer-reviewed papers; identified gaps between theoretical optimization models and production deployment.",
+        "Conducted two supervised literature reviews on neural network architectures and meta-heuristic multi-agent decision-making systems under Artughrul Qayibov.",
+        "Synthesized findings from peer-reviewed papers and published both summaries on LinkedIn, reaching practitioners in the AI/ML community.",
       ],
     },
     {
@@ -92,7 +96,7 @@ export default function Home() {
       degree: "B.S. Data Science & Analytics",
       school: "BEU × INHA University — Dual Degree",
       period: "2025 – 2029",
-      detail: "INHA Summer School · Jul/Aug 2026",
+      detail: "Dual Degree Program · Baku Engineering University × INHA University, South Korea",
     },
   ];
 
@@ -104,6 +108,14 @@ export default function Home() {
   ];
 
   const blogPosts = [
+    {
+      title: "The Neural Network Family: A Guide to Every Major Architecture",
+      date: "2025",
+      tag: "Deep Learning",
+      description:
+        "Covers seven architectures — ANN, FNN, CNN, RNN/LSTM/GRU, Transformer, GNN, SNN — each mapped to its structural rationale and the class of problem it solves best. Supervised by Artughrul Qayibov, BEU.",
+      link: "https://linkedin.com/in/toghrul-aliyev-a83b3037b",
+    },
     {
       title: "Meta-Heuristic Based Multi-Agent Decision-Making Systems",
       date: "2025",
@@ -236,10 +248,12 @@ export default function Home() {
             {activeTab === "About" && (
               <section className="animate-in fade-in slide-in-from-bottom-2 duration-500">
                 <p className="text-zinc-400 leading-relaxed mb-10">
-                  Freshman at BEU–INHA University with hands-on experience in deep learning,
-                  NLP pipelines, and AI-native product engineering. Built a physics-informed ConvLSTM
-                  on 1GB+ thermodynamic sensor data and a GDG Baku Hackathon-finalist cybersecurity
-                  platform. Seeking remote ML/AI engineering or research internship roles.
+                  Freshman at BEU–INHA University who builds first and learns by doing. Trained a
+                  physics-informed ConvLSTM to R² = 0.94 on 1GB+ of real sensor data, shipped an AI
+                  cybersecurity platform to a national hackathon final, and runs production-grade n8n
+                  automation workflows. Comfortable across the full experiment cycle: data wrangling,
+                  model iteration, metric analysis, and deployment. Seeking a remote ML/AI internship
+                  or part-time role where I can contribute and grow fast.
                 </p>
 
                 <h3 className="text-2xl font-bold text-white mb-6">What I&apos;m Doing</h3>
@@ -275,7 +289,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-white mb-2">AI-Native Products</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Shipping full-stack AI applications with Next.js 15, FastAPI, and Gemini 2.5 — from hackathon prototypes to production.
+                        Shipping AI-powered products with Gemini 2.5 and modern web stacks — from hackathon prototypes to production deployments.
                       </p>
                     </div>
                   </div>

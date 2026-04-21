@@ -13,26 +13,28 @@ Freshman at **BEU × INHA University** building real AI tools — physics-inform
 - 🧠 Built a **physics-informed ConvLSTM** on 1GB+ thermodynamic sensor data (DTS wellbore modeling)
 - 🔐 **GDG Baku Hackathon Finalist** — built [ZeroT](https://zerot.vercel.app), an AI-native cybersecurity platform
 - 🎓 **Section Leader** at Stanford Code in Place — mentoring Python students globally
-- 🔬 **Research Contributor** at BEU — Meta-Heuristic Multi-Agent Decision-Making Systems (Dr. A. Gayibov)
-- 📦 Building **Gist** — end-to-end NLP content intelligence pipeline (FastAPI · spaCy · BERTopic · Docker)
+- 🔬 **Research Contributor** at BEU — Meta-Heuristic Multi-Agent Decision-Making Systems (Artughrul Qayibov)
 - 📫 Reach me at: **toghrulaliyev724@gmail.com**
 
 ---
 
 ## 🛠️ Tech Stack
 
-### AI / ML / NLP
-[![ai](https://skillicons.dev/icons?i=python,pytorch)](https://skillicons.dev)
+### ML / DL
+[![ml](https://skillicons.dev/icons?i=python,pytorch)](https://skillicons.dev)
 
-`Scikit-learn` · `Pandas` · `NumPy` · `Polars` · `ConvLSTM` · `HuggingFace` · `spaCy` · `BERTopic` · `MiniLM` · `Firecrawl` · `Gemini 2.5` · `Groq`
+`Scikit-learn` · `Pandas` · `NumPy` · `Polars` · `ConvLSTM`
 
-### Web & Infrastructure
-[![web](https://skillicons.dev/icons?i=nextjs,react,ts,fastapi,docker,vercel,git,linux)](https://skillicons.dev)
+### NLP
+`HuggingFace` · `spaCy` · `BERTopic` · `MiniLM` · `Firecrawl`
 
-### Other
-[![other](https://skillicons.dev/icons?i=cpp)](https://skillicons.dev)
+### AI / LLMs
+`Gemini 2.5` · `Groq` · `Prompt Engineering`
 
-`n8n` · `Prompt Engineering` · `SQL`
+### Automation & Infra
+[![infra](https://skillicons.dev/icons?i=docker,git,linux,vercel)](https://skillicons.dev)
+
+`n8n`
 
 ---
 
