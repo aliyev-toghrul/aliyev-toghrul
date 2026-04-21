@@ -103,7 +103,7 @@ export default function Home() {
       degree: "B.S. Data Science & Analytics",
       school: "BEU × INHA University — Dual Degree",
       period: "2025 – 2029",
-      detail: "GPA 3.67 · INHA Summer School Jul/Aug 2026",
+      detail: "INHA Summer School · Jul/Aug 2026",
     },
   ];
 
@@ -201,7 +201,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-[10px] uppercase text-zinc-500 font-bold tracking-wider">Availability</p>
-                <p className="text-xs text-zinc-200">Remote · Full-time Summer 2026</p>
+                <p className="text-xs text-zinc-200">Remote preferred · Part-time after 5 PM</p>
               </div>
             </div>
           </div>
@@ -273,7 +273,7 @@ export default function Home() {
             {activeTab === "About" && (
               <section className="animate-in fade-in slide-in-from-bottom-2 duration-500">
                 <p className="text-zinc-400 leading-relaxed mb-10">
-                  Freshman at BEU–INHA University (GPA 3.67) with hands-on experience in deep learning,
+                  Freshman at BEU–INHA University with hands-on experience in deep learning,
                   NLP pipelines, and AI-native product engineering. Built a physics-informed ConvLSTM
                   on 1GB+ thermodynamic sensor data and a GDG Baku Hackathon-finalist cybersecurity platform.
                   Stanford Code in Place Section Leader. Seeking remote ML/AI engineering or research internship roles.
@@ -437,28 +437,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Languages */}
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-lg bg-[#3ff2d7]/20 flex items-center justify-center text-xs">🌐</span>
-                    Languages
-                  </h3>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    {[
-                      { lang: "Azerbaijani", level: "Native", flag: "🇦🇿" },
-                      { lang: "Turkish", level: "Native", flag: "🇹🇷" },
-                      { lang: "English", level: "Professional", flag: "🇬🇧" },
-                      { lang: "Korean", level: "Beginner", flag: "🇰🇷" },
-                    ].map((l, i) => (
-                      <div key={i} className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-4 text-center">
-                        <div className="text-2xl mb-2">{l.flag}</div>
-                        <p className="text-sm font-semibold text-white">{l.lang}</p>
-                        <p className="text-xs text-zinc-500 mt-0.5">{l.level}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
               </section>
             )}
 
@@ -554,7 +532,7 @@ export default function Home() {
               <section className="animate-in fade-in slide-in-from-bottom-2 duration-500 space-y-8">
                 <p className="text-zinc-400 text-sm leading-relaxed">
                   Open to remote ML/AI engineering and research internship opportunities.
-                  Part-time availability after 5 PM (Baku, UTC+4) · Full-time from Summer 2026.
+                  Remote preferred · Part-time availability after 5 PM (Baku, UTC+4).
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -607,10 +585,6 @@ export default function Home() {
                     <div className="flex items-center gap-2.5">
                       <span className="w-2 h-2 rounded-full bg-[#3ff2d7] shrink-0"></span>
                       <span className="text-sm text-zinc-400">Remote preferred · Part-time after 5 PM (Baku, UTC+4)</span>
-                    </div>
-                    <div className="flex items-center gap-2.5">
-                      <span className="w-2 h-2 rounded-full bg-[#3ff2d7] shrink-0"></span>
-                      <span className="text-sm text-zinc-400">Full-time available from Summer 2026</span>
                     </div>
                     <div className="flex items-center gap-2.5">
                       <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
