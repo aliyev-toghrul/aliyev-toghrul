@@ -26,15 +26,15 @@ Freshman at **BEU × INHA University** building real AI tools — physics-inform
 `Scikit-learn` · `Pandas` · `NumPy` · `Polars` · `ConvLSTM`
 
 ### NLP
-`HuggingFace` · `spaCy` · `BERTopic` · `MiniLM` · `Firecrawl`
+`HuggingFace` · `spaCy` · `BERTopic` · `MiniLM` · `Firecrawl` · `Playwright`
 
 ### AI / LLMs
-`Gemini 2.5` · `Groq` · `Prompt Engineering`
+`Gemini 2.5` · `Groq` · `Fal.ai` · `Prompt Engineering` · `LangChain`
 
 ### Automation & Infra
 [![infra](https://skillicons.dev/icons?i=docker,git,linux,vercel)](https://skillicons.dev)
 
-`n8n`
+`n8n` · `Make.com` · `Telegram Bot API`
 
 ---
 

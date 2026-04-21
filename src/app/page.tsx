@@ -47,11 +47,11 @@ export default function Home() {
     },
     {
       category: "AI / LLMs",
-      items: ["Gemini 2.5", "Groq", "Prompt Engineering"],
+      items: ["Gemini 2.5", "Groq", "Fal.ai", "Prompt Engineering", "LangChain*"],
     },
     {
       category: "Automation",
-      items: ["n8n"],
+      items: ["n8n", "Make.com", "Telegram Bot API", "Playwright"],
     },
     {
       category: "Infra",
@@ -277,7 +277,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-white mb-2">NLP Pipelines</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Designing end-to-end NLP systems: scraping, NER, semantic deduplication, topic clustering, and LLM summarization.
+                        End-to-end NLP systems: scraping with Playwright, NER, semantic deduplication, topic clustering, and LLM summarization. Exploring LangChain agent architectures.
                       </p>
                     </div>
                   </div>
@@ -289,7 +289,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-white mb-2">AI-Native Products</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Shipping AI-powered products with Gemini 2.5 and modern web stacks — from hackathon prototypes to production deployments.
+                        Shipping AI-powered products with Gemini 2.5, Fal.ai, and Telegram bots — from hackathon prototypes to production. Automating workflows with n8n and Make.com.
                       </p>
                     </div>
                   </div>
@@ -390,7 +390,7 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                  <p className="text-[11px] text-zinc-600 mt-3">* SQL: basic/intermediate level</p>
+                  <p className="text-[11px] text-zinc-600 mt-3">* LangChain: actively learning · experimenting with agent architectures</p>
                 </div>
 
                 {/* Certifications */}
