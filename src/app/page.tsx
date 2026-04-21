@@ -7,50 +7,10 @@ export default function Home() {
 
   const tabs = ["About", "Resume", "Portfolio", "Blog", "Contact"];
 
-  const projects = [
-    {
-      title: "DTS Thermodynamic ML",
-      category: "Physics-Informed Deep Learning",
-      description:
-        "Physics-informed ConvLSTM predicting wellbore flow-rate from Distributed Temperature Sensing data. Processed 1GB+ (~26M lines) of high-noise sensor data with thermodynamic feature engineering (spatial gradients dT/dz, thermal curvature, rolling statistics). Architecture evolved Conv1D-BiLSTM → ConvLSTM with AdamW + Cosine Annealing; strict 80/20 spatial depth split to prevent data leakage.",
-      stack: ["Python", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
-      link: "https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling",
-      badge: "Research Task",
-      badgeColor: "bg-blue-500/20 text-blue-300 border-blue-500/30",
-      year: "2026",
-    },
-    {
-      title: "ZeroT — AI Cybersecurity Platform",
-      category: "AI & Cybersecurity",
-      description:
-        "AI-native cybersecurity platform for SMEs. GDG Baku Build with AI Hackathon Top 10 Finalist. Hybrid Threat Scanner integrating Google Safe Browsing, PhishTank & URLScan.io with Gemini 2.5 — sub-second risk assessments across 100+ URLs with plain-language reporting. Monorepo: Next.js 15 portal + React 18 dashboard; real-time OSINT feed with anti-hallucination AI assistant.",
-      stack: ["Next.js 15", "React 18", "TypeScript", "Tailwind", "Gemini 2.5", "Vercel"],
-      link: "https://zerot.vercel.app",
-      badge: "Hackathon Finalist",
-      badgeColor: "bg-[#3ff2d7]/20 text-[#3ff2d7] border-[#3ff2d7]/30",
-      year: "2025",
-    },
-    {
-      title: "Gist — AI Content Intelligence",
-      category: "NLP · Content Intelligence",
-      description:
-        "End-to-end NLP content intelligence pipeline: Firecrawl web scraping → spaCy NER → MiniLM semantic deduplication → BERTopic topic clustering → Gemini Flash AI summarization. FastAPI backend structured as a modular pipeline. Containerized with Docker for consistent deployment.",
-      stack: ["FastAPI", "spaCy", "HuggingFace", "MiniLM", "BERTopic", "Gemini Flash", "Docker", "Firecrawl"],
-      link: "https://github.com/aliyev-toghrul",
-      badge: "In Development",
-      badgeColor: "bg-amber-500/20 text-amber-300 border-amber-500/30",
-      year: "2025–Present",
-    },
-  ];
-
   const skills = [
     {
-      category: "Languages",
-      items: ["Python", "TypeScript", "C++", "SQL*", "Bash"],
-    },
-    {
       category: "ML / Deep Learning",
-      items: ["PyTorch", "Scikit-learn", "Pandas", "NumPy", "Polars", "ConvLSTM", "Matplotlib"],
+      items: ["Python", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Polars", "ConvLSTM", "Matplotlib"],
     },
     {
       category: "NLP & AI",
@@ -62,7 +22,11 @@ export default function Home() {
     },
     {
       category: "Web & Infrastructure",
-      items: ["Next.js 15", "React 18", "Tailwind CSS", "Vercel", "Docker", "Git", "Linux"],
+      items: ["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "Vercel", "Docker", "Git", "Linux"],
+    },
+    {
+      category: "Other",
+      items: ["C++", "SQL*", "Bash"],
     },
   ];
 
@@ -123,29 +87,13 @@ export default function Home() {
         "Synthesis of peer-reviewed literature on meta-heuristic optimization applied to multi-agent architectures — exploring the gap between theoretical models and production deployment.",
       link: "https://linkedin.com/in/toghrul-aliyev-a83b3037b",
     },
-    {
-      title: "Building a Physics-Informed ConvLSTM on 26M Lines of Sensor Data",
-      date: "2026",
-      tag: "Deep Learning",
-      description:
-        "How I processed 1GB+ of distributed temperature sensing data, engineered thermodynamic features, and evolved my architecture from Conv1D-BiLSTM to ConvLSTM for wellbore flow-rate prediction.",
-      link: "https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling",
-    },
-    {
-      title: "ZeroT: Shipping an AI Cybersecurity Platform in a Hackathon",
-      date: "2025",
-      tag: "AI Engineering",
-      description:
-        "The story of building an AI-native threat intelligence platform — integrating Google Safe Browsing, PhishTank, URLScan.io and Gemini 2.5 into a real-time OSINT dashboard. GDG Baku Top 10 Finalist.",
-      link: "https://zerot.vercel.app",
-    },
   ];
 
   return (
     <div className="min-h-screen bg-[#1a1a1a] text-zinc-300 font-sans selection:bg-[#3ff2d7]/30">
       <main className="max-w-6xl mx-auto px-4 py-8 lg:py-20 flex flex-col lg:flex-row gap-6 items-start">
 
-        {/* SIDEBAR */}
+        {/* ── SIDEBAR ── */}
         <aside className="w-full lg:w-[280px] lg:sticky lg:top-10 bg-[#242424] border border-zinc-800 rounded-3xl p-8 flex flex-col items-center shrink-0">
           <div className="bg-[#333333] rounded-3xl p-4 mb-6 shadow-xl">
             <img
@@ -194,16 +142,6 @@ export default function Home() {
                 <p className="text-xs text-zinc-200">Baku, Azerbaijan</p>
               </div>
             </div>
-
-            <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#242424] border border-zinc-800 rounded-xl flex items-center justify-center text-[#3ff2d7] shrink-0">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div>
-                <p className="text-[10px] uppercase text-zinc-500 font-bold tracking-wider">Availability</p>
-                <p className="text-xs text-zinc-200">Remote preferred · Part-time after 5 PM</p>
-              </div>
-            </div>
           </div>
 
           <div className="w-full mt-6 space-y-3">
@@ -227,7 +165,7 @@ export default function Home() {
           </div>
         </aside>
 
-        {/* CONTENT AREA */}
+        {/* ── CONTENT AREA ── */}
         <div className="flex-1 w-full min-w-0 flex flex-col gap-6 relative">
 
           {/* Desktop Nav */}
@@ -269,14 +207,14 @@ export default function Home() {
               </h2>
             </header>
 
-            {/* ABOUT */}
+            {/* ── ABOUT ── */}
             {activeTab === "About" && (
               <section className="animate-in fade-in slide-in-from-bottom-2 duration-500">
                 <p className="text-zinc-400 leading-relaxed mb-10">
                   Freshman at BEU–INHA University with hands-on experience in deep learning,
                   NLP pipelines, and AI-native product engineering. Built a physics-informed ConvLSTM
-                  on 1GB+ thermodynamic sensor data and a GDG Baku Hackathon-finalist cybersecurity platform.
-                  Stanford Code in Place Section Leader. Seeking remote ML/AI engineering or research internship roles.
+                  on 1GB+ thermodynamic sensor data and a GDG Baku Hackathon-finalist cybersecurity
+                  platform. Seeking remote ML/AI engineering or research internship roles.
                 </p>
 
                 <h3 className="text-2xl font-bold text-white mb-6">What I&apos;m Doing</h3>
@@ -288,7 +226,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-white mb-2">Deep Learning & ML</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Building physics-informed neural networks and ConvLSTM architectures on real-world scientific datasets — from DTS sensor data to supervised ML modeling.
+                        Building physics-informed neural networks and ConvLSTM architectures on real-world scientific datasets.
                       </p>
                     </div>
                   </div>
@@ -300,7 +238,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-white mb-2">NLP Pipelines</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Designing end-to-end NLP systems: web scraping, NER, semantic deduplication, topic clustering with BERTopic, and LLM summarization via Gemini Flash.
+                        Designing end-to-end NLP systems: scraping, NER, semantic deduplication, topic clustering, and LLM summarization.
                       </p>
                     </div>
                   </div>
@@ -312,7 +250,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-white mb-2">AI-Native Products</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Shipping full-stack AI applications with Next.js 15, FastAPI, and Gemini 2.5 — from hackathon finalist platforms to production-deployed tools.
+                        Shipping full-stack AI applications with Next.js 15, FastAPI, and Gemini 2.5 — from hackathon prototypes to production.
                       </p>
                     </div>
                   </div>
@@ -324,7 +262,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-white mb-2">Teaching & Research</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Stanford Code in Place Section Leader mentoring Python students globally. Research contributor on Meta-Heuristic Multi-Agent Decision-Making Systems at BEU.
+                        Stanford Code in Place Section Leader. Research on Meta-Heuristic Multi-Agent Decision-Making Systems at BEU.
                       </p>
                     </div>
                   </div>
@@ -332,7 +270,7 @@ export default function Home() {
               </section>
             )}
 
-            {/* RESUME */}
+            {/* ── RESUME ── */}
             {activeTab === "Resume" && (
               <section className="animate-in fade-in slide-in-from-bottom-2 duration-500 space-y-10">
 
@@ -440,65 +378,30 @@ export default function Home() {
               </section>
             )}
 
-            {/* PORTFOLIO */}
+            {/* ── PORTFOLIO ── */}
             {activeTab === "Portfolio" && (
-              <section className="animate-in fade-in slide-in-from-bottom-2 duration-500 space-y-6">
-                <p className="text-zinc-400 text-sm leading-relaxed">
-                  Hands-on projects spanning deep learning research, AI-native product engineering, and NLP automation.
-                </p>
-                <div className="space-y-6">
-                  {projects.map((p, i) => (
-                    <div key={i} className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-colors group">
-                      <div className="flex items-start justify-between flex-wrap gap-3 mb-3">
-                        <div>
-                          <div className="flex items-center gap-3 mb-1 flex-wrap">
-                            <h3 className="text-lg font-bold text-white group-hover:text-[#3ff2d7] transition-colors">
-                              {p.title}
-                            </h3>
-                            <span className={`text-[10px] px-2.5 py-1 rounded-full border font-medium ${p.badgeColor}`}>
-                              {p.badge}
-                            </span>
-                          </div>
-                          <p className="text-xs text-zinc-500">{p.category} · {p.year}</p>
-                        </div>
-                        <a
-                          href={p.link}
-                          target="_blank"
-                          className="flex items-center gap-1.5 text-xs text-[#3ff2d7] hover:text-white transition-colors shrink-0"
-                        >
-                          View Project
-                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-                        </a>
-                      </div>
-                      <p className="text-sm text-zinc-400 leading-relaxed mb-4">{p.description}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {p.stack.map((tech, j) => (
-                          <span key={j} className="text-[11px] px-2.5 py-1 bg-[#2a2a2a] border border-zinc-700/60 rounded-lg text-zinc-400">
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="pt-2 text-center">
-                  <a
-                    href="https://github.com/aliyev-toghrul"
-                    target="_blank"
-                    className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-[#3ff2d7] transition-colors"
-                  >
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    View all repositories on GitHub →
-                  </a>
+              <section className="animate-in fade-in slide-in-from-bottom-2 duration-500">
+                <div className="flex flex-col items-center justify-center py-20 text-center">
+                  <div className="w-16 h-16 rounded-2xl bg-[#3ff2d7]/10 border border-[#3ff2d7]/20 flex items-center justify-center text-[#3ff2d7] mb-6">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">Projects coming soon</h3>
+                  <p className="text-sm text-zinc-500 max-w-xs leading-relaxed">
+                    Working on documenting my projects. Check my{" "}
+                    <a href="https://github.com/aliyev-toghrul" target="_blank" className="text-[#3ff2d7] hover:underline">
+                      GitHub
+                    </a>{" "}
+                    in the meantime.
+                  </p>
                 </div>
               </section>
             )}
 
-            {/* BLOG */}
+            {/* ── BLOG ── */}
             {activeTab === "Blog" && (
               <section className="animate-in fade-in slide-in-from-bottom-2 duration-500 space-y-6">
                 <p className="text-zinc-400 text-sm leading-relaxed">
-                  Writing about deep learning, NLP engineering, AI products, and lessons from building in public.
+                  Writing about deep learning, NLP engineering, and AI products.
                 </p>
                 <div className="space-y-4">
                   {blogPosts.map((post, i) => (
@@ -527,12 +430,11 @@ export default function Home() {
               </section>
             )}
 
-            {/* CONTACT */}
+            {/* ── CONTACT ── */}
             {activeTab === "Contact" && (
               <section className="animate-in fade-in slide-in-from-bottom-2 duration-500 space-y-8">
                 <p className="text-zinc-400 text-sm leading-relaxed">
                   Open to remote ML/AI engineering and research internship opportunities.
-                  Remote preferred · Part-time availability after 5 PM (Baku, UTC+4).
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -577,20 +479,6 @@ export default function Home() {
                       </div>
                     </a>
                   ))}
-                </div>
-
-                <div className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-6">
-                  <h3 className="text-sm font-bold text-white mb-3">Availability</h3>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2.5">
-                      <span className="w-2 h-2 rounded-full bg-[#3ff2d7] shrink-0"></span>
-                      <span className="text-sm text-zinc-400">Remote preferred · Part-time after 5 PM (Baku, UTC+4)</span>
-                    </div>
-                    <div className="flex items-center gap-2.5">
-                      <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
-                      <span className="text-sm text-zinc-400">INHA Summer School — South Korea, Jul/Aug 2026</span>
-                    </div>
-                  </div>
                 </div>
 
               </section>
