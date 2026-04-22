@@ -10,10 +10,11 @@ Freshman at **BEU × INHA University** building real AI tools — physics-inform
 
 ## 🚀 About Me
 
-- 🧠 Built a **physics-informed ConvLSTM** on 1GB+ thermodynamic sensor data (DTS wellbore modeling)
-- 🔐 **GDG Baku Hackathon Finalist** — built [ZeroT](https://zerot.vercel.app), an AI-native cybersecurity platform
-- 🎓 **Section Leader** at Stanford Code in Place — mentoring Python students globally
-- 🔬 **Research Contributor** at BEU — Meta-Heuristic Multi-Agent Decision-Making Systems (Artughrul Qayibov)
+- 🧠 Trained a **physics-informed ConvLSTM to R² = 0.94** on 1GB+ of real DTS sensor data
+- 🔐 **GDG Baku Hackathon Finalist** — shipped [ZeroT](https://zerot.vercel.app), an AI-native cybersecurity platform
+- 🎓 **Section Leader** at Stanford Code in Place — mentoring 17 students globally
+- 🔬 **Research Contributor** at BEU — published two ML architecture reviews (Artughrul Qayibov)
+- ⚙️ Runs production-grade **n8n / Make.com automation workflows**, Telegram bots, and Fal.ai pipelines
 - 📫 Reach me at: **toghrulaliyev724@gmail.com**
 
 ---
