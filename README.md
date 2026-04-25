@@ -15,7 +15,6 @@ Freshman at **BEU × INHA University** building real AI tools — physics-inform
 - 🎓 **Section Leader** at Stanford Code in Place — mentoring 17 students globally
 - 🔬 **Research Contributor** at BEU — published two ML architecture reviews (Artughrul Qayibov)
 - ⚙️ Runs production-grade **n8n / Make.com automation workflows**, Telegram bots, and Fal.ai pipelines
-- 🐧 Daily-drives **Arch Linux** — takes engineering seriously, not just academically
 - 📫 Reach me at: **toghrulaliyev724@gmail.com**
 
 ---

@@ -55,7 +55,7 @@ export default function Home() {
     },
     {
       category: "Databases",
-      items: ["Firebase", "Supabase", "MongoDB*"],
+      items: ["Firebase", "Supabase"],
     },
     {
       category: "Dev Tools",
@@ -259,7 +259,7 @@ export default function Home() {
                   Freshman at BEU–INHA University who builds first and learns by doing. Trained a
                   physics-informed ConvLSTM to R² = 0.94 on 1GB+ of real sensor data, shipped an AI
                   cybersecurity platform to a national hackathon final, and runs production-grade n8n
-                  automation workflows. Daily-drives Arch Linux. Comfortable across the full experiment
+                  automation workflows. Comfortable across the full experiment
                   cycle: data wrangling, model iteration, metric analysis, and deployment. Seeking a
                   remote ML/AI internship or part-time role where I can contribute and grow fast.
                 </p>
@@ -398,7 +398,7 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                  <p className="text-[11px] text-zinc-600 mt-3">* C++: basic level · MongoDB: familiar, not yet in production · FastAPI: via agent workflows · LangChain: actively learning</p>
+                  <p className="text-[11px] text-zinc-600 mt-3">* C++: basic level · FastAPI: via agent workflows · LangChain: actively learning</p>
                 </div>
 
                 {/* Certifications */}
