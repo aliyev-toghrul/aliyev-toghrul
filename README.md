@@ -15,6 +15,7 @@ Freshman at **BEU × INHA University** building real AI tools — physics-inform
 - 🎓 **Section Leader** at Stanford Code in Place — mentoring 17 students globally
 - 🔬 **Research Contributor** at BEU — published two ML architecture reviews (Artughrul Qayibov)
 - ⚙️ Runs production-grade **n8n / Make.com automation workflows**, Telegram bots, and Fal.ai pipelines
+- 🐧 Daily-drives **Arch Linux** — takes engineering seriously, not just academically
 - 📫 Reach me at: **toghrulaliyev724@gmail.com**
 
 ---
@@ -22,7 +23,7 @@ Freshman at **BEU × INHA University** building real AI tools — physics-inform
 ## 🛠️ Tech Stack
 
 ### ML / DL
-[![ml](https://skillicons.dev/icons?i=python,pytorch)](https://skillicons.dev)
+[![ml](https://skillicons.dev/icons?i=python,pytorch,cpp)](https://skillicons.dev)
 
 `Scikit-learn` · `Pandas` · `NumPy` · `Polars` · `ConvLSTM`
 
@@ -30,7 +31,7 @@ Freshman at **BEU × INHA University** building real AI tools — physics-inform
 `HuggingFace` · `spaCy` · `BERTopic` · `MiniLM` · `Firecrawl` · `Playwright`
 
 ### AI / LLMs
-`Gemini 2.5` · `Groq` · `Fal.ai` · `Prompt Engineering` · `LangChain`
+`Gemini 2.5` · `Groq` · `Fal.ai` · `FastAPI` · `Prompt Engineering` · `LangChain`
 
 ### Automation & Infra
 [![infra](https://skillicons.dev/icons?i=docker,git,linux,vercel)](https://skillicons.dev)

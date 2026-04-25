@@ -35,7 +35,7 @@ export default function Home() {
   const skills = [
     {
       category: "Languages",
-      items: ["Python"],
+      items: ["Python", "C++*"],
     },
     {
       category: "ML / DL",
@@ -47,7 +47,7 @@ export default function Home() {
     },
     {
       category: "AI / LLMs",
-      items: ["Gemini 2.5", "Groq", "Fal.ai", "Prompt Engineering", "LangChain*"],
+      items: ["Gemini 2.5", "Groq", "Fal.ai", "FastAPI*", "Prompt Engineering", "LangChain*"],
     },
     {
       category: "Automation",
@@ -114,7 +114,7 @@ export default function Home() {
       tag: "Deep Learning",
       description:
         "Covers seven architectures — ANN, FNN, CNN, RNN/LSTM/GRU, Transformer, GNN, SNN — each mapped to its structural rationale and the class of problem it solves best. Supervised by Artughrul Qayibov, BEU.",
-      link: "https://linkedin.com/in/toghrul-aliyev-a83b3037b",
+      link: "https://www.linkedin.com/posts/toghrul-aliyev17_ai-artificialintelligence-neuralnetworks-activity-7448614843626029057-fyPu",
     },
     {
       title: "Meta-Heuristic Based Multi-Agent Decision-Making Systems",
@@ -122,7 +122,7 @@ export default function Home() {
       tag: "Research",
       description:
         "Synthesis of peer-reviewed literature on meta-heuristic optimization applied to multi-agent architectures — exploring the gap between theoretical models and production deployment.",
-      link: "https://linkedin.com/in/toghrul-aliyev-a83b3037b",
+      link: "https://www.linkedin.com/posts/toghrul-aliyev17_multiagentsystems-swarmintelligence-metaheuristics-activity-7444503086833807360-5cin",
     },
   ];
 
@@ -251,9 +251,9 @@ export default function Home() {
                   Freshman at BEU–INHA University who builds first and learns by doing. Trained a
                   physics-informed ConvLSTM to R² = 0.94 on 1GB+ of real sensor data, shipped an AI
                   cybersecurity platform to a national hackathon final, and runs production-grade n8n
-                  automation workflows. Comfortable across the full experiment cycle: data wrangling,
-                  model iteration, metric analysis, and deployment. Seeking a remote ML/AI internship
-                  or part-time role where I can contribute and grow fast.
+                  automation workflows. Daily-drives Arch Linux. Comfortable across the full experiment
+                  cycle: data wrangling, model iteration, metric analysis, and deployment. Seeking a
+                  remote ML/AI internship or part-time role where I can contribute and grow fast.
                 </p>
 
                 <h3 className="text-2xl font-bold text-white mb-6">What I&apos;m Doing</h3>
@@ -390,7 +390,7 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                  <p className="text-[11px] text-zinc-600 mt-3">* LangChain: actively learning · experimenting with agent architectures</p>
+                  <p className="text-[11px] text-zinc-600 mt-3">* C++: basic level · LangChain: actively learning · FastAPI: used via AI agent workflows</p>
                 </div>
 
                 {/* Certifications */}
