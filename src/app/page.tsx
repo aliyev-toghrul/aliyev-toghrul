@@ -39,7 +39,7 @@ export default function Home() {
     },
     {
       category: "ML / DL",
-      items: ["PyTorch", "Scikit-learn", "Pandas", "NumPy", "Polars", "ConvLSTM"],
+      items: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Polars", "ConvLSTM", "Matplotlib"],
     },
     {
       category: "NLP",
@@ -47,15 +47,23 @@ export default function Home() {
     },
     {
       category: "AI / LLMs",
-      items: ["Gemini 2.5", "Groq", "Fal.ai", "FastAPI*", "Prompt Engineering", "LangChain*"],
+      items: ["Gemini 2.5", "Groq", "OpenAI", "Qwen", "OpenRouter", "Together AI", "Replicate", "Fal.ai", "FastAPI*", "Prompt Engineering", "LangChain*"],
     },
     {
       category: "Automation",
       items: ["n8n", "Make.com", "Telegram Bot API", "Playwright"],
     },
     {
+      category: "Databases",
+      items: ["Firebase", "Supabase", "MongoDB*"],
+    },
+    {
+      category: "Dev Tools",
+      items: ["Jupyter", "Google Colab", "Streamlit", "Gradio", "GitHub Actions"],
+    },
+    {
       category: "Infra",
-      items: ["Docker", "Git", "Linux", "Vercel"],
+      items: ["Docker", "Git", "Linux", "Vercel", "DigitalOcean"],
     },
   ];
 
@@ -390,7 +398,7 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                  <p className="text-[11px] text-zinc-600 mt-3">* C++: basic level · LangChain: actively learning · FastAPI: used via AI agent workflows</p>
+                  <p className="text-[11px] text-zinc-600 mt-3">* C++: basic level · MongoDB: familiar, not yet in production · FastAPI: via agent workflows · LangChain: actively learning</p>
                 </div>
 
                 {/* Certifications */}

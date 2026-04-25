@@ -23,20 +23,31 @@ Freshman at **BEU × INHA University** building real AI tools — physics-inform
 ## 🛠️ Tech Stack
 
 ### ML / DL
-[![ml](https://skillicons.dev/icons?i=python,pytorch,cpp)](https://skillicons.dev)
+[![ml](https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp)](https://skillicons.dev)
 
-`Scikit-learn` · `Pandas` · `NumPy` · `Polars` · `ConvLSTM`
+`Scikit-learn` · `Pandas` · `NumPy` · `Polars` · `ConvLSTM` · `Matplotlib`
 
 ### NLP
 `HuggingFace` · `spaCy` · `BERTopic` · `MiniLM` · `Firecrawl` · `Playwright`
 
 ### AI / LLMs
-`Gemini 2.5` · `Groq` · `Fal.ai` · `FastAPI` · `Prompt Engineering` · `LangChain`
+`Gemini 2.5` · `Groq` · `OpenAI` · `Qwen` · `OpenRouter` · `Together AI` · `Replicate` · `Fal.ai` · `FastAPI` · `Prompt Engineering` · `LangChain`
 
-### Automation & Infra
+### Automation
+`n8n` · `Make.com` · `Telegram Bot API`
+
+### Databases
+`Firebase` · `Supabase` · `MongoDB`
+
+### Dev Tools
+[![devtools](https://skillicons.dev/icons?i=jupyter,github)](https://skillicons.dev)
+
+`Google Colab` · `Streamlit` · `Gradio` · `GitHub Actions`
+
+### Infra
 [![infra](https://skillicons.dev/icons?i=docker,git,linux,vercel)](https://skillicons.dev)
 
-`n8n` · `Make.com` · `Telegram Bot API`
+`DigitalOcean`
 
 ---
 
