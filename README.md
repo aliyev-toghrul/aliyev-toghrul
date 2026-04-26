@@ -28,19 +28,19 @@
 ### ML / DL
 [![ml](https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp)](https://skillicons.dev)
 
-`Scikit-learn` · `Pandas` · `NumPy` · `Polars` · `ConvLSTM` · `Matplotlib`
+`Scikit-learn` · `Pandas` · `NumPy` · `ConvLSTM` · `Matplotlib` · `Seaborn`
 
-### NLP
-`HuggingFace` · `spaCy` · `BERTopic` · `MiniLM` · `Firecrawl` · `Playwright`
+### NLP & Data
+`HuggingFace` · `Firecrawl` · `BeautifulSoup` · `Playwright`
 
 ### AI / LLMs
-`Gemini 2.5` · `Groq` · `OpenAI` · `Qwen` · `OpenRouter` · `Together AI` · `Replicate` · `Fal.ai` · `FastAPI` · `Prompt Engineering` · `LangChain`
+`Gemini 2.5` · `Claude API` · `OpenAI SDK` · `Groq` · `Ollama` · `OpenRouter` · `Fal.ai` · `FastAPI` · `Prompt Engineering`
 
 ### Automation
 `n8n` · `Make.com` · `Telegram Bot API`
 
 ### Databases
-`Firebase` · `Supabase`
+`Supabase` · `Firebase` · `MongoDB`
 
 ### Dev Tools
 [![devtools](https://skillicons.dev/icons?i=jupyter,github)](https://skillicons.dev)
@@ -50,7 +50,7 @@
 ### Infra
 [![infra](https://skillicons.dev/icons?i=docker,git,linux,vercel)](https://skillicons.dev)
 
-`DigitalOcean`
+`Arch Linux` · `DigitalOcean`
 
 ---
 

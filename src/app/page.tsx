@@ -23,8 +23,8 @@ export default function Home() {
       title: "ZeroT — AI-Native Cybersecurity Platform",
       category: "AI & Cybersecurity",
       description:
-        "AI-native cybersecurity platform for SMEs. GDG Baku Build with AI Hackathon Top 10 Finalist. Hybrid Threat Scanner integrating Google Safe Browsing, PhishTank & URLScan.io with Gemini 2.5 — sub-second risk assessments across 100+ URLs with plain-language SME reporting. Monorepo: Next.js 15 portal + React 18 dashboard; real-time OSINT feed with anti-hallucination AI assistant.",
-      stack: ["Next.js 15", "React 18", "TypeScript", "Tailwind", "Gemini 2.5", "Vercel"],
+        "AI-powered cybersecurity readiness platform built for SMEs without in-house security teams. GDG Baku Build with AI Hackathon Top 10 Finalist. Ingests suspicious emails and URLs, runs AI triage via Gemini 2.5, and returns plain-language risk assessments with guided response playbooks and a live readiness scorecard. Validated on 100+ real malicious/benign URLs sourced from Kaggle and opendata.az. Built as a full Next.js 15 + React 18 monorepo with Gemini 2.5 backend and Vercel deployment.",
+      stack: ["Next.js 15", "React 18", "Gemini 2.5", "Vercel", "opendata.az", "Kaggle datasets"],
       link: "https://zerot.vercel.app",
       badge: "Hackathon Finalist",
       badgeColor: "bg-[#3ff2d7]/20 text-[#3ff2d7] border-[#3ff2d7]/30",
@@ -35,27 +35,27 @@ export default function Home() {
   const skills = [
     {
       category: "Languages",
-      items: ["Python", "C++*"],
+      items: ["Python", "C++*", "SQL"],
     },
     {
       category: "ML / DL",
-      items: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Polars", "ConvLSTM", "Matplotlib"],
+      items: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "ConvLSTM", "Matplotlib", "Seaborn"],
     },
     {
-      category: "NLP",
-      items: ["HuggingFace", "spaCy", "BERTopic", "MiniLM", "Firecrawl"],
+      category: "NLP & Data",
+      items: ["HuggingFace", "Firecrawl", "BeautifulSoup", "Playwright"],
     },
     {
       category: "AI / LLMs",
-      items: ["Gemini 2.5", "Groq", "OpenAI", "Qwen", "OpenRouter", "Together AI", "Replicate", "Fal.ai", "FastAPI*", "Prompt Engineering", "LangChain*"],
+      items: ["Gemini 2.5", "Claude API", "OpenAI SDK", "Groq", "Ollama", "OpenRouter", "Fal.ai", "FastAPI", "Prompt Engineering"],
     },
     {
       category: "Automation",
-      items: ["n8n", "Make.com", "Telegram Bot API", "Playwright"],
+      items: ["n8n", "Make.com", "Telegram Bot API"],
     },
     {
       category: "Databases",
-      items: ["Firebase", "Supabase"],
+      items: ["Supabase", "Firebase", "MongoDB*"],
     },
     {
       category: "Dev Tools",
@@ -63,7 +63,7 @@ export default function Home() {
     },
     {
       category: "Infra",
-      items: ["Docker", "Git", "Linux", "Vercel", "DigitalOcean"],
+      items: ["Docker", "Git", "Arch Linux", "Vercel", "DigitalOcean"],
     },
   ];
 
@@ -285,7 +285,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-white mb-2">NLP Pipelines</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        End-to-end NLP systems: scraping with Playwright, NER, semantic deduplication, topic clustering, and LLM summarization. Exploring LangChain agent architectures.
+                        End-to-end data pipelines: web scraping with Playwright and Firecrawl, data extraction, and LLM-powered summarization via native SDKs.
                       </p>
                     </div>
                   </div>
@@ -398,7 +398,7 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                  <p className="text-[11px] text-zinc-600 mt-3">* C++: basic level · FastAPI: via agent workflows · LangChain: actively learning</p>
+                  <p className="text-[11px] text-zinc-600 mt-3">* C++: basic level · MongoDB: familiar · SQL: basic/intermediate</p>
                 </div>
 
                 {/* Certifications */}
