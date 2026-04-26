@@ -45,7 +45,7 @@
 ### Dev Tools
 [![devtools](https://skillicons.dev/icons?i=jupyter,github)](https://skillicons.dev)
 
-`Google Colab` · `Streamlit` · `Gradio` · `GitHub Actions`
+`Google Colab` · `Streamlit` · `GitHub Actions`
 
 ### Infra
 [![infra](https://skillicons.dev/icons?i=docker,git,linux,vercel)](https://skillicons.dev)

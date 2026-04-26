@@ -59,7 +59,7 @@ export default function Home() {
     },
     {
       category: "Dev Tools",
-      items: ["Jupyter", "Google Colab", "Streamlit", "Gradio", "GitHub Actions"],
+      items: ["Jupyter", "Google Colab", "Streamlit", "GitHub Actions"],
     },
     {
       category: "Infra",
