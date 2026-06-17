@@ -30,8 +30,8 @@ body {
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease;
 }
 .glow-card:hover {
-  border-color: rgba(63, 242, 215, 0.3) !important;
-  box-shadow: 0 0 24px rgba(63, 242, 215, 0.08), 0 8px 32px rgba(0,0,0,0.3);
+  border-color: rgba(99, 102, 241, 0.4) !important;
+  box-shadow: 0 0 28px rgba(99, 102, 241, 0.12), 0 8px 32px rgba(0,0,0,0.4);
   transform: translateY(-3px);
 }
 
@@ -40,9 +40,9 @@ body {
   transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
 }
 .skill-tag:hover {
-  background: rgba(63, 242, 215, 0.12) !important;
-  border-color: rgba(63, 242, 215, 0.4) !important;
-  color: #3ff2d7 !important;
+  background: rgba(34, 211, 238, 0.1) !important;
+  border-color: rgba(34, 211, 238, 0.4) !important;
+  color: #22d3ee !important;
   transform: scale(1.08);
 }
 
@@ -56,7 +56,7 @@ body {
   position: absolute;
   bottom: 0; left: 50%;
   width: 0; height: 2px;
-  background: #3ff2d7;
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
   border-radius: 2px;
   transition: width 0.25s ease, left 0.25s ease;
 }
@@ -70,7 +70,7 @@ body {
   transition: color 0.2s, transform 0.2s;
 }
 .sidebar-icon:hover {
-  color: #3ff2d7 !important;
+  color: #22d3ee !important;
   transform: scale(1.2);
 }
 
@@ -79,23 +79,14 @@ body {
   transition: box-shadow 0.3s ease;
 }
 .avatar-wrap:hover {
-  box-shadow: 0 0 0 3px rgba(63, 242, 215, 0.4), 0 0 24px rgba(63, 242, 215, 0.2);
-}
-
-/* Teal accent button hover */
-.teal-btn {
-  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
-}
-.teal-btn:hover {
-  box-shadow: 0 0 16px rgba(63, 242, 215, 0.25);
-  transform: translateY(-1px);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5), 0 0 32px rgba(99, 102, 241, 0.25);
 }
 
 /* Subtle background grid */
 .bg-grid {
   background-image:
-    linear-gradient(rgba(63,242,215,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(63,242,215,0.03) 1px, transparent 1px);
+    linear-gradient(rgba(99,102,241,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99,102,241,0.04) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
