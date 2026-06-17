@@ -288,7 +288,9 @@ export default function Home() {
             {activeTab === "About" && (
               <section className="animate-in fade-in slide-in-from-bottom-2 duration-500">
                 <p className="text-zinc-400 leading-relaxed mb-10">
-                  Freshman at BEU–INHA University, currently interning at Microsoft as part of the AI Innovators Summer Program. Builds first and learns by doing — trained a physics-informed ConvLSTM to R² = 0.94 on 1GB+ of real sensor data, shipped an AI cybersecurity platform to a national hackathon final, and builds production-grade RAG systems and automation workflows. Comfortable across the full ML cycle: data wrangling, model training, metric analysis, and deployment.
+                  I&apos;m an AI &amp; ML engineer focused on building real systems — from deep learning models trained on scientific data to RAG pipelines and end-to-end automation workflows. Currently interning at Microsoft&apos;s AI Innovators Summer Program, where I work on retrieval-augmented generation and machine learning projects.
+                  <br /><br />
+                  I study Data Science at BEU × INHA University and have contributed to research on neural architectures and meta-heuristic multi-agent systems. I work across the full ML stack: data engineering, model training, LLM integration, and deployment.
                 </p>
 
                 <h3 className="text-2xl font-bold text-white mb-6">What I&apos;m Doing</h3>
