@@ -288,12 +288,7 @@ export default function Home() {
             {activeTab === "About" && (
               <section className="animate-in fade-in slide-in-from-bottom-2 duration-500">
                 <p className="text-zinc-400 leading-relaxed mb-10">
-                  Freshman at BEU–INHA University who builds first and learns by doing. Trained a
-                  physics-informed ConvLSTM to R² = 0.94 on 1GB+ of real sensor data, shipped an AI
-                  cybersecurity platform to a national hackathon final, and runs production-grade n8n
-                  automation workflows. Comfortable across the full experiment
-                  cycle: data wrangling, model iteration, metric analysis, and deployment. Seeking a
-                  remote ML/AI internship or part-time role where I can contribute and grow fast.
+                  Freshman at BEU–INHA University, currently interning at Microsoft as part of the AI Innovators Summer Program. Builds first and learns by doing — trained a physics-informed ConvLSTM to R² = 0.94 on 1GB+ of real sensor data, shipped an AI cybersecurity platform to a national hackathon final, and builds production-grade RAG systems and automation workflows. Comfortable across the full ML cycle: data wrangling, model training, metric analysis, and deployment.
                 </p>
 
                 <h3 className="text-2xl font-bold text-white mb-6">What I&apos;m Doing</h3>
@@ -303,21 +298,21 @@ export default function Home() {
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v8"/><path d="m16 6-4 4-4-4"/><path d="M12 14v8"/><path d="m8 18 4 4 4-4"/><path d="m19 9-4 4 4 4"/><path d="m5 15 4-4-4-4"/></svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">Deep Learning & ML</h4>
+                      <h4 className="font-bold text-white mb-2">ML Modeling & Training</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Building physics-informed neural networks and ConvLSTM architectures on real-world scientific datasets.
+                        Designing and training deep learning models — ConvLSTM, transformers, and RAG pipelines — on real-world scientific and production datasets.
                       </p>
                     </div>
                   </div>
 
                   <div className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-[#3ff2d7] shrink-0">
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">NLP Pipelines</h4>
+                      <h4 className="font-bold text-white mb-2">AI Engineering</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        End-to-end data pipelines: web scraping with Playwright and Firecrawl, data extraction, and LLM-powered summarization via native SDKs.
+                        Building reliable AI systems and pipelines — RAG architectures, LLM integrations, and model deployment — with a focus on clean, production-ready engineering.
                       </p>
                     </div>
                   </div>
@@ -327,9 +322,21 @@ export default function Home() {
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">AI-Native Products</h4>
+                      <h4 className="font-bold text-white mb-2">AI Automation</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Shipping AI-powered products with Gemini 2.5, Fal.ai, and Telegram bots — from hackathon prototypes to production. Automating workflows with n8n and Make.com.
+                        Shipping agentic workflows and AI-native products using n8n, Make.com, Fal.ai, and Telegram bots — from hackathon prototypes to deployed tools.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-[#1e1e1f] border border-zinc-800 rounded-2xl p-6 flex gap-4 shadow-lg">
+                    <div className="text-[#3ff2d7] shrink-0">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white mb-2">NLP & Data Pipelines</h4>
+                      <p className="text-xs text-zinc-400 leading-relaxed">
+                        End-to-end data pipelines: web scraping with Playwright, Selenium, and Firecrawl, data extraction, and LLM-powered summarization via native SDKs.
                       </p>
                     </div>
                   </div>
@@ -339,9 +346,9 @@ export default function Home() {
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">Teaching & Research</h4>
+                      <h4 className="font-bold text-white mb-2">Research</h4>
                       <p className="text-xs text-zinc-400 leading-relaxed">
-                        Stanford Code in Place Section Leader. Research on Meta-Heuristic Multi-Agent Decision-Making Systems at BEU.
+                        Investigating ML architectures, meta-heuristic systems, and physics-informed models through supervised academic research and technical projects.
                       </p>
                     </div>
                   </div>
