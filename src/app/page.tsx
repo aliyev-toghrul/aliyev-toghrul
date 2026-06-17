@@ -62,7 +62,7 @@ export default function Home() {
     },
     {
       category: "Automation",
-      items: ["n8n", "Make.com", "Telegram Bot API", "Playwright"],
+      items: ["n8n", "Make.com", "Selenium", "Beautiful Soup", "Telegram Bot API", "Playwright"],
     },
     {
       category: "Infra",
