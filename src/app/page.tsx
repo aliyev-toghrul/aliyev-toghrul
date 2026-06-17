@@ -184,29 +184,29 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#060d1f] text-slate-300 font-sans selection:bg-indigo-500/30 bg-grid">
+    <div className="min-h-screen bg-[#0c0e12] text-slate-300 font-sans selection:bg-blue-500/30 bg-grid">
       <main className="max-w-6xl mx-auto px-4 py-8 lg:py-20 flex flex-col lg:flex-row gap-6 items-start">
 
         {/* ── SIDEBAR ── */}
-        <aside className="w-full lg:w-[280px] lg:sticky lg:top-10 bg-[#0a1628] border border-[#1e3a5f] rounded-3xl p-8 flex flex-col items-center shrink-0">
-          <div className="bg-[#0f2040] rounded-3xl p-4 mb-6 shadow-xl avatar-wrap">
+        <aside className="w-full lg:w-[280px] lg:sticky lg:top-10 bg-[#111318] border border-[#1f2535] rounded-3xl p-8 flex flex-col items-center shrink-0">
+          <div className="bg-[#1a1d24] rounded-3xl p-4 mb-6 shadow-xl avatar-wrap">
             <img
               src="/me.png"
               alt="Toghrul Aliyev"
-              className="w-24 h-24 lg:w-32 lg:h-32 rounded-3xl object-cover bg-[#0a1628]"
+              className="w-24 h-24 lg:w-32 lg:h-32 rounded-3xl object-cover bg-[#111318]"
             />
           </div>
 
           <div className="text-center mb-8">
             <h1 className="text-xl font-bold text-white mb-3">Toghrul Aliyev</h1>
-            <span className="px-4 py-1.5 bg-gradient-to-r from-indigo-600 to-cyan-500 text-xs font-semibold text-white rounded-lg shadow-lg shadow-indigo-500/20">
+            <span className="px-4 py-1.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-xs font-semibold text-white rounded-lg shadow-lg shadow-blue-500/20">
               ML / AI Engineer
             </span>
           </div>
 
-          <div className="w-full border-t border-[#1e3a5f] pt-8 space-y-5">
+          <div className="w-full border-t border-[#1f2535] pt-8 space-y-5">
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#0f2040] border border-[#1e3a5f] rounded-xl flex items-center justify-center text-indigo-400 shrink-0">
+              <div className="w-10 h-10 bg-[#1a1d24] border border-[#1f2535] rounded-xl flex items-center justify-center text-blue-400 shrink-0">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               </div>
               <div className="min-w-0">
@@ -218,7 +218,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#0f2040] border border-[#1e3a5f] rounded-xl flex items-center justify-center text-indigo-400 shrink-0">
+              <div className="w-10 h-10 bg-[#1a1d24] border border-[#1f2535] rounded-xl flex items-center justify-center text-blue-400 shrink-0">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 15 19.79 19.79 0 0 1 1.94 6.4 2 2 0 0 1 3.91 4.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 11.91a16 16 0 0 0 5.99 5.99l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div>
@@ -228,7 +228,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#0f2040] border border-[#1e3a5f] rounded-xl flex items-center justify-center text-indigo-400 shrink-0">
+              <div className="w-10 h-10 bg-[#1a1d24] border border-[#1f2535] rounded-xl flex items-center justify-center text-blue-400 shrink-0">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div>
@@ -242,7 +242,7 @@ export default function Home() {
             <a
               href="https://linkedin.com/in/toghrul-aliyev-a83b3037b"
               target="_blank"
-              className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 rounded-xl text-white text-xs font-semibold hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-500/20"
+              className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-blue-600 rounded-xl text-white text-xs font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-500/20"
             >
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Download CV
@@ -263,13 +263,13 @@ export default function Home() {
         <div className="flex-1 w-full min-w-0 flex flex-col gap-6 relative">
 
           {/* Desktop Nav */}
-          <nav className="absolute top-0 right-0 z-10 hidden lg:flex bg-[#0a1628] border border-[#1e3a5f] rounded-bl-3xl rounded-tr-3xl overflow-hidden">
+          <nav className="absolute top-0 right-0 z-10 hidden lg:flex bg-[#111318] border border-[#1f2535] rounded-bl-3xl rounded-tr-3xl overflow-hidden">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={`nav-tab px-8 py-5 text-sm font-medium transition-colors ${
-                  activeTab === tab ? "text-indigo-400 active" : "text-slate-400 hover:text-slate-200"
+                  activeTab === tab ? "text-blue-400 active" : "text-slate-400 hover:text-slate-200"
                 }`}
               >
                 {tab}
@@ -278,13 +278,13 @@ export default function Home() {
           </nav>
 
           {/* Mobile Nav */}
-          <nav className="lg:hidden bg-[#0a1628] border border-[#1e3a5f] rounded-2xl flex justify-around p-2">
+          <nav className="lg:hidden bg-[#111318] border border-[#1f2535] rounded-2xl flex justify-around p-2">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={`px-3 py-2.5 text-xs font-medium rounded-xl transition-colors ${
-                  activeTab === tab ? "bg-indigo-600/20 text-indigo-400" : "text-slate-400"
+                  activeTab === tab ? "bg-blue-600/20 text-blue-400" : "text-slate-400"
                 }`}
               >
                 {tab}
@@ -293,11 +293,11 @@ export default function Home() {
           </nav>
 
           {/* Main Article */}
-          <article className="bg-[#060d1f] border border-[#1e3a5f] rounded-3xl p-6 lg:p-10 min-h-[600px]">
+          <article className="bg-[#0c0e12] border border-[#1f2535] rounded-3xl p-6 lg:p-10 min-h-[600px]">
             <header className="mb-8">
               <h2 className="text-3xl font-bold text-white mb-4 relative inline-block">
                 {activeTab}
-                <div className="absolute -bottom-1 left-0 w-10 h-1 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-full"></div>
+                <div className="absolute -bottom-1 left-0 w-10 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full"></div>
               </h2>
             </header>
 
@@ -312,8 +312,8 @@ export default function Home() {
 
                 <h3 className="text-2xl font-bold text-white mb-6">What I&apos;m Doing</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="glow-card bg-[#0d1a35] border border-[#1e3a5f] rounded-2xl p-6 flex gap-4 shadow-lg">
-                    <div className="text-indigo-400 shrink-0">
+                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl p-6 flex gap-4 shadow-lg">
+                    <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v8"/><path d="m16 6-4 4-4-4"/><path d="M12 14v8"/><path d="m8 18 4 4 4-4"/><path d="m19 9-4 4 4 4"/><path d="m5 15 4-4-4-4"/></svg>
                     </div>
                     <div>
@@ -324,8 +324,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card bg-[#0d1a35] border border-[#1e3a5f] rounded-2xl p-6 flex gap-4 shadow-lg">
-                    <div className="text-indigo-400 shrink-0">
+                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl p-6 flex gap-4 shadow-lg">
+                    <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
                     </div>
                     <div>
@@ -336,8 +336,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card bg-[#0d1a35] border border-[#1e3a5f] rounded-2xl p-6 flex gap-4 shadow-lg">
-                    <div className="text-indigo-400 shrink-0">
+                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl p-6 flex gap-4 shadow-lg">
+                    <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>
                     </div>
                     <div>
@@ -348,8 +348,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card bg-[#0d1a35] border border-[#1e3a5f] rounded-2xl p-6 flex gap-4 shadow-lg">
-                    <div className="text-indigo-400 shrink-0">
+                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl p-6 flex gap-4 shadow-lg">
+                    <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
                     </div>
                     <div>
@@ -360,8 +360,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card bg-[#0d1a35] border border-[#1e3a5f] rounded-2xl p-6 flex gap-4 shadow-lg">
-                    <div className="text-indigo-400 shrink-0">
+                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl p-6 flex gap-4 shadow-lg">
+                    <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
                     <div>
@@ -382,7 +382,7 @@ export default function Home() {
                 <a
                   href="https://linkedin.com/in/toghrul-aliyev-a83b3037b"
                   target="_blank"
-                  className="inline-flex items-center gap-2 px-5 py-3 bg-indigo-600 rounded-xl text-white text-sm font-semibold hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-500/20"
+                  className="inline-flex items-center gap-2 px-5 py-3 bg-blue-600 rounded-xl text-white text-sm font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-500/20"
                 >
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                   Download Full CV (PDF)
@@ -391,13 +391,13 @@ export default function Home() {
                 {/* Education */}
                 <div>
                   <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     Education
                   </h3>
-                  <div className="relative pl-6 border-l-2 border-[#1e3a5f] space-y-6">
+                  <div className="relative pl-6 border-l-2 border-[#1f2535] space-y-6">
                     {education.map((e, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-indigo-500 border-2 border-[#060d1f] shadow-md shadow-indigo-500/50" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-500 border-2 border-[#0c0e12] shadow-md shadow-blue-500/50" />
                         <p className="font-bold text-white text-sm">{e.school}</p>
                         <p className="text-sm text-zinc-400">{e.degree}</p>
                         <p className="text-xs text-cyan-400 mt-0.5 font-mono">{e.period}</p>
@@ -413,13 +413,13 @@ export default function Home() {
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3ff2d7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
                     Experience
                   </h3>
-                  <div className="relative pl-6 border-l-2 border-[#1e3a5f] space-y-8">
+                  <div className="relative pl-6 border-l-2 border-[#1f2535] space-y-8">
                     {experience.map((e, i) => (
                       <div key={i} className="relative">
                         <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#3ff2d7] border-2 border-[#1a1a1a]" />
                         <div className="flex flex-wrap items-center gap-2 mb-0.5">
                           <p className="font-bold text-white text-sm">{e.role}</p>
-                          <span className="text-[10px] px-2 py-0.5 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 rounded-full">{e.type}</span>
+                          <span className="text-[10px] px-2 py-0.5 bg-blue-500/10 border border-blue-500/30 text-blue-400 rounded-full">{e.type}</span>
                         </div>
                         <p className="text-sm text-zinc-400">{e.org}</p>
                         <p className="text-xs text-cyan-400 mt-0.5 mb-2 font-mono">{e.period}</p>
@@ -443,7 +443,7 @@ export default function Home() {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {skills.flatMap(s => s.items).map((item, j) => (
-                      <span key={j} className="skill-tag text-xs px-3 py-1.5 bg-[#0d1a35] border border-[#1e3a5f] rounded-full text-slate-200">
+                      <span key={j} className="skill-tag text-xs px-3 py-1.5 bg-[#14171e] border border-[#1f2535] rounded-full text-slate-200">
                         {item}
                       </span>
                     ))}
@@ -460,7 +460,7 @@ export default function Home() {
                   <div className="relative pl-6 border-l-2 border-zinc-800 space-y-6">
                     {certs.map((c, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-indigo-400/60 border-2 border-[#060d1f]" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-400/60 border-2 border-[#0c0e12]" />
                         <p className="text-sm font-semibold text-white leading-tight">{c.name}</p>
                         <p className="text-xs text-zinc-500 mt-0.5">{c.issuer}</p>
                       </div>
@@ -485,8 +485,8 @@ export default function Home() {
                       key={cat}
                       className={`px-4 py-1.5 rounded-full text-xs font-medium border transition-all ${
                         cat === "All"
-                          ? "bg-indigo-600 text-white border-indigo-600"
-                          : "bg-transparent text-slate-400 border-[#1e3a5f] hover:border-indigo-400 hover:text-indigo-400"
+                          ? "bg-blue-600 text-white border-indigo-600"
+                          : "bg-transparent text-slate-400 border-[#1f2535] hover:border-blue-400 hover:text-blue-400"
                       }`}
                     >
                       {cat}
@@ -503,20 +503,20 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-br from-[#0d1035] via-[#0a1a50] to-[#06082a] flex items-center justify-center">
                       <div className="relative flex items-center justify-center w-full h-full">
                         {/* Background glow */}
-                        <div className="absolute w-32 h-32 bg-indigo-500/20 rounded-full blur-2xl" />
+                        <div className="absolute w-32 h-32 bg-blue-500/20 rounded-full blur-2xl" />
                         {/* Shield icon */}
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="opacity-80">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="opacity-80">
                           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                           <path d="m9 12 2 2 4-4" stroke="#22d3ee" strokeWidth="1.5"/>
                         </svg>
                         {/* Floating dots */}
-                        <div className="absolute top-4 right-6 w-1.5 h-1.5 bg-indigo-400 rounded-full opacity-60" />
+                        <div className="absolute top-4 right-6 w-1.5 h-1.5 bg-blue-400 rounded-full opacity-60" />
                         <div className="absolute top-8 right-12 w-1 h-1 bg-cyan-400 rounded-full opacity-40" />
                         <div className="absolute bottom-6 left-8 w-1 h-1 bg-indigo-300 rounded-full opacity-50" />
                         <div className="absolute bottom-10 left-4 w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-30" />
                         {/* Label */}
                         <div className="absolute bottom-4 left-0 right-0 text-center">
-                          <span className="text-indigo-300 text-xs font-mono tracking-widest opacity-60">ZERO THREAD SHIELD</span>
+                          <span className="text-blue-300 text-xs font-mono tracking-widest opacity-60">ZERO THREAD SHIELD</span>
                         </div>
                       </div>
                     </div>
@@ -536,7 +536,7 @@ export default function Home() {
                         <a
                           href="https://zerot.vercel.app"
                           target="_blank"
-                          className="flex items-center gap-1.5 px-4 py-1.5 bg-indigo-500/20 border border-indigo-500/50 text-indigo-300 rounded-full text-xs font-medium hover:bg-indigo-500/30 transition-colors"
+                          className="flex items-center gap-1.5 px-4 py-1.5 bg-blue-500/20 border border-blue-500/50 text-blue-300 rounded-full text-xs font-medium hover:bg-blue-500/30 transition-colors"
                         >
                           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
                           Preview
@@ -554,7 +554,7 @@ export default function Home() {
                   </div>
 
                   {/* Coming soon placeholder */}
-                  <div className="relative rounded-2xl overflow-hidden border border-dashed border-[#1e3a5f] aspect-[4/3] flex items-center justify-center bg-[#1a1a1a]">
+                  <div className="relative rounded-2xl overflow-hidden border border-dashed border-[#1f2535] aspect-[4/3] flex items-center justify-center bg-[#1a1a1a]">
                     <div className="text-center">
                       <div className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center mx-auto mb-2">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#71717a" strokeWidth="2"><path d="M12 5v14M5 12h14"/></svg>
@@ -582,15 +582,15 @@ export default function Home() {
             {activeTab === "Blog" && (
               <section className="fade-up space-y-6">
                 <h2 className="text-3xl font-bold text-white">Blog</h2>
-                <div className="w-10 h-1 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-full -mt-4" />
+                <div className="w-10 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full -mt-4" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2">
 
                   {/* Post 1 */}
-                  <div className="glow-card bg-[#0d1a35] border border-[#1e3a5f] rounded-2xl overflow-hidden group">
+                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl overflow-hidden group">
                     <div className="relative overflow-hidden h-44">
                       <img src="/blog-nn.png" alt="Neural Network Architecture" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                       <div className="absolute top-3 left-3">
-                        <span className="text-[10px] px-2.5 py-1 bg-indigo-600 text-white rounded-full font-semibold backdrop-blur-sm shadow-lg shadow-indigo-500/30">Deep Learning</span>
+                        <span className="text-[10px] px-2.5 py-1 bg-blue-600 text-white rounded-full font-semibold backdrop-blur-sm shadow-lg shadow-blue-500/30">Deep Learning</span>
                       </div>
                     </div>
                     <div className="p-5">
@@ -604,14 +604,14 @@ export default function Home() {
                           8 mins
                         </span>
                       </div>
-                      <h3 className="text-sm font-bold text-white mb-2 leading-snug group-hover:text-indigo-400 transition-colors">
+                      <h3 className="text-sm font-bold text-white mb-2 leading-snug group-hover:text-blue-400 transition-colors">
                         The Neural Network Family: A Guide to Every Major Architecture
                       </h3>
                       <p className="text-xs text-slate-400 leading-relaxed mb-4">
                         A visual deep-dive into FNN, CNN, RNN/LSTM, Transformers, GNNs, and Spiking Neural Networks — when to use each and why it matters for applied AI.
                       </p>
                       <div className="flex items-center justify-between">
-                        <span className="skill-tag text-[10px] px-2.5 py-1 bg-[#0d1a35] border border-[#1e3a5f] rounded-full text-slate-400">Neural Networks</span>
+                        <span className="skill-tag text-[10px] px-2.5 py-1 bg-[#14171e] border border-[#1f2535] rounded-full text-slate-400">Neural Networks</span>
                         <a href="https://www.linkedin.com/in/toghrul-aliyev-a83b3037b/" target="_blank" className="text-xs text-cyan-400 hover:text-white transition-colors flex items-center gap-1 font-medium">
                           Read More
                           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -664,7 +664,7 @@ export default function Home() {
               <section className="fade-up space-y-8">
                 <div>
                   <h2 className="text-3xl font-bold text-white">Contact</h2>
-                  <div className="w-10 h-1 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-full mt-2" />
+                  <div className="w-10 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full mt-2" />
                 </div>
 
                 {/* Info cards */}
@@ -693,9 +693,9 @@ export default function Home() {
                       key={i}
                       href={item.href}
                       target={item.href.startsWith("http") ? "_blank" : undefined}
-                      className="glow-card flex items-center gap-3 bg-[#0d1a35] border border-[#1e3a5f] rounded-2xl p-4 hover:border-indigo-500/50 transition-all group"
+                      className="glow-card flex items-center gap-3 bg-[#14171e] border border-[#1f2535] rounded-2xl p-4 hover:border-blue-500/50 transition-all group"
                     >
-                      <div className="w-9 h-9 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
+                      <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
                         {item.icon}
                       </div>
                       <div className="min-w-0">
@@ -720,7 +720,7 @@ export default function Home() {
                         name="name"
                         placeholder="John Doe"
                         required
-                        className="w-full bg-[#0d1a35] border border-[#1e3a5f] rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500/60 transition-colors"
+                        className="w-full bg-[#14171e] border border-[#1f2535] rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-blue-500/60 transition-colors"
                       />
                     </div>
                     <div>
@@ -730,7 +730,7 @@ export default function Home() {
                         name="email"
                         placeholder="john@example.com"
                         required
-                        className="w-full bg-[#0d1a35] border border-[#1e3a5f] rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500/60 transition-colors"
+                        className="w-full bg-[#14171e] border border-[#1f2535] rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-blue-500/60 transition-colors"
                       />
                     </div>
                   </div>
@@ -741,12 +741,12 @@ export default function Home() {
                       rows={5}
                       placeholder="Write your message here..."
                       required
-                      className="w-full bg-[#0d1a35] border border-[#1e3a5f] rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500/60 transition-colors resize-none"
+                      className="w-full bg-[#14171e] border border-[#1f2535] rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-blue-500/60 transition-colors resize-none"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 py-3.5 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-semibold rounded-xl hover:from-indigo-500 hover:to-cyan-400 transition-all text-sm shadow-lg shadow-indigo-500/25"
+                    className="w-full flex items-center justify-center gap-2 py-3.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl hover:from-blue-500 hover:to-cyan-400 transition-all text-sm shadow-lg shadow-blue-500/25"
                   >
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                     Send Message
