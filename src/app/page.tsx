@@ -28,7 +28,18 @@ export default function Home() {
       link: "https://zerot.vercel.app",
       badge: "Hackathon Finalist",
       badgeColor: "bg-[#3ff2d7]/20 text-[#3ff2d7] border-[#3ff2d7]/30",
-      year: "2025",
+      year: "2026",
+    },
+    {
+      title: "AI Automation Hackathon — n8n & Fal.ai",
+      category: "AI Automation",
+      description:
+        "Built an end-to-end AI automation pipeline for a hackathon challenge combining n8n workflow orchestration with Fal.ai's generative media APIs. Designed multi-step agentic flows that trigger on events, process data through LLM nodes, and produce AI-generated outputs — demonstrating production-ready automation architecture.",
+      stack: ["n8n", "Fal.ai", "Make.com", "Telegram Bot API", "Python"],
+      link: "https://github.com/aliyev-toghrul",
+      badge: "Hackathon",
+      badgeColor: "bg-purple-500/20 text-purple-300 border-purple-500/30",
+      year: "2026",
     },
   ];
 
@@ -43,7 +54,7 @@ export default function Home() {
     },
     {
       category: "NLP & Data",
-      items: ["HuggingFace", "Firecrawl", "BeautifulSoup", "Playwright"],
+      items: ["HuggingFace", "Firecrawl", "BeautifulSoup", "Playwright", "Selenium", "spaCy"],
     },
     {
       category: "AI / LLMs",
@@ -69,22 +80,41 @@ export default function Home() {
 
   const experience = [
     {
+      role: "AI Engineering Intern",
+      org: "Microsoft",
+      period: "2026 – Present",
+      type: "Internship",
+      bullets: [
+        "Working on RAG (Retrieval-Augmented Generation) systems, building and evaluating ML pipelines for internal AI products.",
+        "Contributing to model evaluation, data preparation, and production ML workflows within the AI engineering team.",
+      ],
+    },
+    {
+      role: "Computer Science Translator",
+      org: "Khan Academy",
+      period: "May 2026 – Present",
+      type: "Volunteer",
+      bullets: [
+        "Translating Khan Academy's Computer Science curriculum into Azerbaijani, making CS education accessible to Azerbaijani-speaking learners globally.",
+      ],
+    },
+    {
       role: "Section Leader",
       org: "Stanford Code in Place",
-      period: "2026 – Present",
-      type: "Part-time",
+      period: "Apr – May 2026",
+      type: "Part-time · Completed",
       bullets: [
-        "Selected to mentor 17 students globally; running weekly Python sessions and guiding learners through Stanford's introductory CS curriculum.",
-        "Reviews code submissions and provides structured feedback aligned with Stanford's teaching standards.",
+        "Selected from a global applicant pool to mentor students in Stanford's introductory Python programming course.",
+        "Led weekly small-group sessions, reviewed code submissions, and provided structured feedback aligned with Stanford's teaching standards.",
       ],
     },
     {
       role: "Research Contributor — ML Systems",
       org: "Baku Engineering University",
-      period: "2025 – Present",
-      type: "Research",
+      period: "2025 – May 2026",
+      type: "Research · Completed",
       bullets: [
-        "Conducted two supervised literature reviews on neural network architectures and meta-heuristic multi-agent decision-making systems under Artughrul Qayibov.",
+        "Conducted two supervised literature reviews on neural network architectures and meta-heuristic multi-agent decision-making systems under lecturer Artughrul Qayibov.",
         "Synthesized findings from peer-reviewed papers and published both summaries on LinkedIn, reaching practitioners in the AI/ML community.",
       ],
     },
@@ -110,6 +140,8 @@ export default function Home() {
 
   const certs = [
     { name: "Machine Learning Specialization", issuer: "DeepLearning.AI · Andrew Ng" },
+    { name: "Google AI Essentials Specialization (4-course)", issuer: "Google · Mar 2026 · ID: SQNCONMLK4MR" },
+    { name: "Natural Sciences & Research", issuer: "Constructor University · May 2026" },
     { name: "Prompting Essentials (4-course)", issuer: "Google" },
     { name: "Data Analysis with Python", issuer: "IBM / Coursera" },
     { name: "SQL Basic", issuer: "HackerRank" },
