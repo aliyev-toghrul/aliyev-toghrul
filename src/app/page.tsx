@@ -30,6 +30,17 @@ export default function Home() {
       badgeColor: "bg-[#3ff2d7]/20 text-[#3ff2d7] border-[#3ff2d7]/30",
       year: "2026",
     },
+    {
+      title: "Mirzazada — AI Content Automation Engine",
+      category: "AI Automation",
+      description:
+        "Automated content engine for cross-platform social media. Built during AI & Automation Hackathon Baku. Orchestrated with n8n for complex workflow management, Gemini LLM for intelligent post rewriting and context adaptation, and fal.ai for high-speed, high-fidelity image generation. Bridges gap between raw ideas and platform-ready content with a single click.",
+      stack: ["n8n", "Gemini", "fal.ai", "Telegram API"],
+      link: "https://github.com/aliyev-toghrul",
+      badge: "Hackathon Build",
+      badgeColor: "bg-purple-500/20 text-purple-300 border-purple-500/30",
+      year: "2026",
+    },
   ];
 
   const skills = [
