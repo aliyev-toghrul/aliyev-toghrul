@@ -61,6 +61,17 @@ export default function Home() {
 
   const experience = [
     {
+      role: "Intern — AI & Automation",
+      org: "Microsoft AI Innovators Summer Program",
+      period: "June 4 – July 27, 2026",
+      type: "Internship",
+      bullets: [
+        "Building full-stack web applications and AI-powered platforms to solve real-world problems under the guidance of Barbaros Günay (CSA Manager, Microsoft).",
+        "Developing Retrieval-Augmented Generation (RAG) systems, machine learning models, and production automation workflows.",
+        "Contributing to both frontend (Next.js, React) and backend AI infrastructure across a one-month intensive program.",
+      ],
+    },
+    {
       role: "Section Leader",
       org: "Stanford Code in Place",
       period: "2026 – Present",
