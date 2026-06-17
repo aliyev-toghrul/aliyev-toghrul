@@ -9,26 +9,26 @@ export default function Home() {
 
   const projects = [
     {
-      title: "DTS Thermodynamic ML Modeling",
+      title: "Physics-Informed Wellbore Flow Prediction (ConvLSTM)",
       category: "Physics-Informed Deep Learning",
       description:
-        "Built a physics-informed ConvLSTM to predict wellbore flow-rate from DTS sensor data; processed 1GB+ (~26M lines) of high-noise data with thermodynamic feature engineering (spatial gradients dT/dz, thermal curvature, rolling statistics). Achieved R² = 0.94 on held-out test data; evolved architecture Conv1D-BiLSTM → ConvLSTM with AdamW + Cosine Annealing and strict 80/20 spatial depth split to validate OOD extrapolation.",
+        "Developed a spatial-temporal regression pipeline using PyTorch to predict wellbore flow rates from DTS fiber-optic sensor data. Processed 1GB+ (~26M lines) of high-noise data with thermodynamic feature engineering (spatial gradients dT/dz, thermal curvature, rolling statistics). Implemented a spatial-split validation strategy to ensure generalization (OOD extrapolation), achieving R² = 0.94. Architecture evolved from Conv1D-BiLSTM → ConvLSTM with AdamW + Cosine Annealing.",
       stack: ["Python", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
       link: "https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling",
       badge: "Research Task",
       badgeColor: "bg-blue-500/20 text-blue-300 border-blue-500/30",
-      year: "2026",
+      year: "Mar – Apr 2026",
     },
     {
-      title: "ZeroT — AI-Native Cybersecurity Platform",
+      title: "ZeroT — Zero Thread Shield",
       category: "AI & Cybersecurity",
       description:
-        "AI-powered cybersecurity readiness platform built for SMEs without in-house security teams. GDG Baku Build with AI Hackathon Top 10 Finalist. Ingests suspicious emails and URLs, runs AI triage via Gemini 2.5, and returns plain-language risk assessments with guided response playbooks and a live readiness scorecard. Validated on 100+ real malicious/benign URLs sourced from Kaggle and opendata.az. Built as a full Next.js 15 + React 18 monorepo with Gemini 2.5 backend and Vercel deployment.",
+        "Built an AI-native cybersecurity readiness platform for SMEs as part of the GDG Baku 'Build with AI' Hackathon — reached the Top 10 Finals. The platform combines real-time OSINT threat feeds, a hybrid AI threat scanner powered by Google Gemini 2.5, and a founder dashboard. Ingests suspicious emails and URLs, runs AI triage, and returns plain-language risk assessments with guided response playbooks and a live readiness scorecard. Validated on 100+ real malicious/benign URLs from Kaggle and opendata.az.",
       stack: ["Next.js 15", "React 18", "Gemini 2.5", "Vercel", "opendata.az", "Kaggle datasets"],
       link: "https://zerot.vercel.app",
-      badge: "Hackathon Finalist",
+      badge: "GDG Baku Hackathon Finalist",
       badgeColor: "bg-[#3ff2d7]/20 text-[#3ff2d7] border-[#3ff2d7]/30",
-      year: "2026",
+      year: "Mar 2026",
     },
     {
       title: "AI Automation Hackathon — n8n & Fal.ai",
@@ -81,12 +81,12 @@ export default function Home() {
   const experience = [
     {
       role: "AI Engineering Intern",
-      org: "Microsoft",
-      period: "2026 – Present",
+      org: "Microsoft — AI Innovators Summer Program",
+      period: "Jun 4 – Jul 27, 2026",
       type: "Internship",
       bullets: [
-        "Working on RAG (Retrieval-Augmented Generation) systems, building and evaluating ML pipelines for internal AI products.",
-        "Contributing to model evaluation, data preparation, and production ML workflows within the AI engineering team.",
+        "Selected for Microsoft's AI Innovators Summer Program led by Barbaros Günay, CSA Manager at Microsoft.",
+        "Building RAG (Retrieval-Augmented Generation) systems and ML pipelines; working on AI automation and machine learning model development.",
       ],
     },
     {
