@@ -23,4 +23,126 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  cursor: none;
 }
+
+a, button { cursor: none; }
+
+/* Custom cursor */
+#cursor-dot {
+  position: fixed;
+  top: 0; left: 0;
+  width: 8px; height: 8px;
+  background: #3ff2d7;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, opacity 0.2s;
+}
+
+#cursor-ring {
+  position: fixed;
+  top: 0; left: 0;
+  width: 36px; height: 36px;
+  border: 1.5px solid rgba(63, 242, 215, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, transform 0.08s linear;
+}
+
+body.cursor-hover #cursor-dot {
+  width: 12px; height: 12px;
+  opacity: 0.8;
+}
+
+body.cursor-hover #cursor-ring {
+  width: 52px; height: 52px;
+  border-color: rgba(63, 242, 215, 0.8);
+}
+
+/* Card glow on hover */
+.glow-card {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease;
+}
+.glow-card:hover {
+  border-color: rgba(63, 242, 215, 0.3) !important;
+  box-shadow: 0 0 24px rgba(63, 242, 215, 0.08), 0 8px 32px rgba(0,0,0,0.3);
+  transform: translateY(-3px);
+}
+
+/* Skill tag pop */
+.skill-tag {
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+}
+.skill-tag:hover {
+  background: rgba(63, 242, 215, 0.12) !important;
+  border-color: rgba(63, 242, 215, 0.4) !important;
+  color: #3ff2d7 !important;
+  transform: scale(1.08);
+}
+
+/* Nav tab underline animation */
+.nav-tab {
+  position: relative;
+  transition: color 0.2s;
+}
+.nav-tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  width: 0; height: 2px;
+  background: #3ff2d7;
+  border-radius: 2px;
+  transition: width 0.25s ease, left 0.25s ease;
+}
+.nav-tab:hover::after,
+.nav-tab.active::after {
+  width: 60%; left: 20%;
+}
+
+/* Sidebar icon hover */
+.sidebar-icon {
+  transition: color 0.2s, transform 0.2s;
+}
+.sidebar-icon:hover {
+  color: #3ff2d7 !important;
+  transform: scale(1.2);
+}
+
+/* Avatar ring pulse on hover */
+.avatar-wrap {
+  transition: box-shadow 0.3s ease;
+}
+.avatar-wrap:hover {
+  box-shadow: 0 0 0 3px rgba(63, 242, 215, 0.4), 0 0 24px rgba(63, 242, 215, 0.2);
+}
+
+/* Teal accent button hover */
+.teal-btn {
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.teal-btn:hover {
+  box-shadow: 0 0 16px rgba(63, 242, 215, 0.25);
+  transform: translateY(-1px);
+}
+
+/* Subtle background grid */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(63,242,215,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(63,242,215,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Fade-in-up for tab content */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fadeUp 0.35s ease forwards;
+}
+
