@@ -92,9 +92,18 @@ export default function Home() {
       ],
     },
     {
+      role: "Computer Science Translator",
+      org: "Khan Academy",
+      period: "May 2026 – Present",
+      type: "Volunteering",
+      bullets: [
+        "Translating and localizing computer science educational content for broader global accessibility.",
+      ],
+    },
+    {
       role: "Research Contributor — ML Systems",
       org: "Baku Engineering University",
-      period: "2025 – Present",
+      period: "2025 – May 2026",
       type: "Research",
       bullets: [
         "Conducted two supervised literature reviews on neural network architectures and meta-heuristic multi-agent decision-making systems under Artughrul Qayibov.",
@@ -108,15 +117,6 @@ export default function Home() {
       type: "Open Source",
       bullets: [
         "Maintains public project portfolio across deep learning, AI cybersecurity, and NLP automation domains.",
-      ],
-    },
-    {
-      role: "Computer Science Translator",
-      org: "Khan Academy",
-      period: "May 2026 – Present",
-      type: "Volunteering",
-      bullets: [
-        "Translating and localizing computer science educational content for broader global accessibility.",
       ],
     },
   ];
