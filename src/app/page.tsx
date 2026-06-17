@@ -28,7 +28,7 @@ export default function Home() {
       link: "https://zerot.vercel.app",
       badge: "Hackathon Finalist",
       badgeColor: "bg-[#3ff2d7]/20 text-[#3ff2d7] border-[#3ff2d7]/30",
-      year: "2025",
+      year: "2026",
     },
   ];
 
@@ -61,24 +61,23 @@ export default function Home() {
 
   const experience = [
     {
-      role: "Intern — AI & Automation",
+      role: "Intern — AI Engineering",
       org: "Microsoft AI Innovators Summer Program",
       period: "June 4 – July 27, 2026",
       type: "Internship",
       bullets: [
-        "Building full-stack web applications and AI-powered platforms to solve real-world problems under the guidance of Barbaros Günay (CSA Manager, Microsoft).",
-        "Developing Retrieval-Augmented Generation (RAG) systems, machine learning models, and production automation workflows.",
-        "Contributing to both frontend (Next.js, React) and backend AI infrastructure across a one-month intensive program.",
+        "Building Retrieval-Augmented Generation (RAG) systems and ML models under the guidance of Barbaros Günay (CSA Manager, Microsoft).",
+        "Working on AI/ML engineering projects focused on real-world problem-solving using advanced LLM and ML techniques.",
       ],
     },
     {
       role: "Section Leader",
       org: "Stanford Code in Place",
-      period: "2026 – Present",
+      period: "Apr – May 2026",
       type: "Part-time",
       bullets: [
-        "Selected to mentor 17 students globally; running weekly Python sessions and guiding learners through Stanford's introductory CS curriculum.",
-        "Reviews code submissions and provides structured feedback aligned with Stanford's teaching standards.",
+        "Taught foundational Python programming concepts (control flow, variables, data structures) to a global cohort of students based on Stanford's CS106A curriculum.",
+        "Reviewed code submissions and provided structured feedback aligned with Stanford's teaching standards.",
       ],
     },
     {
@@ -100,6 +99,15 @@ export default function Home() {
         "Maintains public project portfolio across deep learning, AI cybersecurity, and NLP automation domains.",
       ],
     },
+    {
+      role: "Computer Science Translator",
+      org: "Khan Academy",
+      period: "May 2026 – Present",
+      type: "Volunteering",
+      bullets: [
+        "Translating and localizing computer science educational content for broader global accessibility.",
+      ],
+    },
   ];
 
   const education = [
@@ -112,6 +120,8 @@ export default function Home() {
   ];
 
   const certs = [
+    { name: "Google AI Specialization", issuer: "Google", year: "Mar 2026", id: "SQNCONMLK4MR" },
+    { name: "Natural Sciences & Research", issuer: "Constructor University", year: "May 2026" },
     { name: "Machine Learning Specialization", issuer: "DeepLearning.AI · Andrew Ng" },
     { name: "Prompting Essentials (4-course)", issuer: "Google" },
     { name: "Data Analysis with Python", issuer: "IBM / Coursera" },
