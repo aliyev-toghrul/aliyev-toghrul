@@ -1,51 +1,23 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("About");
-  const dotRef = useRef<HTMLDivElement>(null);
-  const ringRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const dot = dotRef.current;
-    const ring = ringRef.current;
-    if (!dot || !ring) return;
-
-    let ringX = 0, ringY = 0;
-    let mouseX = 0, mouseY = 0;
-    let animId: number;
-
-    const onMove = (e: MouseEvent) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      dot.style.left = mouseX + "px";
-      dot.style.top = mouseY + "px";
-    };
-
-    const animate = () => {
-      ringX += (mouseX - ringX) * 0.12;
-      ringY += (mouseY - ringY) * 0.12;
-      ring.style.left = ringX + "px";
-      ring.style.top = ringY + "px";
-      animId = requestAnimationFrame(animate);
-    };
-
-    const onEnter = () => document.body.classList.add("cursor-hover");
-    const onLeave = () => document.body.classList.remove("cursor-hover");
-
-    document.addEventListener("mousemove", onMove);
-    animId = requestAnimationFrame(animate);
-
+    const onEnter = () => {};
+    const onLeave = () => {};
     const interactives = document.querySelectorAll("a, button, .glow-card, .skill-tag");
     interactives.forEach(el => {
       el.addEventListener("mouseenter", onEnter);
       el.addEventListener("mouseleave", onLeave);
     });
-
     return () => {
-      document.removeEventListener("mousemove", onMove);
-      cancelAnimationFrame(animId);
+      interactives.forEach(el => {
+        el.removeEventListener("mouseenter", onEnter);
+        el.removeEventListener("mouseleave", onLeave);
+      });
     };
   }, [activeTab]);
 
@@ -213,10 +185,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#1a1a1a] text-zinc-300 font-sans selection:bg-[#3ff2d7]/30 bg-grid">
-      {/* Custom cursor */}
-      <div id="cursor-dot" ref={dotRef} />
-      <div id="cursor-ring" ref={ringRef} />
-
       <main className="max-w-6xl mx-auto px-4 py-8 lg:py-20 flex flex-col lg:flex-row gap-6 items-start">
 
         {/* ── SIDEBAR ── */}
