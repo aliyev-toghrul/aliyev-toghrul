@@ -191,7 +191,7 @@ export default function Home() {
         <aside className="w-full lg:w-[280px] lg:sticky lg:top-10 bg-[#242424] border border-zinc-800 rounded-3xl p-8 flex flex-col items-center shrink-0">
           <div className="bg-[#333333] rounded-3xl p-4 mb-6 shadow-xl avatar-wrap">
             <img
-              src="https://avatars.githubusercontent.com/u/205692610?v=4"
+              src="/me.png"
               alt="Toghrul Aliyev"
               className="w-24 h-24 lg:w-32 lg:h-32 rounded-3xl object-cover bg-[#242424]"
             />
