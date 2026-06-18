@@ -4,6 +4,18 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("About");
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("theme");
+    if (saved === "light") setIsDark(false);
+  }, []);
+
+  const toggleTheme = () => {
+    const next = !isDark;
+    setIsDark(next);
+    localStorage.setItem("theme", next ? "dark" : "light");
+  };
 
   useEffect(() => {
     const onEnter = () => {};
@@ -184,56 +196,56 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0c0e12] text-slate-300 font-sans selection:bg-blue-500/30 bg-grid">
+    <div className={`min-h-screen t-bg t-body font-sans selection:bg-blue-500/30 ${isDark ? "" : "light-theme"}`}>
       <main className="max-w-6xl mx-auto px-4 py-8 lg:py-20 flex flex-col lg:flex-row gap-6 items-start">
 
         {/* ── SIDEBAR ── */}
-        <aside className="w-full lg:w-[280px] lg:sticky lg:top-10 bg-[#111318] border border-[#1f2535] rounded-3xl p-8 flex flex-col items-center shrink-0">
-          <div className="bg-[#1a1d24] rounded-3xl p-4 mb-6 shadow-xl avatar-wrap">
+        <aside className="w-full lg:w-[280px] lg:sticky lg:top-10 t-surface t-border border rounded-3xl p-8 flex flex-col items-center shrink-0">
+          <div className="t-icon-bg rounded-3xl p-4 mb-6 shadow-xl avatar-wrap">
             <img
               src="/me.png"
               alt="Toghrul Aliyev"
-              className="w-24 h-24 lg:w-32 lg:h-32 rounded-3xl object-cover bg-[#111318]"
+              className="w-24 h-24 lg:w-32 lg:h-32 rounded-3xl object-cover t-surface"
             />
           </div>
 
           <div className="text-center mb-8">
-            <h1 className="text-xl font-bold text-white mb-3">Toghrul Aliyev</h1>
-            <span className="px-4 py-1.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-xs font-semibold text-white rounded-lg shadow-lg shadow-blue-500/20">
+            <h1 className="text-xl font-bold t-heading mb-3">Toghrul Aliyev</h1>
+            <span className="px-4 py-1.5 bg-[#1e3a8a] text-xs font-semibold text-blue-200 rounded-lg border border-blue-800">
               ML / AI Engineer
             </span>
           </div>
 
-          <div className="w-full border-t border-[#1f2535] pt-8 space-y-5">
+          <div className="w-full t-border border-t pt-8 space-y-5">
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#1a1d24] border border-[#1f2535] rounded-xl flex items-center justify-center text-blue-400 shrink-0">
+              <div className="w-10 h-10 t-icon-bg t-border border rounded-xl flex items-center justify-center text-blue-400 shrink-0">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               </div>
               <div className="min-w-0">
-                <p className="text-[10px] uppercase text-slate-500 font-bold tracking-wider">Email</p>
-                <a href="mailto:toghrulaliyev724@gmail.com" className="text-xs text-slate-200 truncate block hover:text-cyan-400 transition-colors">
+                <p className="text-[10px] uppercase t-faint font-bold tracking-wider">Email</p>
+                <a href="mailto:toghrulaliyev724@gmail.com" className="text-xs t-body truncate block hover:text-cyan-400 transition-colors">
                   toghrulaliyev724@gmail.com
                 </a>
               </div>
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#1a1d24] border border-[#1f2535] rounded-xl flex items-center justify-center text-blue-400 shrink-0">
+              <div className="w-10 h-10 t-icon-bg t-border border rounded-xl flex items-center justify-center text-blue-400 shrink-0">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 15 19.79 19.79 0 0 1 1.94 6.4 2 2 0 0 1 3.91 4.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 11.91a16 16 0 0 0 5.99 5.99l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div>
-                <p className="text-[10px] uppercase text-slate-500 font-bold tracking-wider">Phone</p>
-                <a href="tel:+994505190132" className="text-xs text-slate-200 hover:text-cyan-400 transition-colors">+994 50 519 0132</a>
+                <p className="text-[10px] uppercase t-faint font-bold tracking-wider">Phone</p>
+                <a href="tel:+994505190132" className="text-xs t-body hover:text-cyan-400 transition-colors">+994 50 519 0132</a>
               </div>
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#1a1d24] border border-[#1f2535] rounded-xl flex items-center justify-center text-blue-400 shrink-0">
+              <div className="w-10 h-10 t-icon-bg t-border border rounded-xl flex items-center justify-center text-blue-400 shrink-0">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div>
-                <p className="text-[10px] uppercase text-slate-500 font-bold tracking-wider">Location</p>
-                <p className="text-xs text-slate-200">Baku, Azerbaijan</p>
+                <p className="text-[10px] uppercase t-faint font-bold tracking-wider">Location</p>
+                <p className="text-xs t-body">Baku, Azerbaijan</p>
               </div>
             </div>
           </div>
@@ -242,7 +254,7 @@ export default function Home() {
             <a
               href="https://linkedin.com/in/toghrul-aliyev-a83b3037b"
               target="_blank"
-              className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-blue-600 rounded-xl text-white text-xs font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-500/20"
+              className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-[#1e3a8a] rounded-xl text-blue-100 text-xs font-semibold hover:bg-[#1e40af] transition-all border border-blue-800"
             >
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Download CV
@@ -269,12 +281,22 @@ export default function Home() {
                 key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={`nav-tab px-8 py-5 text-sm font-medium transition-colors ${
-                  activeTab === tab ? "text-blue-400 active" : "text-slate-400 hover:text-slate-200"
+                  activeTab === tab ? "t-accent-t active" : "t-muted hover:t-body"
                 }`}
               >
                 {tab}
               </button>
             ))}
+            {/* Theme toggle */}
+            <div className="ml-auto pr-4 flex items-center">
+              <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
+                {isDark ? (
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                ) : (
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                )}
+              </button>
+            </div>
           </nav>
 
           {/* Mobile Nav */}
@@ -284,7 +306,7 @@ export default function Home() {
                 key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={`px-3 py-2.5 text-xs font-medium rounded-xl transition-colors ${
-                  activeTab === tab ? "bg-blue-600/20 text-blue-400" : "text-slate-400"
+                  activeTab === tab ? "t-icon-bg text-blue-300" : "text-slate-400"
                 }`}
               >
                 {tab}
@@ -304,7 +326,7 @@ export default function Home() {
             {/* ── ABOUT ── */}
             {activeTab === "About" && (
               <section className="fade-up">
-                <p className="text-slate-300 leading-relaxed mb-10">
+                <p className="t-body leading-relaxed mb-10">
                   I&apos;m an AI &amp; ML engineer focused on building real systems — from deep learning models trained on scientific data to RAG pipelines and end-to-end automation workflows. Currently interning at Microsoft&apos;s AI Innovators Summer Program, where I work on retrieval-augmented generation and machine learning projects.
                   <br /><br />
                   I study Data Science at BEU × INHA University and have contributed to research on neural architectures and meta-heuristic multi-agent systems. I work across the full ML stack: data engineering, model training, LLM integration, and deployment.
@@ -312,61 +334,61 @@ export default function Home() {
 
                 <h3 className="text-2xl font-bold text-white mb-6">What I&apos;m Doing</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl p-6 flex gap-4 shadow-lg">
+                  <div className="glow-card t-card t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v8"/><path d="m16 6-4 4-4-4"/><path d="M12 14v8"/><path d="m8 18 4 4 4-4"/><path d="m19 9-4 4 4 4"/><path d="m5 15 4-4-4-4"/></svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">ML Modeling & Training</h4>
-                      <p className="text-xs text-slate-400 leading-relaxed">
+                      <h4 className="font-bold t-heading mb-2">ML Modeling & Training</h4>
+                      <p className="text-xs t-muted leading-relaxed">
                         Designing and training deep learning models — ConvLSTM, transformers, and RAG pipelines — on real-world scientific and production datasets.
                       </p>
                     </div>
                   </div>
 
-                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl p-6 flex gap-4 shadow-lg">
+                  <div className="glow-card t-card t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">AI Engineering</h4>
-                      <p className="text-xs text-slate-400 leading-relaxed">
+                      <h4 className="font-bold t-heading mb-2">AI Engineering</h4>
+                      <p className="text-xs t-muted leading-relaxed">
                         Building reliable AI systems and pipelines — RAG architectures, LLM integrations, and model deployment — with a focus on clean, production-ready engineering.
                       </p>
                     </div>
                   </div>
 
-                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl p-6 flex gap-4 shadow-lg">
+                  <div className="glow-card t-card t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">AI Automation</h4>
-                      <p className="text-xs text-slate-400 leading-relaxed">
+                      <h4 className="font-bold t-heading mb-2">AI Automation</h4>
+                      <p className="text-xs t-muted leading-relaxed">
                         Shipping agentic workflows and AI-native products using n8n, Make.com, Fal.ai, and Telegram bots — from hackathon prototypes to deployed tools.
                       </p>
                     </div>
                   </div>
 
-                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl p-6 flex gap-4 shadow-lg">
+                  <div className="glow-card t-card t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">NLP & Data Pipelines</h4>
-                      <p className="text-xs text-slate-400 leading-relaxed">
+                      <h4 className="font-bold t-heading mb-2">NLP & Data Pipelines</h4>
+                      <p className="text-xs t-muted leading-relaxed">
                         End-to-end data pipelines: web scraping with Playwright, Selenium, and Firecrawl, data extraction, and LLM-powered summarization via native SDKs.
                       </p>
                     </div>
                   </div>
 
-                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl p-6 flex gap-4 shadow-lg">
+                  <div className="glow-card t-card t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">Research</h4>
-                      <p className="text-xs text-slate-400 leading-relaxed">
+                      <h4 className="font-bold t-heading mb-2">Research</h4>
+                      <p className="text-xs t-muted leading-relaxed">
                         Investigating ML architectures, meta-heuristic systems, and physics-informed models through supervised academic research and technical projects.
                       </p>
                     </div>
@@ -390,14 +412,14 @@ export default function Home() {
 
                 {/* Education */}
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                  <h3 className="text-lg font-bold t-heading mb-6 flex items-center gap-3">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     Education
                   </h3>
                   <div className="relative pl-6 border-l-2 border-[#1f2535] space-y-6">
                     {education.map((e, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-500 border-2 border-[#0c0e12] shadow-md shadow-blue-500/50" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-500 border-2 border-transparent shadow-md shadow-blue-500/50" />
                         <p className="font-bold text-white text-sm">{e.school}</p>
                         <p className="text-sm text-zinc-400">{e.degree}</p>
                         <p className="text-xs text-cyan-400 mt-0.5 font-mono">{e.period}</p>
@@ -409,7 +431,7 @@ export default function Home() {
 
                 {/* Experience */}
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                  <h3 className="text-lg font-bold t-heading mb-6 flex items-center gap-3">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3ff2d7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
                     Experience
                   </h3>
@@ -419,7 +441,7 @@ export default function Home() {
                         <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#3ff2d7] border-2 border-[#1a1a1a]" />
                         <div className="flex flex-wrap items-center gap-2 mb-0.5">
                           <p className="font-bold text-white text-sm">{e.role}</p>
-                          <span className="text-[10px] px-2 py-0.5 bg-blue-500/10 border border-blue-500/30 text-blue-400 rounded-full">{e.type}</span>
+                          <span className="text-[10px] px-2 py-0.5 bg-blue-900/40 border border-blue-800 text-blue-300 rounded-full">{e.type}</span>
                         </div>
                         <p className="text-sm text-zinc-400">{e.org}</p>
                         <p className="text-xs text-cyan-400 mt-0.5 mb-2 font-mono">{e.period}</p>
@@ -437,7 +459,7 @@ export default function Home() {
 
                 {/* Skills */}
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                  <h3 className="text-lg font-bold t-heading mb-6 flex items-center gap-3">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3ff2d7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v8"/><path d="m16 6-4 4-4-4"/><path d="M12 14v8"/><path d="m8 18 4 4 4-4"/><path d="m19 9-4 4 4 4"/><path d="m5 15 4-4-4-4"/></svg>
                     My Skills
                   </h3>
@@ -448,19 +470,19 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
-                  <p className="text-[11px] text-slate-600 mt-3">* C++: basic level · MongoDB: familiar · SQL: basic/intermediate</p>
+                  <p className="text-[11px] t-faint mt-3">* C++: basic level · MongoDB: familiar · SQL: basic/intermediate</p>
                 </div>
 
                 {/* Certifications */}
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                  <h3 className="text-lg font-bold t-heading mb-6 flex items-center gap-3">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3ff2d7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
                     Certifications
                   </h3>
                   <div className="relative pl-6 border-l-2 border-zinc-800 space-y-6">
                     {certs.map((c, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-400/60 border-2 border-[#0c0e12]" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-400/60 border-2 border-transparent" />
                         <p className="text-sm font-semibold text-white leading-tight">{c.name}</p>
                         <p className="text-xs text-zinc-500 mt-0.5">{c.issuer}</p>
                       </div>
@@ -474,7 +496,7 @@ export default function Home() {
             {/* ── PORTFOLIO ── */}
             {activeTab === "Portfolio" && (
               <section className="fade-up space-y-6">
-                <p className="text-zinc-400 text-sm leading-relaxed">
+                <p className="t-muted text-sm leading-relaxed">
                   Selected projects in deep learning research and AI-native product engineering.
                 </p>
 
@@ -500,7 +522,7 @@ export default function Home() {
                   {/* ZeroT — Zero Thread Shield */}
                   <div className="relative group rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer aspect-[4/3]">
                     {/* Thumbnail */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#0d1035] via-[#0a1a50] to-[#06082a] flex items-center justify-center">
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#0a0f1e] via-[#0d1530] to-[#060b1a] flex items-center justify-center">
                       <div className="relative flex items-center justify-center w-full h-full">
                         {/* Background glow */}
                         <div className="absolute w-32 h-32 bg-blue-500/20 rounded-full blur-2xl" />
@@ -569,7 +591,7 @@ export default function Home() {
                   <a
                     href="https://github.com/aliyev-toghrul"
                     target="_blank"
-                    className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-cyan-400 transition-colors"
+                    className="inline-flex items-center gap-2 text-sm t-muted hover:text-cyan-400 transition-colors"
                   >
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                     View all repositories on GitHub →
@@ -581,12 +603,12 @@ export default function Home() {
             {/* ── BLOG ── */}
             {activeTab === "Blog" && (
               <section className="fade-up space-y-6">
-                <h2 className="text-3xl font-bold text-white">Blog</h2>
-                <div className="w-10 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full -mt-4" />
+                <h2 className="text-3xl font-bold t-heading">Blog</h2>
+                <div className="w-10 h-1 bg-blue-700 rounded-full -mt-4" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2">
 
                   {/* Post 1 */}
-                  <div className="glow-card bg-[#14171e] border border-[#1f2535] rounded-2xl overflow-hidden group">
+                  <div className="glow-card t-card t-border border rounded-2xl overflow-hidden group">
                     <div className="relative overflow-hidden h-44">
                       <img src="/blog-nn.png" alt="Neural Network Architecture" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                       <div className="absolute top-3 left-3">
@@ -594,7 +616,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="p-5">
-                      <div className="flex items-center gap-3 text-xs text-slate-500 mb-3">
+                      <div className="flex items-center gap-3 text-xs t-faint mb-3">
                         <span className="flex items-center gap-1">
                           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                           May 2026
@@ -604,10 +626,10 @@ export default function Home() {
                           8 mins
                         </span>
                       </div>
-                      <h3 className="text-sm font-bold text-white mb-2 leading-snug group-hover:text-blue-400 transition-colors">
+                      <h3 className="text-sm font-bold t-heading mb-2 leading-snug group-hover:text-blue-400 transition-colors">
                         The Neural Network Family: A Guide to Every Major Architecture
                       </h3>
-                      <p className="text-xs text-slate-400 leading-relaxed mb-4">
+                      <p className="text-xs t-muted leading-relaxed mb-4">
                         A visual deep-dive into FNN, CNN, RNN/LSTM, Transformers, GNNs, and Spiking Neural Networks — when to use each and why it matters for applied AI.
                       </p>
                       <div className="flex items-center justify-between">
@@ -642,7 +664,7 @@ export default function Home() {
                       <h3 className="text-sm font-bold text-white mb-2 leading-snug group-hover:text-[#3ff2d7] transition-colors">
                         Meta-Heuristic Based Multi-Agent Decision-Making Systems Research
                       </h3>
-                      <p className="text-xs text-slate-400 leading-relaxed mb-4">
+                      <p className="text-xs t-muted leading-relaxed mb-4">
                         Exploring decentralized AI via co-evolutionary algorithms — how distributed swarm intelligence outperforms centralized controllers by ~28x in multi-UAV path planning benchmarks.
                       </p>
                       <div className="flex items-center justify-between">
@@ -663,8 +685,8 @@ export default function Home() {
             {activeTab === "Contact" && (
               <section className="fade-up space-y-8">
                 <div>
-                  <h2 className="text-3xl font-bold text-white">Contact</h2>
-                  <div className="w-10 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full mt-2" />
+                  <h2 className="text-3xl font-bold t-heading">Contact</h2>
+                  <div className="w-10 h-1 bg-blue-700 rounded-full mt-2" />
                 </div>
 
                 {/* Info cards */}
@@ -695,12 +717,12 @@ export default function Home() {
                       target={item.href.startsWith("http") ? "_blank" : undefined}
                       className="glow-card flex items-center gap-3 bg-[#14171e] border border-[#1f2535] rounded-2xl p-4 hover:border-blue-500/50 transition-all group"
                     >
-                      <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+                      <div className="w-9 h-9 rounded-xl bg-blue-900/30 border border-blue-800/50 flex items-center justify-center text-blue-400 shrink-0">
                         {item.icon}
                       </div>
                       <div className="min-w-0">
-                        <p className="text-[10px] uppercase text-slate-500 font-bold tracking-wider">{item.label}</p>
-                        <p className="text-xs text-slate-200 truncate group-hover:text-cyan-400 transition-colors">{item.value}</p>
+                        <p className="text-[10px] uppercase t-faint font-bold tracking-wider">{item.label}</p>
+                        <p className="text-xs t-body truncate group-hover:text-cyan-400 transition-colors">{item.value}</p>
                       </div>
                     </a>
                   ))}
@@ -714,7 +736,7 @@ export default function Home() {
                 >
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="text-xs text-slate-400 mb-1.5 block">Full Name</label>
+                      <label className="text-xs t-muted mb-1.5 block">Full Name</label>
                       <input
                         type="text"
                         name="name"
@@ -746,7 +768,7 @@ export default function Home() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 py-3.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl hover:from-blue-500 hover:to-cyan-400 transition-all text-sm shadow-lg shadow-blue-500/25"
+                    className="w-full flex items-center justify-center gap-2 py-3.5 bg-[#1e3a8a] text-blue-100 font-semibold rounded-xl hover:bg-[#1e40af] transition-all text-sm border border-blue-800"
                   >
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                     Send Message
@@ -758,7 +780,7 @@ export default function Home() {
 
           </article>
 
-          <footer className="text-center text-xs text-slate-600 pb-4">
+          <footer className="text-center text-xs t-faint pb-4">
             © {new Date().getFullYear()} Toghrul Aliyev
           </footer>
         </div>
