@@ -6,41 +6,46 @@ body {
 
 /* ── THEME TOKENS ── */
 :root {
-  --bg:        #0c0e12;
-  --surface:   #111318;
-  --card:      #14171e;
-  --icon-bg:   #1a1d24;
-  --border:    #1f2535;
-  --heading:   #ffffff;
-  --body:      #cbd5e1;
-  --muted:     #94a3b8;
-  --faint:     #475569;
-  --accent:    #06061e;
-  --accent-h:  #0a0a2e;
-  --accent-t:  #93c5fd;
-  --accent2:   #22d3ee;
+  --bg:          #0c0e12;
+  --surface:     #111318;
+  --card:        #14171e;
+  --card-alt:    #0b1328;
+  --icon-bg:     #1a1d24;
+  --border:      #1f2535;
+  --heading:     #ffffff;
+  --body:        #cbd5e1;
+  --muted:       #94a3b8;
+  --faint:       #475569;
+  --accent:      #06061e;
+  --accent-h:    #0a0a2e;
+  --accent-t:    #93c5fd;
+  --accent2:     #22d3ee;
+  --nav-active:  rgba(6,6,30,0.7);
 }
 
 .light-theme {
-  --bg:        #f0f4f8;
-  --surface:   #ffffff;
-  --card:      #f8fafc;
-  --icon-bg:   #e8edf4;
-  --border:    #dde3ed;
-  --heading:   #0f172a;
-  --body:      #334155;
-  --muted:     #475569;
-  --faint:     #94a3b8;
-  --accent:    #1d4ed8;
-  --accent-h:  #1e40af;
-  --accent-t:  #1d4ed8;
-  --accent2:   #0891b2;
+  --bg:          #f0f4f8;
+  --surface:     #ffffff;
+  --card:        #f8fafc;
+  --card-alt:    #eef2f9;
+  --icon-bg:     #e8edf4;
+  --border:      #dde3ed;
+  --heading:     #0f172a;
+  --body:        #334155;
+  --muted:       #475569;
+  --faint:       #94a3b8;
+  --accent:      #1d4ed8;
+  --accent-h:    #1e40af;
+  --accent-t:    #1d4ed8;
+  --accent2:     #0891b2;
+  --nav-active:  #e8edf4;
 }
 
 /* ── THEME UTILITY CLASSES ── */
 .t-bg        { background-color: var(--bg); }
 .t-surface   { background-color: var(--surface); }
 .t-card      { background-color: var(--card); }
+.t-card-alt  { background-color: var(--card-alt); }
 .t-icon-bg   { background-color: var(--icon-bg); }
 .t-border    { border-color: var(--border) !important; }
 .t-heading   { color: var(--heading) !important; }
@@ -49,6 +54,11 @@ body {
 .t-faint     { color: var(--faint) !important; }
 .t-accent-t  { color: var(--accent-t) !important; }
 .t-accent2   { color: var(--accent2) !important; }
+
+.nav-active {
+  background-color: var(--nav-active);
+  border-radius: 8px;
+}
 
 /* ── INTERACTIVE ── */
 .glow-card {

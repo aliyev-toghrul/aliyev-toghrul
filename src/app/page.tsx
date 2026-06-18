@@ -283,13 +283,13 @@ export default function Home() {
         <div className="flex-1 w-full min-w-0 flex flex-col gap-6 relative">
 
           {/* Desktop Nav */}
-          <nav className="absolute top-0 right-0 z-10 hidden lg:flex bg-[#111318] border border-[#1f2535] rounded-bl-3xl rounded-tr-3xl overflow-hidden">
+          <nav className="absolute top-0 right-0 z-10 hidden lg:flex bg-[#111318] border border-[#1f2535] rounded-bl-3xl rounded-tr-3xl overflow-hidden px-2 items-center">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`nav-tab px-8 py-5 text-sm font-medium transition-colors ${
-                  activeTab === tab ? "t-accent-t active" : "t-muted hover:t-body"
+                className={`nav-tab px-6 py-2.5 my-2 mx-1 text-sm font-medium transition-all rounded-lg ${
+                  activeTab === tab ? "t-accent-t active nav-active" : "t-muted hover:t-body"
                 }`}
               >
                 {tab}
@@ -342,7 +342,7 @@ export default function Home() {
 
                 <h3 className="text-2xl font-bold t-heading mb-6">What I&apos;m Doing</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="glow-card t-card t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
+                  <div className="glow-card t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v8"/><path d="m16 6-4 4-4-4"/><path d="M12 14v8"/><path d="m8 18 4 4 4-4"/><path d="m19 9-4 4 4 4"/><path d="m5 15 4-4-4-4"/></svg>
                     </div>
@@ -354,7 +354,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card t-card t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
+                  <div className="glow-card t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
                     </div>
@@ -366,7 +366,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card t-card t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
+                  <div className="glow-card t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>
                     </div>
@@ -378,7 +378,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card t-card t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
+                  <div className="glow-card t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
                     </div>
@@ -390,7 +390,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card t-card t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
+                  <div className="glow-card t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
                     <div className="text-blue-400 shrink-0">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
@@ -427,7 +427,7 @@ export default function Home() {
                   <div className="relative pl-6 border-l-2 t-border space-y-6">
                     {education.map((e, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#06061e] border-2 border-transparent shadow-md shadow-blue-500/50" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#06061e] border-2 border-[#1e3a8a] shadow-md shadow-blue-900/60 shadow-md shadow-blue-500/50" />
                         <p className="font-bold t-heading text-sm">{e.school}</p>
                         <p className="text-sm t-muted">{e.degree}</p>
                         <p className="text-xs text-cyan-400 mt-0.5 font-mono">{e.period}</p>
@@ -446,7 +446,7 @@ export default function Home() {
                   <div className="relative pl-6 border-l-2 t-border space-y-8">
                     {experience.map((e, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#06061e] border-2 border-transparent" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#06061e] border-2 border-[#1e3a8a] shadow-md shadow-blue-900/60" />
                         <div className="flex flex-wrap items-center gap-2 mb-0.5">
                           <p className="font-bold t-heading text-sm">{e.role}</p>
                           <span className="text-[10px] px-2 py-0.5 bg-[#06061e] border border-[#1e3a8a] text-blue-300 rounded-full">{e.type}</span>
@@ -490,7 +490,7 @@ export default function Home() {
                   <div className="relative pl-6 border-l-2 t-border space-y-6">
                     {certs.map((c, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#06061e] border-2 border-transparent" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#06061e] border-2 border-[#1e3a8a] shadow-md shadow-blue-900/60" />
                         <p className="text-sm font-semibold t-heading leading-tight">{c.name}</p>
                         <p className="text-xs t-faint mt-0.5">{c.issuer}</p>
                       </div>
