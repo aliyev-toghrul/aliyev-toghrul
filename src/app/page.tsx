@@ -11,6 +11,14 @@ export default function Home() {
     if (saved === "light") setIsDark(false);
   }, []);
 
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.remove("light-theme");
+    } else {
+      document.documentElement.classList.add("light-theme");
+    }
+  }, [isDark]);
+
   const toggleTheme = () => {
     const next = !isDark;
     setIsDark(next);
@@ -196,7 +204,7 @@ export default function Home() {
   ];
 
   return (
-    <div className={`min-h-screen t-bg t-body font-sans selection:bg-blue-500/30 ${isDark ? "" : "light-theme"}`}>
+    <div className="min-h-screen t-bg t-body font-sans selection:bg-blue-900/40">
       <main className="max-w-6xl mx-auto px-4 py-8 lg:py-20 flex flex-col lg:flex-row gap-6 items-start">
 
         {/* ── SIDEBAR ── */}
@@ -211,7 +219,7 @@ export default function Home() {
 
           <div className="text-center mb-8">
             <h1 className="text-xl font-bold t-heading mb-3">Toghrul Aliyev</h1>
-            <span className="px-4 py-1.5 bg-[#1e3a8a] text-xs font-semibold text-blue-200 rounded-lg border border-blue-800">
+            <span className="px-4 py-1.5 bg-[#06061e] text-xs font-semibold text-blue-200 rounded-lg border border-blue-800">
               ML / AI Engineer
             </span>
           </div>
@@ -254,7 +262,7 @@ export default function Home() {
             <a
               href="https://linkedin.com/in/toghrul-aliyev-a83b3037b"
               target="_blank"
-              className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-[#1e3a8a] rounded-xl text-blue-100 text-xs font-semibold hover:bg-[#1e40af] transition-all border border-blue-800"
+              className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-[#06061e] rounded-xl text-blue-200 text-xs font-semibold hover:bg-[#0a0a2e] transition-all border border-blue-800"
             >
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Download CV
@@ -315,12 +323,12 @@ export default function Home() {
           </nav>
 
           {/* Main Article */}
-          <article className="bg-[#0c0e12] border border-[#1f2535] rounded-3xl p-6 lg:p-10 min-h-[600px]">
+          <article className="t-bg t-border border rounded-3xl p-6 lg:p-10 min-h-[600px]">
             <header className="mb-8">
-              <h2 className="text-3xl font-bold text-white mb-4 relative inline-block">
+              <h2 className="text-3xl font-bold t-heading mb-2">
                 {activeTab}
-                <div className="absolute -bottom-1 left-0 w-10 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full"></div>
               </h2>
+              <div className="w-10 h-1 bg-[#06061e] rounded-full"></div>
             </header>
 
             {/* ── ABOUT ── */}
@@ -419,7 +427,7 @@ export default function Home() {
                   <div className="relative pl-6 border-l-2 border-[#1f2535] space-y-6">
                     {education.map((e, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-500 border-2 border-transparent shadow-md shadow-blue-500/50" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#06061e] border-2 border-transparent shadow-md shadow-blue-500/50" />
                         <p className="font-bold text-white text-sm">{e.school}</p>
                         <p className="text-sm text-zinc-400">{e.degree}</p>
                         <p className="text-xs text-cyan-400 mt-0.5 font-mono">{e.period}</p>
@@ -441,7 +449,7 @@ export default function Home() {
                         <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#3ff2d7] border-2 border-[#1a1a1a]" />
                         <div className="flex flex-wrap items-center gap-2 mb-0.5">
                           <p className="font-bold text-white text-sm">{e.role}</p>
-                          <span className="text-[10px] px-2 py-0.5 bg-blue-900/40 border border-blue-800 text-blue-300 rounded-full">{e.type}</span>
+                          <span className="text-[10px] px-2 py-0.5 bg-[#06061e] border border-[#1e3a8a] text-blue-300 rounded-full">{e.type}</span>
                         </div>
                         <p className="text-sm text-zinc-400">{e.org}</p>
                         <p className="text-xs text-cyan-400 mt-0.5 mb-2 font-mono">{e.period}</p>
@@ -482,7 +490,7 @@ export default function Home() {
                   <div className="relative pl-6 border-l-2 border-zinc-800 space-y-6">
                     {certs.map((c, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-400/60 border-2 border-transparent" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#1e3a8a]/80 border-2 border-transparent" />
                         <p className="text-sm font-semibold text-white leading-tight">{c.name}</p>
                         <p className="text-xs text-zinc-500 mt-0.5">{c.issuer}</p>
                       </div>
@@ -508,7 +516,7 @@ export default function Home() {
                       className={`px-4 py-1.5 rounded-full text-xs font-medium border transition-all ${
                         cat === "All"
                           ? "bg-blue-600 text-white border-indigo-600"
-                          : "bg-transparent text-slate-400 border-[#1f2535] hover:border-blue-400 hover:text-blue-400"
+                          : "bg-transparent text-slate-400 border-[#1f2535] hover:border-[#1e3a8a] hover:text-blue-300"
                       }`}
                     >
                       {cat}
@@ -604,7 +612,7 @@ export default function Home() {
             {activeTab === "Blog" && (
               <section className="fade-up space-y-6">
                 <h2 className="text-3xl font-bold t-heading">Blog</h2>
-                <div className="w-10 h-1 bg-blue-700 rounded-full -mt-4" />
+                <div className="w-10 h-1 bg-[#06061e] rounded-full -mt-4" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2">
 
                   {/* Post 1 */}
@@ -686,7 +694,7 @@ export default function Home() {
               <section className="fade-up space-y-8">
                 <div>
                   <h2 className="text-3xl font-bold t-heading">Contact</h2>
-                  <div className="w-10 h-1 bg-blue-700 rounded-full mt-2" />
+                  <div className="w-10 h-1 bg-[#06061e] rounded-full mt-2" />
                 </div>
 
                 {/* Info cards */}
@@ -717,7 +725,7 @@ export default function Home() {
                       target={item.href.startsWith("http") ? "_blank" : undefined}
                       className="glow-card flex items-center gap-3 bg-[#14171e] border border-[#1f2535] rounded-2xl p-4 hover:border-blue-500/50 transition-all group"
                     >
-                      <div className="w-9 h-9 rounded-xl bg-blue-900/30 border border-blue-800/50 flex items-center justify-center text-blue-400 shrink-0">
+                      <div className="w-9 h-9 rounded-xl bg-[#06061e]/80 border border-[#1e3a8a]/50 flex items-center justify-center text-blue-400 shrink-0">
                         {item.icon}
                       </div>
                       <div className="min-w-0">
@@ -768,7 +776,7 @@ export default function Home() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 py-3.5 bg-[#1e3a8a] text-blue-100 font-semibold rounded-xl hover:bg-[#1e40af] transition-all text-sm border border-blue-800"
+                    className="w-full flex items-center justify-center gap-2 py-3.5 bg-[#06061e] text-blue-200 font-semibold rounded-xl hover:bg-[#0a0a2e] transition-all text-sm border border-blue-800"
                   >
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                     Send Message

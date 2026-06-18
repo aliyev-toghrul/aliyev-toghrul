@@ -15,8 +15,8 @@ body {
   --body:      #cbd5e1;
   --muted:     #94a3b8;
   --faint:     #475569;
-  --accent:    #1e3a8a;
-  --accent-h:  #1e40af;
+  --accent:    #06061e;
+  --accent-h:  #0a0a2e;
   --accent-t:  #93c5fd;
   --accent2:   #22d3ee;
 }
@@ -55,8 +55,8 @@ body {
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease;
 }
 .glow-card:hover {
-  border-color: rgba(30, 58, 138, 0.5) !important;
-  box-shadow: 0 0 28px rgba(30, 58, 138, 0.15), 0 8px 32px rgba(0,0,0,0.4);
+  border-color: rgba(30, 58, 138, 0.6) !important;
+  box-shadow: 0 0 28px rgba(6, 6, 30, 0.4), 0 8px 32px rgba(0,0,0,0.5);
   transform: translateY(-3px);
 }
 .light-theme .glow-card:hover {
@@ -83,7 +83,7 @@ body {
   position: absolute;
   bottom: 0; left: 50%;
   width: 0; height: 2px;
-  background: linear-gradient(90deg, #1d4ed8, #22d3ee);
+  background: linear-gradient(90deg, #06061e, #1e3a8a);
   border-radius: 2px;
   transition: width 0.25s ease, left 0.25s ease;
 }
@@ -122,9 +122,9 @@ body {
   transition: all 0.2s ease;
 }
 .theme-toggle:hover {
-  border-color: #1d4ed8;
+  border-color: #1e3a8a;
   color: #93c5fd;
-  background: rgba(29, 78, 216, 0.1);
+  background: rgba(6, 6, 30, 0.5);
 }
 
 
