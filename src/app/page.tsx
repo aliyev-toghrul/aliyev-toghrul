@@ -87,15 +87,15 @@ export default function Home() {
     },
     {
       category: "ML / DL",
-      items: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "ConvLSTM", "Matplotlib", "Seaborn"],
+      items: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Polars", "ConvLSTM", "Matplotlib", "Seaborn"],
     },
     {
       category: "NLP & Data",
-      items: ["HuggingFace", "Firecrawl", "BeautifulSoup", "Playwright", "Selenium", "spaCy"],
+      items: ["HuggingFace", "Firecrawl", "Jina", "BeautifulSoup", "Playwright", "Selenium", "spaCy"],
     },
     {
       category: "AI / LLMs",
-      items: ["Gemini 2.5", "Claude API", "OpenAI SDK", "Groq", "Ollama", "OpenRouter", "Fal.ai", "FastAPI", "Prompt Engineering"],
+      items: ["Gemini 2.5", "Claude API", "OpenAI SDK", "Groq", "Ollama", "OpenRouter", "LangChain", "Fal.ai", "FastAPI", "Prompt Engineering"],
     },
     {
       category: "Automation",
@@ -171,7 +171,7 @@ export default function Home() {
       degree: "B.S. Data Science & Analytics",
       school: "BEU × INHA University — Dual Degree",
       period: "2025 – 2029",
-      detail: "Dual Degree Program · Baku Engineering University × INHA University, South Korea",
+      detail: "Dual Degree Program · Baku Engineering University × INHA University, South Korea · GPA: 3.67",
     },
   ];
 
@@ -179,6 +179,7 @@ export default function Home() {
     { name: "Machine Learning Specialization", issuer: "DeepLearning.AI · Andrew Ng" },
     { name: "Google AI Essentials Specialization (4-course)", issuer: "Google · Mar 2026 · ID: SQNCONMLK4MR" },
     { name: "Natural Sciences & Research", issuer: "Constructor University · May 2026" },
+    { name: "Advanced Prompting", issuer: "Google" },
     { name: "Prompting Essentials (4-course)", issuer: "Google" },
     { name: "Data Analysis with Python", issuer: "IBM / Coursera" },
     { name: "SQL Basic", issuer: "HackerRank" },
