@@ -50,9 +50,33 @@
 
 ---
 
+### 📊 GitHub Stats
+
 <div align="center">
 
 [![stats](https://github-readme-stats.vercel.app/api?username=aliyev-toghrul&hide_title=true&show_icons=true&include_all_commits=true&count_private=true&theme=midnight-purple&hide_border=true&bg_color=0c0e12)](https://github.com/aliyev-toghrul)
+[![langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aliyev-toghrul&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0c0e12)](https://github.com/aliyev-toghrul)
+
+[![streak](https://streak-stats.demolab.com?user=aliyev-toghrul&mode=daily&theme=midnight-purple&hide_border=true&border_radius=5&background=0c0e12)](https://github.com/aliyev-toghrul)
 
 </div>
+
+---
+
+### 🤝 Connect With Me
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/toghrul-aliyev17)
+[![Gmail](https://img.shields.io/badge/GMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:toghrulaliyev724@gmail.com)
+[![Kaggle](https://img.shields.io/badge/KAGGLE-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/toghrulaliyev)
+
+</div>
+
+<div align="center">
+
+📩 *Open to collaborating on AI/ML, data science, and automation projects!*
+
+</div>
+
 
