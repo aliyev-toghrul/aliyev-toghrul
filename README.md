@@ -2,91 +2,57 @@
 
 # 👋 Hi, I'm Toghrul Aliyev
 
-### Data Analyst · ML / AI Engineer · Data Science Student
+### Data Analyst | ML / AI Engineer | Data Science Student
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-toghrulaliyev.vercel.app-1e3a8a?style=for-the-badge)](https://toghrulaliyev.vercel.app)
-[![LinkedIn](https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge)](https://www.linkedin.com/in/toghrul-aliyev-a83b3037b)
-[![Gmail](https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge)](mailto:toghrulaliyev724@gmail.com)
+[![Portfolio](https://img.shields.io/badge/🌐_PORTFOLIO-111318?style=for-the-badge)](https://toghrulaliyev.vercel.app)
+[![Visit Website](https://img.shields.io/badge/VISIT_WEBSITE-1d4ed8?style=for-the-badge)](https://toghrulaliyev.vercel.app)
 
-</div>
-
----
-
-## 🚀 About Me
-
-- 🧠 Trained a **physics-informed ConvLSTM to R² = 0.94** on 1GB+ (~26M lines) of real DTS sensor data
-- 🔐 **GDG Baku Hackathon Finalist** — shipped [ZeroT](https://zerot.vercel.app), an AI-native cybersecurity analytics platform
-- 💼 **AI Engineering Intern** at Microsoft's AI Innovators Summer Program (led by Barbaros Günay) — building RAG systems & ML pipelines
-- 🎓 **Section Leader** at Stanford Code in Place — taught Python to a global student cohort (completed, Apr–May 2026)
-- 🌍 **Computer Science Translator** (Volunteer) at Khan Academy — localizing CS content into Azerbaijani
-- 🔬 **Research Contributor** at BEU, supervised by Dr. A. Gayibov — published two ML architecture reviews
-- 🏆 Finalist/participant — Build with AI (GDG), AI Automation Hackathon (n8n & Fal.ai), Openwave Hackathon
-- 📫 **toghrulaliyev724@gmail.com**
-
----
-
-## 🛠️ Tech Stack
-
-### ML / DL
-[![ml](https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp)](https://skillicons.dev)
-
-`Scikit-learn` · `Pandas` · `NumPy` · `Polars` · `ConvLSTM` · `Hugging Face Transformers` · `LangChain` · `Matplotlib` · `Seaborn`
-
-### Data Analysis & Statistics
-`EDA` · `Feature Engineering` · `Regression` · `Classification` · `Time-Series Forecasting` · `ETL Pipelines`
-
-### NLP & Data Collection
-`Firecrawl` · `Jina (r.jina.ai)` · `BeautifulSoup` · `Playwright` · `Selenium` · `spaCy`
-
-### AI / LLMs
-`Gemini 2.5 API` · `Claude SDK` · `GPT SDK` · `Groq API` · `Ollama` · `OpenRouter` · `Fal.ai` · `FastAPI` · `Prompt Engineering`
-
-### Automation
-`n8n` · `Make.com` · `Telegram Bot API`
-
-### Databases
-`Supabase` · `Firebase` · `MongoDB`
-
-### Dev Tools
-[![devtools](https://skillicons.dev/icons?i=jupyter,github)](https://skillicons.dev)
-
-`Google Colab` · `Streamlit` · `GitHub Actions`
-
-### Infra
-[![infra](https://skillicons.dev/icons?i=docker,git,linux,vercel)](https://skillicons.dev)
-
-`Arch Linux` · `DigitalOcean`
-
----
-
-## 🎓 Certifications
-
-`Machine Learning Specialization — DeepLearning.AI (Andrew Ng)` · `Data Analysis with Python — IBM/Coursera` · `Prompting Essentials — Google` · `Advanced Prompting — Google` · `Google AI Essentials Specialization` · `Natural Sciences & Research — Constructor University`
-
----
-
-## 🌐 Languages
-
-Azerbaijani (Native) · Turkish (Native) · English (Professional) · Russian (Beginner) · Korean (Beginner)
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-[![stats](https://github-readme-stats.vercel.app/api?username=aliyev-toghrul&hide_title=false&show_icons=true&include_all_commits=true&count_private=true&theme=midnight-purple&hide_border=true&bg_color=0c0e12)](https://github.com/aliyev-toghrul)
-
-[![languages](https://github-readme-stats.vercel.app/api/top-langs?username=aliyev-toghrul&locale=en&layout=compact&card_width=320&langs_count=6&theme=midnight-purple&hide_border=true&bg_color=0c0e12)](https://github.com/aliyev-toghrul)
-
-[![streak](https://streak-stats.demolab.com?user=aliyev-toghrul&mode=daily&theme=midnight-purple&hide_border=true&border_radius=5&background=0c0e12)](https://github.com/aliyev-toghrul)
+*Passionate about turning messy, real-world data into reliable AI systems. I specialize in building end-to-end ML pipelines and RAG systems — from physics-informed deep learning models trained on raw sensor data to production-grade automation workflows.*
 
 </div>
+
+---
+
+### 🚀 About Me
+
+- 💼 Building RAG systems and ML pipelines as an AI Engineering Intern at Microsoft's AI Innovators Summer Program
+- 📊 Specializing in data analysis, ETL pipelines, and statistical modeling for real-world datasets
+- 🔐 Shipped [ZeroT](https://zerot.vercel.app), an AI-native cybersecurity platform — GDG Baku Hackathon Finalist
+- 🌱 Currently diving deeper into LLM integration, NLP, and agentic automation
+- 📫 Reach me at: toghrulaliyev724@gmail.com
+
+---
+
+### 🛠️ Tech Stack
+
+**Core Technologies**
+
+[![core](https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,cpp)](https://skillicons.dev)
+
+**Data Collection & NLP**
+
+[![nlp](https://skillicons.dev/icons?i=selenium)](https://skillicons.dev)
+`Firecrawl` `Jina` `BeautifulSoup` `Playwright` `spaCy`
+
+**AI / LLMs**
+
+[![ai](https://skillicons.dev/icons?i=fastapi)](https://skillicons.dev)
+`Gemini 2.5` `Claude SDK` `GPT SDK` `Groq` `LangChain` `Hugging Face Transformers`
+
+**Automation & Infra**
+
+[![infra](https://skillicons.dev/icons?i=docker,git,github,githubactions,linux,vercel)](https://skillicons.dev)
+`n8n` `Make.com` `Telegram Bot API`
+
+**Databases**
+
+[![db](https://skillicons.dev/icons?i=mongodb,firebase,supabase)](https://skillicons.dev)
 
 ---
 
 <div align="center">
 
-### 💼 Open to remote Data Analyst and ML/AI engineering internship roles
+[![stats](https://github-readme-stats.vercel.app/api?username=aliyev-toghrul&hide_title=true&show_icons=true&include_all_commits=true&count_private=true&theme=midnight-purple&hide_border=true&bg_color=0c0e12)](https://github.com/aliyev-toghrul)
 
 </div>
+
