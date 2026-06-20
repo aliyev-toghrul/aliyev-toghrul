@@ -205,6 +205,19 @@ export default function Home() {
 
   return (
     <div className="min-h-screen t-bg t-body font-sans selection:bg-blue-900/40">
+      {/* Floating theme toggle — fixed to page corner */}
+      <button
+        onClick={toggleTheme}
+        className="theme-toggle fixed top-5 right-5 z-50"
+        aria-label="Toggle theme"
+      >
+        {isDark ? (
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        ) : (
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        )}
+      </button>
+
       <main className="max-w-6xl mx-auto px-4 py-8 lg:py-20 flex flex-col lg:flex-row gap-6 items-start">
 
         {/* ── SIDEBAR ── */}
@@ -283,7 +296,7 @@ export default function Home() {
         <div className="flex-1 w-full min-w-0 flex flex-col gap-6 relative">
 
           {/* Desktop Nav */}
-          <nav className="absolute top-0 right-0 z-10 hidden lg:flex bg-[#111318] border border-[#1f2535] rounded-bl-3xl rounded-tr-3xl overflow-hidden px-2 items-center">
+          <nav className="absolute top-0 right-0 z-10 hidden lg:flex t-surface t-border border rounded-bl-3xl rounded-tr-3xl overflow-hidden px-2 items-center">
             {tabs.map((tab) => (
               <button
                 key={tab}
@@ -295,20 +308,10 @@ export default function Home() {
                 {tab}
               </button>
             ))}
-            {/* Theme toggle */}
-            <div className="ml-auto pr-4 flex items-center">
-              <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
-                {isDark ? (
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-                ) : (
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                )}
-              </button>
-            </div>
           </nav>
 
           {/* Mobile Nav */}
-          <nav className="lg:hidden bg-[#111318] border border-[#1f2535] rounded-2xl flex justify-around p-2">
+          <nav className="lg:hidden t-surface t-border border rounded-2xl flex justify-around p-2">
             {tabs.map((tab) => (
               <button
                 key={tab}
@@ -342,8 +345,8 @@ export default function Home() {
 
                 <h3 className="text-2xl font-bold t-heading mb-6">What I&apos;m Doing</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="glow-card t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
-                    <div className="text-blue-400 shrink-0">
+                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg before:content-[""] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-blue-600 before:via-blue-400 before:to-cyan-400">
+                    <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/25 to-cyan-500/10 border border-blue-500/30 flex items-center justify-center text-blue-300">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v8"/><path d="m16 6-4 4-4-4"/><path d="M12 14v8"/><path d="m8 18 4 4 4-4"/><path d="m19 9-4 4 4 4"/><path d="m5 15 4-4-4-4"/></svg>
                     </div>
                     <div>
@@ -354,8 +357,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
-                    <div className="text-blue-400 shrink-0">
+                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg before:content-[""] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-blue-600 before:via-blue-400 before:to-cyan-400">
+                    <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/25 to-cyan-500/10 border border-blue-500/30 flex items-center justify-center text-blue-300">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
                     </div>
                     <div>
@@ -366,8 +369,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
-                    <div className="text-blue-400 shrink-0">
+                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg before:content-[""] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-blue-600 before:via-blue-400 before:to-cyan-400">
+                    <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/25 to-cyan-500/10 border border-blue-500/30 flex items-center justify-center text-blue-300">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>
                     </div>
                     <div>
@@ -378,8 +381,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
-                    <div className="text-blue-400 shrink-0">
+                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg before:content-[""] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-blue-600 before:via-blue-400 before:to-cyan-400">
+                    <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/25 to-cyan-500/10 border border-blue-500/30 flex items-center justify-center text-blue-300">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
                     </div>
                     <div>
@@ -390,8 +393,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg">
-                    <div className="text-blue-400 shrink-0">
+                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg before:content-[""] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-blue-600 before:via-blue-400 before:to-cyan-400">
+                    <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/25 to-cyan-500/10 border border-blue-500/30 flex items-center justify-center text-blue-300">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
                     <div>
@@ -427,7 +430,7 @@ export default function Home() {
                   <div className="relative pl-6 border-l-2 t-border space-y-6">
                     {education.map((e, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#06061e] border-2 border-[#1e3a8a] shadow-md shadow-blue-900/60 shadow-md shadow-blue-500/50" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-600 border-2 border-[#1e3a8a] shadow-[0_0_10px_rgba(59,130,246,0.7)]" />
                         <p className="font-bold t-heading text-sm">{e.school}</p>
                         <p className="text-sm t-muted">{e.degree}</p>
                         <p className="text-xs text-cyan-400 mt-0.5 font-mono">{e.period}</p>
@@ -446,10 +449,10 @@ export default function Home() {
                   <div className="relative pl-6 border-l-2 t-border space-y-8">
                     {experience.map((e, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#06061e] border-2 border-[#1e3a8a] shadow-md shadow-blue-900/60" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-600 border-2 border-[#1e3a8a] shadow-[0_0_10px_rgba(59,130,246,0.7)]" />
                         <div className="flex flex-wrap items-center gap-2 mb-0.5">
                           <p className="font-bold t-heading text-sm">{e.role}</p>
-                          <span className="text-[10px] px-2 py-0.5 bg-[#06061e] border border-[#1e3a8a] text-blue-300 rounded-full">{e.type}</span>
+                          <span className="text-[10px] px-2.5 py-1 bg-blue-600 text-white rounded-full font-semibold shadow-[0_0_8px_rgba(59,130,246,0.5)]">{e.type}</span>
                         </div>
                         <p className="text-sm t-muted">{e.org}</p>
                         <p className="text-xs text-cyan-400 mt-0.5 mb-2 font-mono">{e.period}</p>
@@ -490,7 +493,7 @@ export default function Home() {
                   <div className="relative pl-6 border-l-2 t-border space-y-6">
                     {certs.map((c, i) => (
                       <div key={i} className="relative">
-                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-[#06061e] border-2 border-[#1e3a8a] shadow-md shadow-blue-900/60" />
+                        <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-600 border-2 border-[#1e3a8a] shadow-[0_0_10px_rgba(59,130,246,0.7)]" />
                         <p className="text-sm font-semibold t-heading leading-tight">{c.name}</p>
                         <p className="text-xs t-faint mt-0.5">{c.issuer}</p>
                       </div>
