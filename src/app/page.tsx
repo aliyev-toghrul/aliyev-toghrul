@@ -65,7 +65,7 @@ export default function Home() {
       link: "https://zerot.vercel.app",
       badge: "GDG Baku Hackathon Finalist",
       badgeColor: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
-      year: "Mar 2026",
+      year: "2025",
     },
     {
       title: "AI Automation Hackathon — n8n & Fal.ai",
@@ -119,36 +119,38 @@ export default function Home() {
     {
       role: "AI Engineering Intern",
       org: "Microsoft — AI Innovators Summer Program",
-      period: "Jun 4 – Jul 27, 2026",
-      type: "Internship",
+      period: "May – Jul 2026",
+      type: "Internship · Completed",
       bullets: [
-        "Selected for Microsoft's AI Innovators Summer Program led by Barbaros Günay, CSA Manager at Microsoft.",
-        "Building RAG (Retrieval-Augmented Generation) systems and ML pipelines; working on AI automation and machine learning model development.",
+        "Designed and built end-to-end RAG systems and analytical pipelines integrating LLM APIs, led by Barbaros Günay, CSA Manager at Microsoft.",
+        "Engineered data ingestion, preprocessing, and retrieval pipelines using Python; applied prompt engineering and statistical validation to evaluate output quality.",
+        "Delivered multiple working AI projects with stakeholder presentations demonstrating measurable system performance.",
       ],
     },
     {
       role: "Computer Science Translator",
       org: "Khan Academy",
-      period: "May 2026 – Present",
-      type: "Volunteer",
+      period: "May – Aug 2026",
+      type: "Volunteer · Completed",
       bullets: [
-        "Translating Khan Academy's Computer Science curriculum into Azerbaijani, making CS education accessible to Azerbaijani-speaking learners globally.",
+        "Translated CS and data literacy educational content into Azerbaijani, expanding access to analytical concepts for 10M+ Azerbaijani-speaking learners globally.",
       ],
     },
     {
-      role: "Section Leader",
+      role: "Section Leader — Mentor",
       org: "Stanford Code in Place",
       period: "Apr – May 2026",
-      type: "Part-time · Completed",
+      type: "Completed",
       bullets: [
-        "Selected from a global applicant pool to mentor students in Stanford's introductory Python programming course.",
-        "Led weekly small-group sessions, reviewed code submissions, and provided structured feedback aligned with Stanford's teaching standards.",
+        "Selected globally to lead weekly group sessions teaching Python fundamentals and OOP concepts, aligned with Stanford's CS106A curriculum.",
+        "Conducted additional 1-on-1 mentoring sessions to support students with individual challenges.",
+        "Contributed on a volunteering basis across both group instruction and personal mentorship throughout the 2-month programme.",
       ],
     },
     {
       role: "Research Contributor — ML Systems",
       org: "Baku Engineering University",
-      period: "2025 – May 2026",
+      period: "2025 – Jun 2026",
       type: "Research · Completed",
       bullets: [
         "Conducted two supervised literature reviews on neural network architectures and meta-heuristic multi-agent decision-making systems under lecturer Artughrul Qayibov.",
@@ -171,7 +173,7 @@ export default function Home() {
       degree: "B.S. Data Science & Analytics",
       school: "BEU × INHA University — Dual Degree",
       period: "2025 – 2029",
-      detail: "Dual Degree Program · Baku Engineering University × INHA University, South Korea · GPA: 3.67",
+      detail: "Dual Degree Program · Baku Engineering University × INHA University, South Korea · GPA: 93.9/100",
     },
   ];
 
@@ -339,9 +341,9 @@ export default function Home() {
             {activeTab === "About" && (
               <section className="fade-up">
                 <p className="t-body leading-relaxed mb-10">
-                  I&apos;m an AI &amp; ML engineer focused on building real systems — from deep learning models trained on scientific data to RAG pipelines and end-to-end automation workflows. Currently interning at Microsoft&apos;s AI Innovators Summer Program, where I work on retrieval-augmented generation and machine learning projects.
+                  Data Science &amp; Analytics student (GPA 93.9/100, BEU–INHA University) actively seeking internship and paid opportunities in data analysis, ML engineering, and AI. Pragmatic builder with a track record of shipping real systems under competitive conditions — including a national hackathon final and a completed corporate AI program at Microsoft.
                   <br /><br />
-                  I study Data Science at BEU × INHA University and have contributed to research on neural architectures and meta-heuristic multi-agent systems. I work across the full ML stack: data engineering, model training, LLM integration, and deployment.
+                  Currently expanding into competitive data science through Kaggle while continuing to build across the full ML stack: data engineering, statistical modelling, LLM integration, and automation. Driven by a strong bias for applied work, collaborative problem-solving, and continuously raising the bar.
                 </p>
 
                 <h3 className="text-2xl font-bold t-heading mb-6">What I&apos;m Doing</h3>
