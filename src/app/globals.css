@@ -113,6 +113,16 @@ body {
   box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.5), 0 0 32px rgba(29, 78, 216, 0.2);
 }
 
+/* ── CARD ACCENT TOP BAR ── */
+.card-accent-top::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #60a5fa, #22d3ee);
+  border-radius: 2px 2px 0 0;
+}
+
 /* ── FADE UP ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(12px); }

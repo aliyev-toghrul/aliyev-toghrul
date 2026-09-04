@@ -348,7 +348,7 @@ export default function Home() {
 
                 <h3 className="text-2xl font-bold t-heading mb-6">What I&apos;m Doing</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg before:content-[""] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-blue-600 before:via-blue-400 before:to-cyan-400">
+                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg card-accent-top">
                     <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/25 to-cyan-500/10 border border-blue-500/30 flex items-center justify-center text-blue-300">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v8"/><path d="m16 6-4 4-4-4"/><path d="M12 14v8"/><path d="m8 18 4 4 4-4"/><path d="m19 9-4 4 4 4"/><path d="m5 15 4-4-4-4"/></svg>
                     </div>
@@ -360,7 +360,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg before:content-[""] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-blue-600 before:via-blue-400 before:to-cyan-400">
+                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg card-accent-top">
                     <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/25 to-cyan-500/10 border border-blue-500/30 flex items-center justify-center text-blue-300">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
                     </div>
@@ -372,7 +372,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg before:content-[""] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-blue-600 before:via-blue-400 before:to-cyan-400">
+                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg card-accent-top">
                     <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/25 to-cyan-500/10 border border-blue-500/30 flex items-center justify-center text-blue-300">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>
                     </div>
@@ -384,7 +384,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg before:content-[""] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-blue-600 before:via-blue-400 before:to-cyan-400">
+                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg card-accent-top">
                     <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/25 to-cyan-500/10 border border-blue-500/30 flex items-center justify-center text-blue-300">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
                     </div>
@@ -396,7 +396,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg before:content-[""] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-blue-600 before:via-blue-400 before:to-cyan-400">
+                  <div className="glow-card relative overflow-hidden t-card-alt t-border border rounded-2xl p-6 flex gap-4 shadow-lg card-accent-top">
                     <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/25 to-cyan-500/10 border border-blue-500/30 flex items-center justify-center text-blue-300">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
