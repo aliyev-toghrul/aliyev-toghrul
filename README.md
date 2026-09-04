@@ -7,7 +7,7 @@
 [![Portfolio](https://img.shields.io/badge/🌐_PORTFOLIO-111318?style=for-the-badge)](https://toghrulaliyev.vercel.app)
 [![Visit Website](https://img.shields.io/badge/VISIT_WEBSITE-1d4ed8?style=for-the-badge)](https://toghrulaliyev.vercel.app)
 
-*Passionate about turning messy, real-world data into reliable AI systems. I specialize in building end-to-end ML pipelines and RAG systems — from physics-informed deep learning models trained on raw sensor data to production-grade automation workflows.*
+*Passionate about turning messy, real-world data into reliable AI systems. I build end-to-end ML pipelines, RAG systems, and automation workflows — and I ship things fast under pressure.*
 
 </div>
 
@@ -15,9 +15,10 @@
 
 ### 🚀 About Me
 
-- 💼 Building RAG systems and ML pipelines as an AI Engineering Intern at Microsoft's AI Innovators Summer Program
-- 📊 Specializing in data analysis, ETL pipelines, and statistical modeling for real-world datasets
-- 🔐 Shipped [ZeroT](https://zerot.vercel.app), an AI-native cybersecurity platform — GDG Baku Hackathon Finalist
+- 🏢 Completed AI Engineering Internship at **Microsoft AI Innovators Summer Program** (May – Jul 2026) — built RAG systems & analytical pipelines led by Barbaros Günay
+- 📊 Specializing in data analysis, ETL pipelines, and statistical modelling for real-world datasets
+- 🔐 Shipped [ZeroT](https://zerot.vercel.app) — AI-native cybersecurity platform, GDG Baku Hackathon Finalist
+- 🎯 Just getting started on Kaggle — competing and building in public
 - 🌱 Currently diving deeper into LLM integration, NLP, and agentic automation
 - 📫 Reach me at: toghrulaliyev724@gmail.com
 
