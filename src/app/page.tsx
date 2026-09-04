@@ -455,7 +455,7 @@ export default function Home() {
                         <div className="absolute -left-[1.45rem] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-600 border-2 border-[#1e3a8a] shadow-[0_0_10px_rgba(59,130,246,0.7)]" />
                         <div className="flex flex-wrap items-center gap-2 mb-0.5">
                           <p className="font-bold t-heading text-sm">{e.role}</p>
-                          <span className="text-[10px] px-2.5 py-1 bg-blue-600 text-white rounded-full font-semibold shadow-[0_0_8px_rgba(59,130,246,0.5)]">{e.type}</span>
+                          <span className="text-[10px] px-2.5 py-1 t-border border t-faint rounded-full font-medium">{e.type}</span>
                         </div>
                         <p className="text-sm t-muted">{e.org}</p>
                         <p className="text-xs text-cyan-400 mt-0.5 mb-2 font-mono">{e.period}</p>
