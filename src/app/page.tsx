@@ -118,6 +118,17 @@ export default function Home() {
 
   const experience = [
     {
+      role: "Machine Learning Competitor",
+      org: "Kaggle",
+      period: "Jul 2026 – Present",
+      type: "Competitions",
+      bullets: [
+        "Participating in machine learning competitions, focusing on deep learning, computer vision, and applied AI.",
+        "RSNA 2026 – Knee Abnormality Detection: Best reported Public LB: 0.922 macro ROC-AUC (team ensemble).",
+        "Developed and evaluated DINOv2-based pipelines for detecting 12 abnormalities from knee MRI; explored pseudo-labeling, cross-validation, probability calibration, and community-based ensemble methods.",
+      ],
+    },
+    {
       role: "AI Engineering Intern",
       org: "Microsoft — AI Innovators Summer Program",
       period: "May – Jul 2026",
@@ -156,15 +167,6 @@ export default function Home() {
       bullets: [
         "Conducted two supervised literature reviews on neural network architectures and meta-heuristic multi-agent decision-making systems under lecturer Artughrul Qayibov.",
         "Synthesized findings from peer-reviewed papers and published both summaries on LinkedIn, reaching practitioners in the AI/ML community.",
-      ],
-    },
-    {
-      role: "Open-Source Contributor",
-      org: "github.com/aliyev-toghrul",
-      period: "2024 – Present",
-      type: "Open Source",
-      bullets: [
-        "Maintains public project portfolio across deep learning, AI cybersecurity, and NLP automation domains.",
       ],
     },
   ];
@@ -277,8 +279,8 @@ export default function Home() {
 
           <div className="w-full mt-6 space-y-3">
             <a
-              href="https://linkedin.com/in/toghrul-aliyev-a83b3037b"
-              target="_blank"
+              href="/Toghrul_Aliyev_CV.pdf"
+              download="Toghrul_Aliyev_CV.pdf"
               className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-[#06061e] rounded-xl text-blue-200 text-xs font-semibold hover:bg-[#0a0a2e] transition-all border border-blue-800"
             >
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -417,8 +419,8 @@ export default function Home() {
               <section className="fade-up space-y-10">
 
                 <a
-                  href="https://linkedin.com/in/toghrul-aliyev-a83b3037b"
-                  target="_blank"
+                  href="/Toghrul_Aliyev_CV.pdf"
+                  download="Toghrul_Aliyev_CV.pdf"
                   className="inline-flex items-center gap-2 px-5 py-3 bg-[#06061e] rounded-xl text-blue-200 text-sm font-semibold hover:bg-[#0a0a2e] transition-all border border-[#1e3a8a]"
                 >
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
