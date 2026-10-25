@@ -16,10 +16,11 @@
 ### 🚀 About Me
 
 - 🏢 Completed AI Engineering Internship at **Microsoft AI Innovators Summer Program** (May – Jul 2026) — built RAG systems & analytical pipelines led by Barbaros Günay
-- 📊 Specializing in data analysis, ETL pipelines, and statistical modelling for real-world datasets
+- 🔬 Engineered [DTS Thermodynamic ML Modeling](https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling) — physics-informed PyTorch ConvLSTM pipeline predicting wellbore flow rates from 1GB+ (~26M rows) fiber-optic sensor telemetry (R² = 0.94)
 - 🔐 Shipped [ZeroT](https://zerot.vercel.app) — AI-native cybersecurity platform, GDG Baku Hackathon Finalist
-- 🎯 Just getting started on Kaggle — competing and building in public
-- 🌱 Currently diving deeper into LLM integration, NLP, and agentic automation
+- 📊 Specializing in data analysis, ETL pipelines, and statistical modelling for real-world datasets
+- 🎯 Competing on Kaggle and building applied ML systems in public
+- 🌱 Diving deeper into LLM integration, NLP, and agentic automation
 - 📫 Reach me at: toghrulaliyev724@gmail.com
 
 ---

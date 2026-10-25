@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("About");
+  const [portfolioFilter, setPortfolioFilter] = useState("All");
   const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
@@ -47,9 +48,9 @@ export default function Home() {
   const projects = [
     {
       title: "Physics-Informed Wellbore Flow Prediction (ConvLSTM)",
-      category: "Physics-Informed Deep Learning",
+      category: "Deep Learning",
       description:
-        "Developed a spatial-temporal regression pipeline using PyTorch to predict wellbore flow rates from DTS fiber-optic sensor data. Processed 1GB+ (~26M lines) of high-noise data with thermodynamic feature engineering (spatial gradients dT/dz, thermal curvature, rolling statistics). Implemented a spatial-split validation strategy to ensure generalization (OOD extrapolation), achieving R² = 0.94. Architecture evolved from Conv1D-BiLSTM → ConvLSTM with AdamW + Cosine Annealing.",
+        "Developed a spatial-temporal regression pipeline using PyTorch to predict wellbore flow rates from DTS fiber-optic sensor data. Processed 1GB+ (~26M rows) of high-noise telemetry with thermodynamic feature engineering (spatial gradients dT/dz, thermal curvature d²T/dz², rolling statistics) and physical zero-flow boundary enforcement, achieving R² = 0.94 across the active producing interval.",
       stack: ["Python", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
       link: "https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling",
       badge: "Research Task",
@@ -519,8 +520,9 @@ export default function Home() {
                   {["All", "AI & Cybersecurity", "Deep Learning", "AI Automation"].map((cat) => (
                     <button
                       key={cat}
+                      onClick={() => setPortfolioFilter(cat)}
                       className={`px-4 py-1.5 rounded-full text-xs font-medium border transition-all ${
-                        cat === "All"
+                        portfolioFilter === cat
                           ? "bg-blue-600 text-white border-indigo-600"
                           : "bg-transparent text-slate-400 border-[#1f2535] hover:border-[#1e3a8a] hover:text-blue-300"
                       }`}
@@ -534,60 +536,121 @@ export default function Home() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 
                   {/* ZeroT — Zero Thread Shield */}
-                  <div className="relative group rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer aspect-[4/3]">
-                    {/* Thumbnail */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#0a0f1e] via-[#0d1530] to-[#060b1a] flex items-center justify-center">
-                      <div className="relative flex items-center justify-center w-full h-full">
-                        {/* Background glow */}
-                        <div className="absolute w-32 h-32 bg-blue-500/20 rounded-full blur-2xl" />
-                        {/* Shield icon */}
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="opacity-80">
-                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                          <path d="m9 12 2 2 4-4" stroke="#22d3ee" strokeWidth="1.5"/>
-                        </svg>
-                        {/* Floating dots */}
-                        <div className="absolute top-4 right-6 w-1.5 h-1.5 bg-blue-400 rounded-full opacity-60" />
-                        <div className="absolute top-8 right-12 w-1 h-1 bg-cyan-400 rounded-full opacity-40" />
-                        <div className="absolute bottom-6 left-8 w-1 h-1 bg-indigo-300 rounded-full opacity-50" />
-                        <div className="absolute bottom-10 left-4 w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-30" />
-                        {/* Label */}
-                        <div className="absolute bottom-4 left-0 right-0 text-center">
-                          <span className="text-blue-300 text-xs font-mono tracking-widest opacity-60">ZERO THREAD SHIELD</span>
+                  {(portfolioFilter === "All" || portfolioFilter === "AI & Cybersecurity") && (
+                    <div className="relative group rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer aspect-[4/3]">
+                      {/* Thumbnail */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#0a0f1e] via-[#0d1530] to-[#060b1a] flex items-center justify-center">
+                        <div className="relative flex items-center justify-center w-full h-full">
+                          {/* Background glow */}
+                          <div className="absolute w-32 h-32 bg-blue-500/20 rounded-full blur-2xl" />
+                          {/* Shield icon */}
+                          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="opacity-80">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="m9 12 2 2 4-4" stroke="#22d3ee" strokeWidth="1.5"/>
+                          </svg>
+                          {/* Floating dots */}
+                          <div className="absolute top-4 right-6 w-1.5 h-1.5 bg-blue-400 rounded-full opacity-60" />
+                          <div className="absolute top-8 right-12 w-1 h-1 bg-cyan-400 rounded-full opacity-40" />
+                          <div className="absolute bottom-6 left-8 w-1 h-1 bg-indigo-300 rounded-full opacity-50" />
+                          <div className="absolute bottom-10 left-4 w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-30" />
+                          {/* Label */}
+                          <div className="absolute bottom-4 left-0 right-0 text-center">
+                            <span className="text-blue-300 text-xs font-mono tracking-widest opacity-60">ZERO THREAD SHIELD</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Category badge */}
+                      <div className="absolute top-3 right-3 z-10">
+                        <span className="text-[10px] px-2.5 py-1 bg-cyan-500/20 border border-cyan-500/40 text-cyan-400 rounded-full font-medium backdrop-blur-sm">
+                          AI &amp; Cybersecurity
+                        </span>
+                      </div>
+
+                      {/* Hover overlay */}
+                      <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center gap-3 p-4">
+                        <p className="text-white text-sm font-bold text-center">Zero Thread Shield</p>
+                        <p className="text-zinc-400 text-xs text-center leading-relaxed">AI-native cybersecurity platform for SMEs — GDG Baku Hackathon Top 10 Finalist</p>
+                        <div className="flex gap-2 mt-1">
+                          <a
+                            href="https://zerot.vercel.app"
+                            target="_blank"
+                            className="flex items-center gap-1.5 px-4 py-1.5 bg-blue-500/20 border border-blue-500/50 text-blue-300 rounded-full text-xs font-medium hover:bg-blue-500/30 transition-colors"
+                          >
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                            Preview
+                          </a>
+                          <a
+                            href="https://github.com/aliyev-toghrul/ZeroT"
+                            target="_blank"
+                            className="flex items-center gap-1.5 px-4 py-1.5 bg-zinc-800 border border-zinc-600 text-zinc-200 rounded-full text-xs font-medium hover:bg-zinc-700 transition-colors"
+                          >
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            Visit
+                          </a>
                         </div>
                       </div>
                     </div>
+                  )}
 
-                    {/* Category badge */}
-                    <div className="absolute top-3 right-3 z-10">
-                      <span className="text-[10px] px-2.5 py-1 bg-cyan-500/20 border border-cyan-500/40 text-cyan-400 rounded-full font-medium backdrop-blur-sm">
-                        AI &amp; Cybersecurity
-                      </span>
-                    </div>
+                  {/* DTS Thermodynamic ML Modeling (ConvLSTM) */}
+                  {(portfolioFilter === "All" || portfolioFilter === "Deep Learning") && (
+                    <div className="relative group rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer aspect-[4/3]">
+                      {/* Thumbnail */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#081226] via-[#0b1c36] to-[#050c18] flex items-center justify-center">
+                        <div className="relative flex items-center justify-center w-full h-full">
+                          {/* Background glow */}
+                          <div className="absolute w-32 h-32 bg-cyan-500/20 rounded-full blur-2xl" />
+                          {/* Thermodynamic waveform + neural nodes icon */}
+                          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="opacity-85">
+                            <path d="M2 12h3l2.5-6 4 12 3.5-8 2 4h5" stroke="#22d3ee" strokeWidth="1.5"/>
+                            <circle cx="7.5" cy="6" r="1.5" fill="#60a5fa" />
+                            <circle cx="11.5" cy="18" r="1.5" fill="#22d3ee" />
+                            <circle cx="15" cy="10" r="1.5" fill="#60a5fa" />
+                          </svg>
+                          {/* Floating dots */}
+                          <div className="absolute top-5 left-6 w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-60" />
+                          <div className="absolute top-7 right-8 w-1 h-1 bg-blue-400 rounded-full opacity-50" />
+                          <div className="absolute bottom-8 right-6 w-1.5 h-1.5 bg-indigo-400 rounded-full opacity-40" />
+                          {/* Label */}
+                          <div className="absolute bottom-4 left-0 right-0 text-center">
+                            <span className="text-blue-300 text-xs font-mono tracking-widest opacity-60">DTS CONVLSTM MODELING</span>
+                          </div>
+                        </div>
+                      </div>
 
-                    {/* Hover overlay */}
-                    <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center gap-3 p-4">
-                      <p className="text-white text-sm font-bold text-center">Zero Thread Shield</p>
-                      <p className="text-zinc-400 text-xs text-center leading-relaxed">AI-native cybersecurity platform for SMEs — GDG Baku Hackathon Top 10 Finalist</p>
-                      <div className="flex gap-2 mt-1">
-                        <a
-                          href="https://zerot.vercel.app"
-                          target="_blank"
-                          className="flex items-center gap-1.5 px-4 py-1.5 bg-blue-500/20 border border-blue-500/50 text-blue-300 rounded-full text-xs font-medium hover:bg-blue-500/30 transition-colors"
-                        >
-                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-                          Preview
-                        </a>
-                        <a
-                          href="https://github.com/aliyev-toghrul/ZeroT"
-                          target="_blank"
-                          className="flex items-center gap-1.5 px-4 py-1.5 bg-zinc-800 border border-zinc-600 text-zinc-200 rounded-full text-xs font-medium hover:bg-zinc-700 transition-colors"
-                        >
-                          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                          Visit
-                        </a>
+                      {/* Category badge */}
+                      <div className="absolute top-3 right-3 z-10">
+                        <span className="text-[10px] px-2.5 py-1 bg-blue-500/20 border border-blue-500/40 text-blue-300 rounded-full font-medium backdrop-blur-sm">
+                          Deep Learning
+                        </span>
+                      </div>
+
+                      {/* Hover overlay */}
+                      <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center gap-3 p-4">
+                        <p className="text-white text-sm font-bold text-center">DTS Wellbore Flow Prediction</p>
+                        <p className="text-zinc-400 text-xs text-center leading-relaxed">Physics-informed PyTorch ConvLSTM on 1GB+ (~26M rows) fiber-optic sensor telemetry (R² = 0.94)</p>
+                        <div className="flex gap-2 mt-1">
+                          <a
+                            href="https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling/blob/main/Project_Presentation.pdf"
+                            target="_blank"
+                            className="flex items-center gap-1.5 px-4 py-1.5 bg-blue-500/20 border border-blue-500/50 text-blue-300 rounded-full text-xs font-medium hover:bg-blue-500/30 transition-colors"
+                          >
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            Slides
+                          </a>
+                          <a
+                            href="https://github.com/aliyev-toghrul/DTS-Thermodynamic-ML-Modeling"
+                            target="_blank"
+                            className="flex items-center gap-1.5 px-4 py-1.5 bg-zinc-800 border border-zinc-600 text-zinc-200 rounded-full text-xs font-medium hover:bg-zinc-700 transition-colors"
+                          >
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            Visit
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  )}
 
                   {/* Coming soon placeholder */}
                   <div className="relative rounded-2xl overflow-hidden border border-dashed border-[#1f2535] aspect-[4/3] flex items-center justify-center bg-[#1a1a1a]">
