@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   title: "Toghrul Aliyev | ML & AI Engineer Portfolio",
   description:
     "Portfolio of Toghrul Aliyev, an AI & Machine Learning Engineer specializing in RAG architectures, LLM integrations, deep learning modeling, and AI automation.",
+  icons: {
+    icon: "https://github.com/aliyev-toghrul.png",
+    shortcut: "https://github.com/aliyev-toghrul.png",
+    apple: "https://github.com/aliyev-toghrul.png",
+  },
   keywords: [
     "Toghrul Aliyev",
     "Toghrul Aliyev AI",
