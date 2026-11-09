@@ -230,7 +230,7 @@ export default function Home() {
         <aside className="w-full lg:w-[280px] lg:sticky lg:top-10 t-surface t-border border rounded-3xl p-8 flex flex-col items-center shrink-0">
           <div className="t-icon-bg rounded-3xl p-4 mb-6 shadow-xl avatar-wrap">
             <img
-              src="/me.png"
+              src="/Profile_Photo.png"
               alt="Toghrul Aliyev"
               className="w-24 h-24 lg:w-32 lg:h-32 rounded-3xl object-cover t-surface"
             />
