@@ -17,9 +17,13 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Toghrul Aliyev, an AI & Machine Learning Engineer specializing in RAG architectures, LLM integrations, deep learning modeling, and AI automation.",
   icons: {
-    icon: "/arch_logo_contrast.jpeg",
-    shortcut: "/arch_logo_contrast.jpeg",
-    apple: "/arch_logo_contrast.jpeg",
+    icon: [
+      { url: "/arch-logo.png", sizes: "32x32", type: "image/png" },
+    ],
+    shortcut: "/arch-logo.png",
+    apple: [
+      { url: "/arch-logo.png", sizes: "180x180", type: "image/png" },
+    ],
   },
   keywords: [
     "Toghrul Aliyev",
