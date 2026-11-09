@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Toghrul Aliyev, an AI & Machine Learning Engineer specializing in RAG architectures, LLM integrations, deep learning modeling, and AI automation.",
   icons: {
-    icon: "/Profile_Photo.png",
-    shortcut: "/Profile_Photo.png",
-    apple: "/Profile_Photo.png",
+    icon: "/arch_linux_NEON_BLUE.png",
+    shortcut: "/arch_linux_NEON_BLUE.png",
+    apple: "/arch_linux_NEON_BLUE.png",
   },
   keywords: [
     "Toghrul Aliyev",
