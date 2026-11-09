@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Toghrul Aliyev | ML & AI Engineer Portfolio",
+    images: ['https://github.com/aliyev-toghrul.png'],
     description:
       "AI & Machine Learning Engineer specializing in RAG architectures, LLM integrations, and AI automation.",
     url: "https://toghrulaliyev.vercel.app",
